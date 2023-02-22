@@ -1,0 +1,35 @@
+
+.is-medium .active,
+.btn:hover {
+    background-color: #666;
+    color: white;
+}
+.is-rounded{
+    margin-top: -59px;
+}
+
+
+
+.image.is-4by3 {
+    padding-top: 43% !important;
+}
+.ml-2 {
+    margin-left: 8.5rem !important;
+}
+
+
+.columns.is-mobile>.column.is-three-fifths {
+    flex: none;
+    width: 44%;
+}
+.is-three-fifths{
+    display: flex;
+    margin-left: 1rem;
+}
+
+@media screen768px {
+    .columns.is-mobile {
+            display: flex none;
+        }
+}
+
