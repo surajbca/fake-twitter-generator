@@ -1,11 +1,37 @@
 
-.is-medium .active,
-.btn:hover {
-    background-color: #666;
-    color: white;
+
+/*.is-fullwidth:hover {
+    background-color: #ffbf00;
+    
 }
+.is-fullwidth:active {
+    background-color: #ffbf00;
+}*/
+.container{
+  margin-top: 88px;
+}
+.is-size-3 {
+    font-size: 2.25rem !important;
+    margin-left: 522px;
+}
+
 .is-rounded{
-    margin-top: -59px;
+    margin-left: 10px;
+    margin-top: -69px;
+}
+.ml-10{
+    margin-left: 100px;
+}
+#ml-12{
+    margin-left: 117px;
+}
+#ml-13{
+    margin-right: 89px;
+}
+
+
+.file.is-medium{
+    margin-left: 140px;
 }
 
 
