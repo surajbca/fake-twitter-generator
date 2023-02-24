@@ -59,3 +59,20 @@
         }
 }
 
+.margin_top{
+        margin-top: -2.75rem !important;
+}
+.m-20{
+    margin-left: 268px;
+}
+
+/* .mt-5 {
+    margin-top: 1.5rem !important;
+    margin-left: 38px !important;
+    margin-right: 45px !important;
+} */
+
+#ml-13 {
+    margin-right: 79px;
+    margin-left: -144px;
+}

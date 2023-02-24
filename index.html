@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/twitter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Document</title>
 </head>
@@ -144,41 +145,62 @@
                 <form id="FormID">
                     <div class="column is-three-fifths box has-background-primary-light ml-12" id="ml-12">
                         <!--div start-->
-                        <div class="columns">
-                            <div class="column">
-                                <label class="label">Layout :</label>
-                                <label class="radio">
-                                    <input type="radio" name="question" id="input1">
-                                    android
-                                </label>
-                            </div>
+                        <div id="desktopView">
                             <div class="column">
                                 <label class="label">Parts</label>
                                 <label class="checkbox">
-                                    <input type="checkbox" id="input2">
-                                    Remember me
+                                    <input type="checkbox" id="input2" onclick="verifyAccount(1)">
+                                    Verfied Account
                                 </label>
                             </div>
-                        </div>
-                        <label class="radio">
-                            <input type="radio" name="question">
-                            iphone
-                        </label>
-                        <div class="columns">
                             <div class="column">
-                                <label class="label">clock</label>
-                                <div class="control ">
-                                    <input class="input " type="time" placeholder="clock" value="10:4 am" id="input3">
-                                </div>
-                            </div>
-                            <div class="column">
-                                <label class="label">Battery percent</label>
+                                <label class="label">Tweet Count</label>
                                 <div class="control">
-                                    <input class="input" type="battery percent" placeholder="percent input" value="50"
-                                        id="input4">
+                                    <input class="input" type="number" placeholder="followers Count" value="0"
+                                        id="input11" oninput="updateInput(value)">
                                 </div>
                             </div>
                         </div>
+                        <div id="mobileView" style="display: none;">
+                            <div class="columns">
+                                <div class="column">
+                                    <label class="label">Layout :</label>
+                                    <label class="radio">
+                                        <input type="radio" name="question" id="input1" onclick="switchAndroid()"
+                                            checked>
+                                        android
+                                    </label>
+                                </div>
+                                <div class="column">
+                                    <label class="label">Parts</label>
+                                    <label class="checkbox">
+                                        <input type="checkbox" id="input21" onclick="verifyAccount(2)">
+                                        Verfied Account
+                                    </label>
+                                </div>
+                            </div>
+                            <label class="radio">
+                                <input type="radio" name="question" onclick="switchIphone()">
+                                iphone
+                            </label>
+                            <div class="columns">
+                                <div class="column">
+                                    <label class="label">clock</label>
+                                    <div class="control ">
+                                        <input class="input " type="text" placeholder="clock" value="10:4 am"
+                                            id="input3" oninput="updateInput()">
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <label class="label">Battery percent</label>
+                                    <div class="control">
+                                        <input class="input" type="number" placeholder="percent input" value="50"
+                                            id="input4" oninput="updateInput()">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="box">
                             <article class="media">
                                 <div class="media-left">
@@ -205,19 +227,19 @@
                                     <nav class="level is-mobile imageIsLoaded()">
                                         <div class="level-left">
                                             <a class="level-item" aria-label="reply">
-                                                <span class="icon is-small">
+                                                <!--<span class="icon is-small">
                                                     <i class="fas fa-reply" aria-hidden="true"></i>
-                                                </span>
+                                                </span>-->
                                             </a>
                                             <a class="level-item" aria-label="retweet">
-                                                <span class="icon is-small">
+                                                <!--<span class="icon is-small">
                                                     <i class="fas fa-retweet" aria-hidden="true"></i>
-                                                </span>
+                                                </span>-->
                                             </a>
                                             <a class="level-item" aria-label="like">
-                                                <span class="icon is-small">
+                                                <!--<span class="icon is-small">
                                                     <i class="fas fa-heart" aria-hidden="true"></i>
-                                                </span>
+                                                </span>-->
                                             </a>
                                         </div>
                                     </nav>
@@ -250,19 +272,19 @@
                                     <nav class="level is-mobile">
                                         <div class="level-left">
                                             <a class="level-item" aria-label="reply">
-                                                <span class="icon is-small">
+                                                <!--<span class="icon is-small">
                                                     <i class="fas fa-reply" aria-hidden="true"></i>
-                                                </span>
+                                                </span>-->
                                             </a>
                                             <a class="level-item" aria-label="retweet">
-                                                <span class="icon is-small">
+                                                <!--<span class="icon is-small">
                                                     <i class="fas fa-retweet" aria-hidden="true"></i>
-                                                </span>
+                                                </span>-->
                                             </a>
                                             <a class="level-item" aria-label="like">
-                                                <span class="icon is-small">
+                                                <!--<span class="icon is-small">
                                                     <i class="fas fa-heart" aria-hidden="true"></i>
-                                                </span>
+                                                </span>-->
                                             </a>
                                         </div>
                                     </nav>
@@ -279,21 +301,21 @@
                         <div class="field">
                             <label class="label">User Name</label>
                             <div class="control">
-                                <input class="input " type="userName" placeholder="user name" value="i.m.john_doe"
+                                <input class="input " type="text" placeholder="user name" value="i.m.john_doe"
                                     id="input6" oninput="updateInput(value)">
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Born Date</label>
                             <div class="control">
-                                <input class="input" type="date" placeholder="born date" value="January 1, 1999"
+                                <input class="input" type="text" placeholder="born date" value="January 1, 1999"
                                     id="input7" oninput="updateInput(value)">
                             </div>
                         </div>
                         <div class="field">
                             <label class="label">Join Date</label>
                             <div class="control  ">
-                                <input class="input " type="date" placeholder="date of birth" value="January 2016"
+                                <input class="input " type="text" placeholder="date of birth" value="January 1, 1999"
                                     id="input8" oninput="updateInput(value)">
                             </div>
                         </div>
@@ -301,14 +323,14 @@
                             <div class="column">
                                 <label class="label">Following Count</label>
                                 <div class="control">
-                                    <input class="input" type="number" placeholder="following Count" value="61"
+                                    <input class="input" type="number" placeholder="following Count" value="0"
                                         id="input9" oninput="updateInput(value)">
                                 </div>
                             </div>
                             <div class="column">
                                 <label class="label">followers Count</label>
                                 <div class="control">
-                                    <input class="input" type="followers" placeholder="followers Count" value="23"
+                                    <input class="input" type="number" placeholder="followers Count" value="0"
                                         id="input10" oninput="updateInput(value)">
                                 </div>
                             </div>
@@ -327,39 +349,210 @@
                         View</button>
                 </div>
                 <div class="box has-background-grey-darker" id=" img">
-                    <div class="card" id="myElement">
-                        <div class="navbar-end has-background-white">
-                            <p id="time"></p>
-                            <p id="Battery"></p>
+                    <input class="button" type="submit" value="Live preview">
+                    <div class="card mt-5" id="myElement">
+                        <div class="has-background-white">
+
+                            <div id="mobileViewBody" style="display: none;">
+                                <div id="iphoneView" style="display: none;">
+                                    <div class="columns">
+                                        <div class="column ml-2">
+                                            <a class="" aria-label="like">
+                                                <p id=""> </p>
+                                                <span class="icon is-small">
+                                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                </span>
+                                                vadafone
+                                            </a>
+
+                                        </div>
+                                        <div class="column">
+                                            <div class="level-left navbar-end">
+                                                <a class="level-item" aria-label="like">
+                                                    <p id="mobileTime">10:04 AM</p>
+
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="level-left navbar-end ">
+                                                <a class="level-item" aria-label="like">
+                                                    <p id="batteryPercentage"> 50 </p>
+                                                    <span class="icon is-small">
+                                                        <i class="fa fa-percent" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                                <a class="level-item mr-2" aria-label="like">
+                                                    <span class="icon is-small">
+                                                        <i class="fa fa-battery-half" aria-hidden="true"></i>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="androidView" style="display: none;">
+                                    <div class="level-left navbar-end">
+                                        <a class="level-item" aria-label="reply">
+                                            <span class="icon is-small">
+                                                <i class="fa fa-wifi" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="retweet">
+                                            <span class="icon is-small">
+                                                <i class="fa fa-signal" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="like">
+                                            <span class="icon is-small">
+                                                <i class="fa fa-signal" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="like">
+                                            <p id="batteryPercentage"> 50 </p>
+                                            <span class="icon is-small">
+                                                <i class="fa fa-percent" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="like">
+                                            <span class="icon is-small">
+                                                <i class="fa fa-battery-half" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <a class="level-item" aria-label="like">
+                                            <p id="mobileTime">10:04 AM</p>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columns" id="desktopViewBody">
+                                <div class="column level-left">
+                                    <span class="icon is-small" id="leftArrow">
+                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                                <div class="level-left has-text-info">
+                                    <h1 style="font-size: medium;">Tweet</h1>
+                                    <div class="level-left">
+                                        <a class="level-item" aria-label="reply">
+                                            <p id="totalTweet"> 0
+                                            </p>&nbsp;&nbsp; Tweet
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
                         </div>
                         <div class="card-image">
+                            <!--<div class="columns">
+                                <div class="column">
+                                    <a class="level-item" aria-label="like">
+                                        <span class="icon is-small" id="time">
+                                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="column">
+                                    <a class="level-item" aria-label="like">
+                                        <span class="icon is-small" id="time">
+                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>-->
                             <figure class="image is-4by3">
+                                <div class="columns">
+                                    <div class="column">
+                                        <a class="level-item" aria-label="like">
+                                            <span class="icon is-small">
+                                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <div class="column">
+                                        <a class="level-item" aria-label="like">
+                                            <span class="icon is-small">
+                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
                                 <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"
                                     id="changeImage3">
                             </figure>
+
                         </div>
+
+
                         <figure class="image is-128x128 mb">
                             <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png"
                                 id="changeImage4">
                         </figure>
+                        <button class="button is-rounded navbar-end margin_top">Edit Profile</button>
                         <div class="card-content">
+
                             <div class="media">
                                 <div class="">
 
                                 </div>
                                 <div class="media-content">
-                                    <p class="title is-4" id="name"></p>
-                                    <p class="subtitle is-6" id="userName"></p>
+                                    <div class="level-left">
+                                        <p id="accountName">john Doe</p>
+                                        <a class="level-item" aria-label="reply" id="name">
+
+                                            <span class="icon is-small">
+                                                <i class="fa fa-check-circle" id="verifyAccount" style="display: none;"
+                                                    aria-hidden="true"></i>
+                                            </span>
+
+                                        </a>
+
+                                    </div>
+                                    <div class="level-left">
+                                        @<p id="userName">i.m.john_doe</p>
+
+                                    </div>
                                 </div>
                             </div>
                             <div class="content">
-                                <p id="Born"></p>
-                                <p id="join"></p>
+                                <div class="level-left">
+                                    <a class="level-item" aria-label="reply" id="Born">
+                                        <span class="icon is-small">
+                                            <i class="fa fa-pinterest-square" aria-hidden="true"></i> &nbsp;&nbsp;
+                                        </span><span>Born</span>
+                                    </a>
+                                    <p id="dob"> January 1, 1999</p>
+                                </div>
+                                <div class="level-left">
+                                    <a class="level-item" aria-label="reply" id="time">
+                                        <span class="icon is-small">
+                                            <i class="fa fa-table" aria-hidden="true"></i> &nbsp;&nbsp;
+                                        </span><span>Joined</span>
+                                    </a>
+                                    <p id="joinDate">January 1, 1999</p>
+                                </div>
+
 
                                 <br>
                                 <div class="has-text-info">
-                                    <p id="following"></p>
-                                    <p id="followers"> </p>
+                                    <div class="level-left">
+                                        <a class="level-item" aria-label="reply">
+                                            <p id="following"> 0
+                                            </p>&nbsp;&nbsp; following
+                                        </a>
+                                        <a class="level-item" aria-label="reply">
+                                            <p id="followers"> 0
+                                            </p> &nbsp;&nbsp;
+                                            followers
+                                        </a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -376,11 +569,35 @@
                             </span>
                             <span class="file-label">
                                 Download Twitter profile AS Image
+
+
                             </span>
                         </span>
                     </label>
                 </div>
+                <div class="level-left ml-20">
+                    <a class="level-item" aria-label="reply">
+                        <span class="icon is-small">
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="level-item" aria-label="reply">
+                        <span class="icon is-small">
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                        </span>
+                    </a>
 
+                    <a class="level-item" aria-label="reply">
+                        <span class="icon is-small">
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                    <a class="level-item" aria-label="reply">
+                        <span class="icon is-small">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </span>
+                    </a>
+                </div>
                 <!--upload btn end-->
                 <!--start note point-->
                 <div class="box mt-5">

@@ -47,22 +47,22 @@ function updateInput(value) {
 
  */
 
-  document.getElementById("time").innerHTML =
+  document.getElementById("mobileTime").innerHTML =
     document.getElementById("input3").value;
 
-  document.getElementById("Battery").innerHTML =
+  document.getElementById("batteryPercentage").innerHTML =
     document.getElementById("input4").value;
 
-  document.getElementById("name").innerHTML =
+  document.getElementById("accountName").innerHTML =
     document.getElementById("input5").value;
 
   document.getElementById("userName").innerHTML =
     document.getElementById("input6").value;
 
-  document.getElementById("Born").innerHTML =
+  document.getElementById("dob").innerHTML =
     document.getElementById("input7").value;
 
-  document.getElementById("join").innerHTML =
+  document.getElementById("joinDate").innerHTML =
     document.getElementById("input8").value;
 
   document.getElementById("following").innerHTML =
@@ -70,6 +70,8 @@ function updateInput(value) {
 
   document.getElementById("followers").innerHTML =
     document.getElementById("input10").value;
+  document.getElementById("totalTweet").innerHTML =
+    document.getElementById("input11").value;
 }
 /*unction formSubmit() {
   document.getElementById("FormID").submit();
@@ -79,11 +81,38 @@ function updateInput(value) {
 function mobileStyle() {
   var element = document.getElementById("myElement");
   element.style.margin = "23px 135px 24px 141px";
+
+  let desktopView = document.getElementById("desktopView");
+  let mobileView = document.getElementById("mobileView");
+  let mobileViewBody = document.getElementById("mobileViewBody");
+  let desktopViewBody = document.getElementById("desktopViewBody");
+
+  mobileViewBody.style.display = "";
+  desktopViewBody.style.display = "none";
+  desktopView.style.display = "none";
+  mobileView.style.display = "";
+
+  let iphoneView = document.getElementById("iphoneView");
+  let androidView = document.getElementById("androidView");
+
+  iphoneView.style.display = "none";
+  androidView.style.display = "";
+  //alert(checkBox.checked);
 }
 
 function desktopStyle() {
   var element = document.getElementById("myElement");
   element.style.margin = "0px";
+  let desktopView = document.getElementById("desktopView");
+  let mobileView = document.getElementById("mobileView");
+  let mobileViewBody = document.getElementById("mobileViewBody");
+  let desktopViewBody = document.getElementById("desktopViewBody");
+
+  mobileViewBody.style.display = "none";
+  desktopViewBody.style.display = "";
+
+  desktopView.style.display = "";
+  mobileView.style.display = "none";
 }
 
 /*button style*/
@@ -101,3 +130,36 @@ function desktopStyle() {
 
   document.getElementById("disp_player").innerHTML = position + " " + player_id;
 }; */
+
+function verifyAccount(value) {
+  let checkBox;
+  if (value == 1) {
+    checkBox = document.getElementById("input2");
+  } else {
+    checkBox = document.getElementById("input21");
+  }
+
+  let element = document.getElementById("verifyAccount");
+  //alert(checkBox.checked);
+  if (checkBox.checked) {
+    element.style.display = "";
+  } else {
+    element.style.display = "none";
+  }
+}
+
+function switchAndroid() {
+  let iphoneView = document.getElementById("iphoneView");
+  let androidView = document.getElementById("androidView");
+
+  iphoneView.style.display = "none";
+  androidView.style.display = "";
+}
+
+function switchIphone() {
+  let iphoneView = document.getElementById("iphoneView");
+  let androidView = document.getElementById("androidView");
+
+  iphoneView.style.display = "";
+  androidView.style.display = "none";
+}
