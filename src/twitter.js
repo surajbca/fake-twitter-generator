@@ -6,8 +6,14 @@ function displayPlayer() {
   document.getElementById("disp_player").innerHTML = position + player_id;
 }
 /* button color */
-function changeColor() {
-  document.getElementById("").style.backgroundColor = "green";
+/*function changeColor() {
+  alert();
+  document.getElementById("dark").style.backgroundColor = "red";
+}*/
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  document.getElementById("ml-12").style.backgroundColor = black;
 }
 
 function preview_image(event, id) {
@@ -99,7 +105,9 @@ function mobileStyle() {
   androidView.style.display = "";
   //alert(checkBox.checked);
 }
+/*end mobile display*/
 
+/*start disktop */
 function desktopStyle() {
   var element = document.getElementById("myElement");
   element.style.margin = "0px";
@@ -114,7 +122,7 @@ function desktopStyle() {
   desktopView.style.display = "";
   mobileView.style.display = "none";
 }
-
+/* end disktop */
 /*button style*/
 /*function submitButtonStyle() {
   document.getElementsByClassName("is-fullwidth").style.backgroundColor = "red";
@@ -162,4 +170,44 @@ function switchIphone() {
 
   iphoneView.style.display = "";
   androidView.style.display = "none";
+}
+
+/* download file */
+
+document.getElementById("btn_convert1").addEventListener("click", function () {
+  html2canvas(document.getElementById("img")).then(function (canvas) {
+    var anchorTag = document.createElement("img");
+    document.body.appendChild(anchorTag);
+    document.getElementById("changeImage3").appendChild(canvas);
+    document.getElementById("changeImage4").appendChild(canvas);
+    anchorTag.download = "filename.jpg";
+    anchorTag.href = canvas.toDataURL();
+    anchorTag.target = "_blank";
+    anchorTag.click();
+  });
+}); /*specific element on page*/
+
+/*
+function downloadimage() {
+  /*var container = document.getElementById("image-wrap");*/
+/* var container = document.getElementById("img"); /* full page */
+/* html2canvas(container, { allowTaint: true }).then(function (canvas) {
+    var link = document.createElement("a");
+    document.body.appendChild(link);
+    link.download = "html_image.jpg";
+    link.href = canvas.toDataURL();
+    link.target = "_blank";
+    link.click();
+  });
+}*/
+
+function downloadImage() {
+  var node = document.getElementById("img");
+  alert(node);
+  var btn = document.getElementById("btn_convert1");
+  alert(btn);
+  domtoimage.toBlob(document.getElementById("img")).then(function (blob) {
+    alert(blob);
+    window.saveAs(blob, "download.png");
+  });
 }

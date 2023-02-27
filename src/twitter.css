@@ -53,11 +53,6 @@
     margin-left: 1rem;
 }
 
-@media screen768px {
-    .columns.is-mobile {
-            display: flex none;
-        }
-}
 
 .margin_top{
         margin-top: -2.75rem !important;
@@ -78,4 +73,24 @@
 }
 .p-6{
     background-image: url('./bg-twitterfake.png');
+}
+/*dark*/
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+/*end dark*/
+
+@media screen and (max-width: 768px) {
+    .columns.is-mobile {
+        display:  none;
+    }
 }

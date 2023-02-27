@@ -11,11 +11,15 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="dark">
     <!--navbar start-->
     <nav class="navbar box" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-
+            <label class="checkbox">
+                <input type="checkbox" id="">
+                dark mood
+                <button onclick="myFunction()">btn</button>
+            </label>
 
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
@@ -137,9 +141,10 @@
         </div>
     </nav>
     <!--navbar end-->
-    <div class="container mt-5">
+    <div class="container mt-5" id="cotainer">
+
         <h1 class="is-size-3 has-text-centered">Fake Twitter Profile Gererator</h1>
-        <div class="columns is-mobile ">
+        <div class="columns is-desktop ">
 
             <div class="column">
                 <form id="FormID">
@@ -348,7 +353,7 @@
                     <button class="button is-medium is-fullwidth is-primary is-outlined" onclick="mobileStyle()">Mobile
                         View</button>
                 </div>
-                <div class="box p-6" id=" img">
+                <div class="box p-6" id="img">
                     <input class="button" type="submit" value="Live preview">
                     <div class="card mt-5" id="myElement">
                         <div class="has-background-white">
@@ -490,7 +495,7 @@
                                     </a>
                                 </div>
                             </div>-->
-                            <figure class="image is-4by3">
+                            <figure class="image is-4by3" id="btn-Preview-Image">
                                 <div class="columns">
                                     <div class="column">
                                         <a class="level-item" aria-label="like">
@@ -584,21 +589,35 @@
                 </div>
 
                 <!--upload btn start-->
-                <div class="file is-medium has-text-centered is-primary">
-                    <label class="file-label" id="upload">
-                        <input class="file-input" type="file" name="resume">
-                        <span class="file-cta">
+                <!-- <div class="file is-medium">
+                    <label class="file-label">-->
+                <!-- <input class="file-output" type="button" typename="resume"> -->
+                <!--<button id="btn_convert1" onclick="downloadImage()">Download Twitter profile AS Image</button>-->
+                <!-- <span class="file-cta">
                             <span class="file-icon">
-                                <i class="fas fa-upload"></i>
+                                <i class="fas fa-download"></i>
                             </span>
                             <span class="file-label">
                                 Download Twitter profile AS Image
+                            </span>
+                        </span> -->
+                <!--</label>
+                </div>-->
 
-
+                <div class="file is-medium has-text-centered is-primary">
+                    <label class="file-label" id="upload">
+                        <input class="file-input" type="file" name="resume" id="btn_convert1">
+                        <span class="file-cta">
+                            <span class="file-icon">
+                                <i class="fas fa-download"></i>
+                            </span>
+                            <span class="file-label">
+                                Download Twitter profile AS Image
                             </span>
                         </span>
                     </label>
                 </div>
+                <!--
                 <div class="level-left ml-20">
                     <a class="level-item" aria-label="reply">
                         <span class="icon is-small">
@@ -621,7 +640,7 @@
                             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                         </span>
                     </a>
-                </div>
+                </div>-->
                 <!--upload btn end-->
                 <!--start note point-->
                 <div class="box mt-5">
