@@ -1,12 +1,4 @@
 
-
-/*.is-fullwidth:hover {
-    background-color: #ffbf00;
-    
-}
-.is-fullwidth:active {
-    background-color: #ffbf00;
-}*/
 .container{
   margin-top: 88px;
 }
@@ -61,11 +53,6 @@
     margin-left: 268px;
 }
 
-/* .mt-5 {
-    margin-top: 1.5rem !important;
-    margin-left: 38px !important;
-    margin-right: 45px !important;
-} */
 
 #ml-13 {
     margin-right: 79px;
@@ -78,16 +65,10 @@
 .main {
     font-size: 50px;
     cursor: pointer;
-    /*position: absolute;*/
     transform: translate(-50%, -50%);
 }
 /*end dark*/
 
-@media screen and (max-width: 768px) {
-    .columns.is-mobile {
-        display:  none;
-    }
-}
 
-/*dark icon */
- 
+
+

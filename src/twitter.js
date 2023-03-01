@@ -6,23 +6,22 @@ function displayPlayer() {
   document.getElementById("disp_player").innerHTML = position + player_id;
 }
 /* button color */
-function changeColor() {
-  alert("");
-  document.getElementById("ml-12").style.backgroundColor = "red";
-  document.getElementById("dark").style.backgroundColor = "red";
-  document.getElementById("myElement").style.backgroundColor = "red";
-  document.getElementById("desktopViewBody").style.backgroundColor = "red";
-  document.getElementById("mt-5").style.backgroundColor = "red";
-  document.getElementById("Note").style.backgroundColor = "red";
-  document.getElementById("Note").style.Color = "white";
-  Document.getElementsByClassName("mt-5").style.backgroundColor = "red";
 
-  document.getElementsByClassName("column").style.backgroundColor = "red";
-}
 /* start dark mood*/
 const toggle = document.getElementById("toggleDark");
 const body = document.querySelector("body");
-const mt = document.querySelector("mt-5");
+const form = document.getElementById("ml-12");
+const Note = document.getElementById("Note");
+const myElement = document.getElementById("myElement");
+const pragraph = document.getElementById("mt-5");
+const desktopViewBody = document.getElementById("desktopViewBody");
+const androidView = document.getElementById("androidView");
+const Select1 = document.getElementById("Select1");
+const Select2 = document.getElementById("Select2");
+const Tweet = document.getElementById("Tweet");
+const totalTweet = document.getElementById("totalTweet");
+const iphoneView = document.getElementById("iphoneView");
+const div1 = document.getElementById("div1");
 
 toggle.addEventListener("click", function () {
   this.classList.toggle("bi-moon");
@@ -31,22 +30,111 @@ toggle.addEventListener("click", function () {
     body.style.background = "white";
     body.style.color = "black";
     body.style.transition = "2s";
+
+    form.style.background = "white";
+    form.style.color = "black";
+    form.style.transition = "2s";
+
+    Note.style.background = "white";
+    Note.style.color = "black";
+    Note.style.transition = "2s";
+
+    myElement.style.background = "white";
+    myElement.style.color = "black";
+    myElement.style.transition = "2s";
+
+    pragraph.style.background = "white";
+    pragraph.style.color = "black";
+    pragraph.style.transition = "2s";
+
+    desktopViewBody.style.background = "white";
+    desktopViewBody.style.color = "black";
+    desktopViewBody.style.transition = "2s";
+
+    androidView.style.background = "white";
+    androidView.style.color = "black";
+    androidView.style.transition = "2s";
+
+    Select1.style.background = "white";
+    Select1.style.color = "black";
+    Select1.style.transition = "2s";
+
+    Select2.style.background = "white";
+    Select2.style.color = "black";
+    Select2.style.transition = "2s";
+
+    Tweet.style.background = "white";
+    Tweet.style.color = "black";
+    Tweet.style.transition = "2s";
+
+    totalTweet.style.background = "white";
+    totalTweet.style.color = "black";
+    totalTweet.style.transition = "2s";
+
+    iphoneView.style.background = "white";
+    iphoneView.style.color = "black";
+    iphoneView.style.transition = "2s";
+
+    div1.style.background = "white";
+    div1.style.color = "black";
+    div1.style.transition = "2s";
   } else {
     body.style.background = "black";
     body.style.color = "white";
     body.style.transition = "2s";
+
+    form.style.background = "black";
+    form.style.color = "white";
+    form.style.transition = "2s";
+
+    Note.style.background = "black";
+    Note.style.color = "white";
+    Note.style.transition = "2s";
+
+    myElement.style.background = "black";
+    myElement.style.color = "white";
+    myElement.style.transition = "2s";
+
+    pragraph.style.background = "black";
+    pragraph.style.color = "white";
+    pragraph.style.transition = "2s";
+
+    desktopViewBody.style.background = "black";
+    desktopViewBody.style.color = "white";
+    desktopViewBody.style.transition = "2s";
+
+    androidView.style.background = "black";
+    androidView.style.color = "white";
+    androidView.style.transition = "2s";
+
+    Select1.style.background = "black";
+    Select1.style.color = "white";
+    Select1.style.transition = "2s";
+
+    Select2.style.background = "black";
+    Select2.style.color = "white";
+    Select2.style.transition = "2s";
+
+    Tweet.style.background = "black";
+    Tweet.style.color = "white";
+    Tweet.style.transition = "2s";
+
+    totalTweet.style.background = "black";
+    totalTweet.style.color = "white";
+    totalTweet.style.transition = "2s";
+
+    iphoneView.style.background = "black";
+    iphoneView.style.color = "white";
+    iphoneView.style.transition = "2s";
+
+    div1.style.background = "black";
+    div1.style.color = "white";
+    div1.style.transition = "2s";
   }
 });
 /*end dark mood*/
-/*function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-  document.getElementById("ml-12").style.backgroundColor = red;
-}*/
 
 function preview_image(event, id) {
-  //alert("id : " + id);
-
   var reader = new FileReader();
   reader.onload = function () {
     var output = document.getElementById(id);
@@ -73,14 +161,6 @@ function preview_image(event, id) {
 
 /* from submit*/
 function updateInput(value) {
-  /*document.getElementById("").innerHTML =
-    document.getElementById("input1").value;
-
-  document.getElementById("").innerHTML =
-    document.getElementById("input2").value;
-
- */
-
   document.getElementById("mobileTime").innerHTML =
     document.getElementById("input3").value;
 
@@ -107,9 +187,6 @@ function updateInput(value) {
   document.getElementById("totalTweet").innerHTML =
     document.getElementById("input11").value;
 }
-/*unction formSubmit() {
-  document.getElementById("FormID").submit();
-}*/
 
 /*mobile display */
 function mobileStyle() {
@@ -151,21 +228,6 @@ function desktopStyle() {
   mobileView.style.display = "none";
 }
 /* end disktop */
-/*button style*/
-/*function submitButtonStyle() {
-  document.getElementsByClassName("is-fullwidth").style.backgroundColor = "red";
-}*/
-
-/*document.getElementById("smit").onclick = function () {
-  var checkedPosition = document.querySelectorAll(
-    "#player_stuff [name='position']:checked"
-  );
-  var playerId = document.querySelector("#player_stuff [name='player_id']");
-  var position = checkedPosition[0].value;
-  var player_id = playerId.value;
-
-  document.getElementById("disp_player").innerHTML = position + " " + player_id;
-}; */
 
 function verifyAccount(value) {
   let checkBox;
@@ -200,99 +262,13 @@ function switchIphone() {
   androidView.style.display = "none";
 }
 
-/* download file */
-
-// document.getElementById("btn_convert1").addEventListener("click", function () {
-//   html2canvas(document.getElementById("img")).then(function (canvas) {
-//     var anchorTag = document.createElement("img");
-//     document.body.appendChild(anchorTag);
-//     document.getElementById("changeImage3").appendChild(canvas);
-//     document.getElementById("changeImage4").appendChild(canvas);
-//     anchorTag.download = "filename.jpg";
-//     anchorTag.href = canvas.toDataURL();
-//     anchorTag.target = "_blank";
-//     anchorTag.click();
-//   });
-//   html2canvas(document.querySelector("#img")).then((canvas) => {
-//     var _data = canvas.toDataURL().replace("data:image/png;base64,", "");
-//     saveAs(canvas.toDataURL(), img_name + ".png");
-//   });
-// }); /*specific element on page*/
-
-/*
-function downloadimage() {
-  /*var container = document.getElementById("image-wrap");*/
-/* var container = document.getElementById("img"); /* full page */
-/* html2canvas(container, { allowTaint: true }).then(function (canvas) {
-    var link = document.createElement("a");
-    document.body.appendChild(link);
-    link.download = "html_image.jpg";
-    link.href = canvas.toDataURL();
-    link.target = "_blank";
-    link.click();
-  });
-}*/
-
-function downloadImage() {
-  var node = document.getElementById("img");
-  alert(node);
-  var btn = document.getElementById("btn_convert1");
-  alert(btn);
-  domtoimage.toBlob(document.getElementById("img")).then(function (blob) {
-    alert(blob);
-    window.saveAs(blob, "download.png");
-  });
-}
-var takeScreenShot = function () {
-  //   html2canvas(document.getElementById("img"), {
-  //     onrendered: function (canvas) {
-  //       var tempcanvas = document.createElement("canvas");
-  //       tempcanvas.width = 350;
-  //       tempcanvas.height = 350;
-  //       var context = tempcanvas.getContext("2d");
-  //       context.drawImage(canvas, 112, 0, 288, 200, 0, 0, 350, 350);
-  //       var link = document.createElement("a");
-  //       link.href = tempcanvas.toDataURL().replace("data:image/png;base64,", ""); //function blocks CORS
-  //       link.download = "screenshot.jpg";
-  //       link.click();
-  //     },
-  //   });
-};
-btns = document.querySelectorAll("button");
-var bonsallNS = new Object();
-bonsallNS.events = {
-  target: function (e) {
-    e = e || window.event;
-    return e.target || e.srcElement;
-  },
-};
-/*btns.forEach((btn) => {
-    // looping through each btn
-    // adding click event to each btn
-    btn.addEventListener("click", () => {
-      // creating canvas of element using html2canvas
-      html2canvas(bonsallNS.events.target(e)).then((canvas) => {
-        // adding canvas/screenshot to the body
-        if (btn.id === "take-src-only") {
-          return document.body.appendChild(canvas);
-        }
-
-        // downloading canvas/screenshot
-        const a = document.createElement("a");
-        a.href = canvas.toDataURL();
-        a.download = "screenshot.jpg";
-        a.click();
-      });
-    });
-  });
-};*/
-
 /*=====*/
 content = document.getElementById("myElement");
 
 function downloadImage() {
-  alert("");
   domtoimage.toBlob(content).then(function (blob) {
     window.saveAs(blob, "my-node.png");
   });
 }
+
+/*==============================*/

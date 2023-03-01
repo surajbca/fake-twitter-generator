@@ -15,7 +15,7 @@
     <title>Document</title>
 </head>
 
-<body id="toggleDark">
+<body class="light">
     <!--navbar start-->
     <nav class="navbar box" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -23,6 +23,7 @@
                 <i class="bi bi-brightness-high-fill dark main" id="toggleDark"></i>
 
             </label>
+
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
@@ -143,7 +144,7 @@
         </div>
     </nav>
     <!--navbar end-->
-    <div class="container mt-5" id="cotainer">
+    <div class="container mt-5" id="container">
         <h1 class="is-size-3 has-text-centered">Fake Twitter Profile Gererator</h1>
         <div class="columns is-desktop ">
 
@@ -207,7 +208,7 @@
                             </div>
                         </div>
 
-                        <div class="box ">
+                        <div class="box " id="Select1">
                             <article class="media">
                                 <div class="media-left">
                                     <figure class="image is-64x64">
@@ -252,7 +253,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="box ">
+                        <div class="box " id="Select2">
                             <article class="media">
                                 <div class="media-left">
                                     <figure class="image is-64x64">
@@ -278,26 +279,20 @@
                                     <nav class="level is-mobile">
                                         <div class="level-left">
                                             <a class="level-item" aria-label="reply">
-                                                <!--<span class="icon is-small">
-                                                    <i class="fas fa-reply" aria-hidden="true"></i>
-                                                </span>-->
+
                                             </a>
                                             <a class="level-item" aria-label="retweet">
-                                                <!--<span class="icon is-small">
-                                                    <i class="fas fa-retweet" aria-hidden="true"></i>
-                                                </span>-->
+
                                             </a>
                                             <a class="level-item" aria-label="like">
-                                                <!--<span class="icon is-small">
-                                                    <i class="fas fa-heart" aria-hidden="true"></i>
-                                                </span>-->
+
                                             </a>
                                         </div>
                                     </nav>
                                 </div>
                             </article>
                         </div>
-                        <div class="field ">
+                        <div class="field" id="div1">
                             <label class="label">Name</label>
                             <div class="control ">
                                 <input class="input " type="text" placeholder="Text input" value="john Doe" id="input5"
@@ -348,7 +343,7 @@
             <div class="column ml-13 dark" id="ml-13">
 
                 <div class="columns mt-2 mx-1 is-primary ">
-                    <button class="button is-medium is-fullwidth is-primary is-outlined"
+                    <button class="button is-medium is-fullwidth is-primary is-outlined "
                         onclick="desktopStyle()">Desktop
                         View</button>
                     <button class="button is-medium is-fullwidth is-primary is-outlined" onclick="mobileStyle()">Mobile
@@ -370,17 +365,14 @@
                                                 </span>
                                                 vadafone
                                             </a>
-
                                         </div>
                                         <div class="column">
                                             <div class="level-left navbar-end">
                                                 <a class="level-item" aria-label="like">
                                                     <p id="mobileTime">10:04 AM</p>
-
                                                 </a>
                                             </div>
                                         </div>
-
                                         <div class="column">
                                             <div class="level-left navbar-end ">
                                                 <a class="level-item" aria-label="like">
@@ -428,12 +420,10 @@
                                         </a>
                                         <a class="level-item" aria-label="like">
                                             <p id="mobileTime">10:04 AM</p>
-
                                         </a>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="" id="desktopViewBody">
                                 <div class="level-left ml-20">
                                     <a class="level-item" aria-label="reply">
@@ -443,59 +433,14 @@
                                     </a>
                                     <div class="columns">
                                         <div class="column">
-                                            <code
-                                                class="has-text-black is-size-4 has-background-white pt-0">Tweet</code><br>
-                                            <code class="has-text-black has-background-white "
-                                                id="totalTweet">0</code>Tweet
+                                            <code class="is-size-4  pt-0" id="Tweet">Tweet</code><br>
+                                            <code class="  " id="totalTweet">0</code>Tweet
                                         </div>
                                     </div>
-                                    <!-- <div class="">
-                                        <span>
-                                            Tweet<h1 id="totalTweet">0</h1>Tweet
-                                        </span>
-                                        <a class="level-item" aria-label="reply">
-                                           
-
-                                        </a> 
-                                    </div> -->
                                 </div>
                             </div>
-                            <!-- <div class="column level-left">
-                                    <span class="icon is-small" id="leftArrow">
-                                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                                <div class="column">
-                                    <h1 style="font-size: medium;">Tweet</h1>
-                                    <div class="">
-                                        <a class="level-item" aria-label="reply">
-                                            <p id="totalTweet"> 0
-                                            </p>&nbsp;&nbsp; Tweet
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>-->
-
-
                         </div>
                         <div class="card-image">
-
-                            <!--<div class="columns">
-                                <div class="column">
-                                    <a class="level-item" aria-label="like">
-                                        <span class="icon is-small" id="time">
-                                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="column">
-                                    <a class="level-item" aria-label="like">
-                                        <span class="icon is-small" id="time">
-                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>-->
                             <figure class="image is-4by3" id="btn-Preview-Image">
                                 <div class="columns">
                                     <div class="column">
@@ -516,37 +461,28 @@
                                 <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"
                                     id="changeImage3">
                             </figure>
-
                         </div>
-
-
                         <figure class="image is-128x128 mb">
                             <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png"
                                 id="changeImage4">
                         </figure>
                         <button class="button is-rounded navbar-end margin_top">Edit Profile</button>
                         <div class="card-content">
-
                             <div class="media">
                                 <div class="">
-
                                 </div>
                                 <div class="media-content">
                                     <div class="level-left">
                                         <p id="accountName">john Doe</p>
                                         <a class="level-item" aria-label="reply" id="name">
-
                                             <span class="icon is-small">
                                                 <i class="fa fa-check-circle" id="verifyAccount" style="display: none;"
                                                     aria-hidden="true"></i>
                                             </span>
-
                                         </a>
-
                                     </div>
                                     <div class="level-left">
                                         @<p id="userName">i.m.john_doe</p>
-
                                     </div>
                                 </div>
                             </div>
@@ -567,8 +503,6 @@
                                     </a>
                                     <p id="joinDate">January 1, 1999</p>
                                 </div>
-
-
                                 <br>
                                 <div class="has-text-info">
                                     <div class="level-left">
@@ -582,71 +516,14 @@
                                             followers
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!--upload btn start-->
-                <!-- <div class="file is-medium">
-                    <label class="file-label">-->
-                <!-- <input class="file-output" type="button" typename="resume"> -->
-                <!--<button id="btn_convert1" onclick="downloadImage()">Download Twitter profile AS Image</button>-->
-                <!-- <span class="file-cta">
-                            <span class="file-icon">
-                                <i class="fas fa-download"></i>
-                            </span>
-                            <span class="file-label">
-                                Download Twitter profile AS Image
-                            </span>
-                        </span> -->
-                <!--</label>
-                </div>-->
-                <!--
-                <div class="file is-medium has-text-centered is-primary">
-                    <label class="file-label" id="upload">
-                        <input class="file-input" name="resume" id="btn_convert1">
-                        <span class="file-cta">
-                            <span class="file-icon">
-                                <i class="fas fa-download"></i>
-                            </span>
-                            <span class="file-label">
-                                Download Twitter profile AS Image
-                            </span>
-                        </span>
-                    </label>
-                </div>-->
                 <button class="button is-primary is-medium twitter-btn " onclick="downloadImage()">Download
                     Twitter
                     profile AS Image <i class="fas fa-download"></i></button>
-                <!--
-                <div class="level-left ml-20">
-                    <a class="level-item" aria-label="reply">
-                        <span class="icon is-small">
-                            <i class="fa fa-wifi" aria-hidden="true"></i>
-                        </span>
-                    </a>
-                    <a class="level-item" aria-label="reply">
-                        <span class="icon is-small">
-                            <i class="fa fa-wifi" aria-hidden="true"></i>
-                        </span>
-                    </a>
-
-                    <a class="level-item" aria-label="reply">
-                        <span class="icon is-small">
-                            <i class="fa fa-wifi" aria-hidden="true"></i>
-                        </span>
-                    </a>
-                    <a class="level-item" aria-label="reply">
-                        <span class="icon is-small">
-                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        </span>
-                    </a>
-                </div>-->
-                <!--upload btn end-->
-                <!--start note point-->
                 <div class="box mt-5 dark" id="mt-5">
                     <p>Twitter Profile Generator generates your very own fake Twitter Profile and prank your
                         friends.
