@@ -19,9 +19,24 @@ const androidView = document.getElementById("androidView");
 const Select1 = document.getElementById("Select1");
 const Select2 = document.getElementById("Select2");
 const Tweet = document.getElementById("Tweet");
-const totalTweet = document.getElementById("totalTweet");
 const iphoneView = document.getElementById("iphoneView");
 const div1 = document.getElementById("div1");
+const born1 = document.getElementById("born1");
+const totalTweet = document.getElementById("totalTweet");
+const Born = document.getElementById("Born");
+const time = document.getElementById("time");
+const following1 = document.getElementById("following1");
+const followers1 = document.getElementById("followers1");
+const wifi = document.getElementById("wifi");
+const signal = document.getElementById("signal");
+const signal2 = document.getElementById("signal2");
+const battery = document.getElementById("battery");
+const battery1 = document.getElementById("battery1");
+const time2 = document.getElementById("time2");
+const ellipsis = document.getElementById("ellipsis");
+const percent = document.getElementById("percent");
+const battery2 = document.getElementById("percent2");
+const mobileTime = document.getElementById("mobileTime");
 
 toggle.addEventListener("click", function () {
   this.classList.toggle("bi-moon");
@@ -67,10 +82,6 @@ toggle.addEventListener("click", function () {
     Tweet.style.color = "black";
     Tweet.style.transition = "2s";
 
-    totalTweet.style.background = "white";
-    totalTweet.style.color = "black";
-    totalTweet.style.transition = "2s";
-
     iphoneView.style.background = "white";
     iphoneView.style.color = "black";
     iphoneView.style.transition = "2s";
@@ -78,6 +89,70 @@ toggle.addEventListener("click", function () {
     div1.style.background = "white";
     div1.style.color = "black";
     div1.style.transition = "2s";
+
+    born1.style.background = "white";
+    born1.style.color = "black";
+    born1.style.transition = "2s";
+
+    totalTweet.style.background = "white";
+    totalTweet.style.color = "black";
+    totalTweet.style.transition = "2s";
+
+    Born.style.background = "white";
+    Born.style.color = "black";
+    Born.style.transition = "2s";
+
+    time.style.background = "white";
+    time.style.color = "black";
+    time.style.transition = "2s";
+
+    following1.style.background = "white";
+    following1.style.color = "black";
+    following1.style.transition = "2s";
+
+    followers1.style.background = "white";
+    followers1.style.color = "black";
+    followers1.style.transition = "2s";
+
+    wifi.style.background = "white";
+    wifi.style.color = "black";
+    wifi.style.transition = "2s";
+
+    signal.style.background = "white";
+    signal.style.color = "black";
+    signal.style.transition = "2s";
+
+    signal2.style.background = "white";
+    signal2.style.color = "black";
+    signal2.style.transition = "2s";
+
+    battery.style.background = "white";
+    battery.style.color = "black";
+    battery.style.transition = "2s";
+
+    battery1.style.background = "white";
+    battery1.style.color = "black";
+    battery1.style.transition = "2s";
+
+    time2.style.background = "white";
+    time2.style.color = "black";
+    time2.style.transition = "2s";
+
+    ellipsis.style.background = "white";
+    ellipsis.style.color = "black";
+    ellipsis.style.transition = "2s";
+
+    percent.style.background = "white";
+    percent.style.color = "black";
+    percent.style.transition = "2s";
+
+    battery2.style.background = "white";
+    battery2.style.color = "black";
+    battery2.style.transition = "2s";
+
+    mobileTime.style.background = "white";
+    mobileTime.style.color = "black";
+    mobileTime.style.transition = "2s";
   } else {
     body.style.background = "black";
     body.style.color = "white";
@@ -119,10 +194,6 @@ toggle.addEventListener("click", function () {
     Tweet.style.color = "white";
     Tweet.style.transition = "2s";
 
-    totalTweet.style.background = "black";
-    totalTweet.style.color = "white";
-    totalTweet.style.transition = "2s";
-
     iphoneView.style.background = "black";
     iphoneView.style.color = "white";
     iphoneView.style.transition = "2s";
@@ -130,6 +201,70 @@ toggle.addEventListener("click", function () {
     div1.style.background = "black";
     div1.style.color = "white";
     div1.style.transition = "2s";
+
+    born1.style.background = "black";
+    born1.style.color = "white";
+    born1.style.transition = "2s";
+
+    totalTweet.style.background = "black";
+    totalTweet.style.color = "white";
+    totalTweet.style.transition = "2s";
+
+    Born.style.background = "black";
+    Born.style.color = "white";
+    Born.style.transition = "2s";
+
+    time.style.background = "black";
+    time.style.color = "white";
+    time.style.transition = "2s";
+
+    following1.style.background = "black";
+    following1.style.color = "white";
+    following1.style.transition = "2s";
+
+    followers1.style.background = "black";
+    followers1.style.color = "white";
+    followers1.style.transition = "2s";
+
+    wifi.style.background = "black";
+    wifi.style.color = "white";
+    wifi.style.transition = "2s";
+
+    signal.style.background = "black";
+    signal.style.color = "white";
+    signal.style.transition = "2s";
+
+    signal2.style.background = "black";
+    signal2.style.color = "white";
+    signal2.style.transition = "2s";
+
+    battery.style.background = "black";
+    battery.style.color = "white";
+    battery.style.transition = "2s";
+
+    battery1.style.background = "black";
+    battery1.style.color = "white";
+    battery1.style.transition = "2s";
+
+    time2.style.background = "black";
+    time2.style.color = "white";
+    time2.style.transition = "2s";
+
+    ellipsis.style.background = "black";
+    ellipsis.style.color = "white";
+    ellipsis.style.transition = "2s";
+
+    percent.style.background = "black";
+    percent.style.color = "white";
+    percent.style.transition = "2s";
+
+    battery2.style.background = "black";
+    battery2.style.color = "white";
+    battery2.style.transition = "2s";
+
+    mobileTime.style.background = "black";
+    mobileTime.style.color = "white";
+    mobileTime.style.transition = "2s";
   }
 });
 /*end dark mood*/

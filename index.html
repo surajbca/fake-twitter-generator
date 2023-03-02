@@ -349,8 +349,9 @@
                     <button class="button is-medium is-fullwidth is-primary is-outlined" onclick="mobileStyle()">Mobile
                         View</button>
                 </div>
+
                 <div class="box p-6" id="img">
-                    <input class="button" type="submit" value="Live preview">
+                    <input class="button live" type="submit" value="Live preview">
                     <div class="card mt-5" id="myElement">
                         <div class="has-background-white">
 
@@ -358,8 +359,8 @@
                                 <div id="iphoneView" style="display: none;">
                                     <div class="columns">
                                         <div class="column ml-2">
-                                            <a class="" aria-label="like">
-                                                <p id=""> </p>
+                                            <a class="" aria-label="like" id="ellipsis">
+                                                <p> </p>
                                                 <span class="icon is-small">
                                                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                                                 </span>
@@ -375,13 +376,13 @@
                                         </div>
                                         <div class="column">
                                             <div class="level-left navbar-end ">
-                                                <a class="level-item" aria-label="like">
+                                                <a class="level-item" aria-label="like" id="percent">
                                                     <p id="batteryPercentage"> 50 </p>
                                                     <span class="icon is-small">
                                                         <i class="fa fa-percent" aria-hidden="true"></i>
                                                     </span>
                                                 </a>
-                                                <a class="level-item mr-2" aria-label="like">
+                                                <a class="level-item mr-2" aria-label="like" id="battery2">
                                                     <span class="icon is-small">
                                                         <i class="fa fa-battery-half" aria-hidden="true"></i>
                                                     </span>
@@ -392,33 +393,33 @@
                                 </div>
                                 <div id="androidView" style="display: none;">
                                     <div class="level-left navbar-end">
-                                        <a class="level-item" aria-label="reply">
+                                        <a class="level-item" aria-label="reply" id="wifi">
                                             <span class="icon is-small">
                                                 <i class="fa fa-wifi" aria-hidden="true"></i>
                                             </span>
                                         </a>
-                                        <a class="level-item" aria-label="retweet">
+                                        <a class="level-item" aria-label="retweet" id="signal">
                                             <span class="icon is-small">
                                                 <i class="fa fa-signal" aria-hidden="true"></i>
                                             </span>
                                         </a>
-                                        <a class="level-item" aria-label="like">
+                                        <a class="level-item" aria-label="like" id="signal2">
                                             <span class="icon is-small">
                                                 <i class="fa fa-signal" aria-hidden="true"></i>
                                             </span>
                                         </a>
-                                        <a class="level-item" aria-label="like">
+                                        <a class="level-item" aria-label="like" id="battery">
                                             <p id="batteryPercentage"> 50 </p>
                                             <span class="icon is-small">
                                                 <i class="fa fa-percent" aria-hidden="true"></i>
                                             </span>
                                         </a>
-                                        <a class="level-item" aria-label="like">
+                                        <a class="level-item" aria-label="like" id="battery1">
                                             <span class="icon is-small">
                                                 <i class="fa fa-battery-half" aria-hidden="true"></i>
                                             </span>
                                         </a>
-                                        <a class="level-item" aria-label="like">
+                                        <a class="level-item" aria-label="like" id="time2">
                                             <p id="mobileTime">10:04 AM</p>
                                         </a>
                                     </div>
@@ -426,15 +427,15 @@
                             </div>
                             <div class="" id="desktopViewBody">
                                 <div class="level-left ml-20">
-                                    <a class="level-item" aria-label="reply">
-                                        <span class="icon is-small">
-                                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                    <a class="level-item has-text-black" aria-label="reply">
+                                        <span class="icon is-small" id="born1">
+                                            <i class="fa fa-arrow-left ml-5" aria-hidden="true"></i>
                                         </span>
                                     </a>
                                     <div class="columns">
-                                        <div class="column">
+                                        <div class="column ">
                                             <code class="is-size-4  pt-0" id="Tweet">Tweet</code><br>
-                                            <code class="  " id="totalTweet">0</code>Tweet
+                                            <code class="mt-2 " id="totalTweet">0</code>Tweet
                                         </div>
                                     </div>
                                 </div>
@@ -444,14 +445,14 @@
                             <figure class="image is-4by3" id="btn-Preview-Image">
                                 <div class="columns">
                                     <div class="column">
-                                        <a class="level-item" aria-label="like">
+                                        <a class="level-item " aria-label="like">
                                             <span class="icon is-small">
                                                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
                                             </span>
                                         </a>
                                     </div>
                                     <div class="column">
-                                        <a class="level-item" aria-label="like">
+                                        <a class="level-item " aria-label="like">
                                             <span class="icon is-small">
                                                 <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                             </span>
@@ -466,14 +467,14 @@
                             <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png"
                                 id="changeImage4">
                         </figure>
-                        <button class="button is-rounded navbar-end margin_top">Edit Profile</button>
+                        <button class="button is-rounded navbar-end margin_top mr-4">Edit Profile</button>
                         <div class="card-content">
                             <div class="media">
                                 <div class="">
                                 </div>
                                 <div class="media-content">
-                                    <div class="level-left">
-                                        <p id="accountName">john Doe</p>
+                                    <div class="level-left has-text-weight-bold">
+                                        <p id="accountName" class="">john Doe</p>
                                         <a class="level-item" aria-label="reply" id="name">
                                             <span class="icon is-small">
                                                 <i class="fa fa-check-circle" id="verifyAccount" style="display: none;"
@@ -487,15 +488,15 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <div class="level-left">
-                                    <a class="level-item" aria-label="reply" id="Born">
+                                <div class="level-left ">
+                                    <a class="level-item " aria-label="reply" id="Born">
                                         <span class="icon is-small">
-                                            <i class="fa fa-pinterest-square" aria-hidden="true"></i> &nbsp;&nbsp;
+                                            <i class="fa fa-table" aria-hidden="true"></i> &nbsp;&nbsp;
                                         </span><span>Born</span>
                                     </a>
                                     <p id="dob"> January 1, 1999</p>
                                 </div>
-                                <div class="level-left">
+                                <div class="level-left ">
                                     <a class="level-item" aria-label="reply" id="time">
                                         <span class="icon is-small">
                                             <i class="fa fa-table" aria-hidden="true"></i> &nbsp;&nbsp;
@@ -505,12 +506,12 @@
                                 </div>
                                 <br>
                                 <div class="has-text-info">
-                                    <div class="level-left">
-                                        <a class="level-item" aria-label="reply">
+                                    <div class="level-left ">
+                                        <a class="level-item " aria-label="reply" id="following1">
                                             <p id="following"> 0
                                             </p>&nbsp;&nbsp; following
                                         </a>
-                                        <a class="level-item" aria-label="reply">
+                                        <a class="level-item born " aria-label="reply" id="followers1">
                                             <p id="followers"> 0
                                             </p> &nbsp;&nbsp;
                                             followers
@@ -524,6 +525,8 @@
                 <button class="button is-primary is-medium twitter-btn " onclick="downloadImage()">Download
                     Twitter
                     profile AS Image <i class="fas fa-download"></i></button>
+
+
                 <div class="box mt-5 dark" id="mt-5">
                     <p>Twitter Profile Generator generates your very own fake Twitter Profile and prank your
                         friends.

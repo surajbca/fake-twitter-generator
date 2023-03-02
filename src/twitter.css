@@ -23,7 +23,7 @@
 
 
 .twitter-btn{
-    margin-left: 140px;
+    margin-left: 150px;
 }
 
 
@@ -63,12 +63,76 @@
 }
 /*dark*/
 .main {
-    font-size: 50px;
+    font-size: 35px;
+    margin-left: 34px;
     cursor: pointer;
     transform: translate(-50%, -50%);
 }
 /*end dark*/
+.live{
+    margin-top: -37px;
+    margin-left: -39px ;
+}
 
+
+
+#Tweet{
+    color: black;
+    background-color: white;
+}
+
+#totalTweet{
+    color: black;
+    margin-left: 10px;
+    background-color: white;
+}
+#Born{
+    color: black;
+}
+#time{
+    color: black;
+}
+#following1{
+    color: black;
+}
+#followers1{
+    color: black;
+}
+#wifi{
+    color: black;
+}
+#signal{
+    color: black;
+}
+#signal2 {
+    color: black;
+}
+#battery{
+    color: black;
+}
+#battery1{
+    color: black;
+}
+#time2{
+    margin-right: 5px;
+    color: black;
+}
+#ellipsis{
+    color: black;
+}
+#percent{
+    color: black;
+}
+#battery2{
+    color: black;
+}
+#mobileTime{
+    color: black;
+}
+#changeImage3{
+    background: #1da1f2;
+    z-index: 1px;
+}
 
 
 
