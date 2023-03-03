@@ -89,9 +89,7 @@
 #Born{
     color: black;
 }
-#time{
-    color: black;
-}
+
 #following1{
     color: black;
 }
@@ -113,26 +111,110 @@
 #battery1{
     color: black;
 }
-#time2{
-    margin-right: 5px;
-    color: black;
-}
+
 #ellipsis{
     color: black;
 }
 #percent{
     color: black;
 }
-#battery2{
+#time{
     color: black;
+}
+#time2{
+    color: black;
+}
+
+#changeImage3{
+    background: #1da1f2;
+    
 }
 #mobileTime{
     color: black;
 }
-#changeImage3{
-    background: #1da1f2;
-    z-index: 1px;
+#battery2{
+    color: black;
 }
 
+/*#rounded{
+    width: 142px;
+        height: 142px;
+        border: 4px solid #fff;
+}*/
 
+
+
+
+.is-rounded{
+    border-radius: 100%;
+}
+.twitter-profile-pic {
+    display: inline-block;
+        position: relative;
+        top: -19px;
+        margin-bottom: -40px;
+        margin-left: 9px;
+}
+
+.twitter-profile-pic img {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#Profile-button{
+    margin-top: -31px !important;
+    margin-bottom: -32px;
+}
+
+.twitter-header-icon {
+    position: absolute;
+    width: 100%;
+    padding: 12px;
+    display: block;
+}
+
+.main-twitter-profile .twitter-header-icon .left-icon,
+.main-twitter-profile .twitter-header-icon .right-dots {
+    width: 28px;
+    height: 28px;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+ .main-twitter-profile .twitter-header-icon .right-dots {
+     width: 28px;
+     height: 28px;
+     background: rgba(0, 0, 0, .5);
+     text-align: center;
+     border-radius: 50%;
+     display: inline-block;
+     position: relative;
+ }
+
+ .twitter-icon{
+width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1da1f2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    right: 11px;
+    box-shadow: 0px 2px 6px 0 rgb(0 0 0 / 30%);
+    z-index: 10;
+    
+ }
+
+ #Note{
+    margin-left: 100px;
+    margin-right: 77px;
+ }
 

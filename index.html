@@ -187,22 +187,22 @@
                                 </div>
                             </div>
                             <label class="radio">
-                                <input type="radio" name="question" onclick="switchIphone()">
+                                <input type="radio" name="question" id="iphoneInput" onclick="switchIphone()">
                                 iphone
                             </label>
                             <div class="columns">
                                 <div class="column">
                                     <label class="label">clock</label>
                                     <div class="control ">
-                                        <input class="input " type="text" placeholder="clock" value="10:4 am"
-                                            id="input3" oninput="updateInput()">
+                                        <input class="input " type="text" placeholder="clock" value="10:04 AM"
+                                            id="input3" oninput="updateInput(value)">
                                     </div>
                                 </div>
                                 <div class="column">
                                     <label class="label">Battery percent</label>
                                     <div class="control">
                                         <input class="input" type="number" placeholder="percent input" value="50"
-                                            id="input4" oninput="updateInput()">
+                                            id="input4" oninput="updateInput(value)">
                                     </div>
                                 </div>
                             </div>
@@ -356,6 +356,7 @@
                         <div class="has-background-white">
 
                             <div id="mobileViewBody" style="display: none;">
+
                                 <div id="iphoneView" style="display: none;">
                                     <div class="columns">
                                         <div class="column ml-2">
@@ -377,7 +378,7 @@
                                         <div class="column">
                                             <div class="level-left navbar-end ">
                                                 <a class="level-item" aria-label="like" id="percent">
-                                                    <p id="batteryPercentage"> 50 </p>
+                                                    <p id="batteryPercentage1"> 50 </p>
                                                     <span class="icon is-small">
                                                         <i class="fa fa-percent" aria-hidden="true"></i>
                                                     </span>
@@ -420,8 +421,20 @@
                                             </span>
                                         </a>
                                         <a class="level-item" aria-label="like" id="time2">
-                                            <p id="mobileTime">10:04 AM</p>
+                                            <p id="androidViewTime">10:04 AM</p>
                                         </a>
+                                    </div>
+                                    <div class="columns twitter-header-icon">
+                                        <div class="left-icon">
+                                            <img src="src\twitter-profile-left-arrow.png" alt="Placeholder image">
+                                        </div>
+                                        <div class="column right-dots">
+                                            <a class="level-item " aria-label="like">
+                                                <span class="icon is-small">
+                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                                </span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -443,31 +456,17 @@
                         </div>
                         <div class="card-image">
                             <figure class="image is-4by3" id="btn-Preview-Image">
-                                <div class="columns">
-                                    <div class="column">
-                                        <a class="level-item " aria-label="like">
-                                            <span class="icon is-small">
-                                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                    <div class="column">
-                                        <a class="level-item " aria-label="like">
-                                            <span class="icon is-small">
-                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                            </span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image"
-                                    id="changeImage3">
+
+                                <img src="src\twitter-header-cover.png" alt="Placeholder image" id="changeImage3">
                             </figure>
                         </div>
-                        <figure class="image is-128x128 mb">
-                            <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png"
-                                id="changeImage4">
-                        </figure>
-                        <button class="button is-rounded navbar-end margin_top mr-4">Edit Profile</button>
+                        <div class="twitter-profile-pic" id="rounded">
+                            <img class="twitter-profile-pic img"
+                                src="C:\Projects\InternProjects\Twitter\src\twitter-profile-pic.jpg" id="changeImage4">
+                        </div>
+
+                        <button class="button is-rounded navbar-end margin_top mr-3" id="Profile-button">Edit
+                            Profile</button>
                         <div class="card-content">
                             <div class="media">
                                 <div class="">
@@ -516,6 +515,11 @@
                                             </p> &nbsp;&nbsp;
                                             followers
                                         </a>
+
+                                        <div class="twitter-icon" id="twitterIcon" style="display: none;">
+                                            <img src="C:\Projects\InternProjects\Twitter\src\twitter-add-post-icon.png"
+                                                alt="Placeholder image">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -525,7 +529,20 @@
                 <button class="button is-primary is-medium twitter-btn " onclick="downloadImage()">Download
                     Twitter
                     profile AS Image <i class="fas fa-download"></i></button>
-
+                <div class=" py-5 mt-3 has-text-centered">
+                    <span class="icon ml-3">
+                        <img src="C:\Projects\InternProjects\Twitter\src\f_logo_RGB-Blue_1024.png">
+                    </span>
+                    <span class="icon ml-3">
+                        <img src="C:\Projects\InternProjects\Twitter\src\twitter.png">
+                    </span>
+                    <span class="icon ml-3">
+                        <img src="C:\Projects\InternProjects\Twitter\src\linkedin2-icon-logo-png.png">
+                    </span>
+                    <span class="icon ml-3">
+                        <img src="C:\Projects\InternProjects\Twitter\src\R.png">
+                    </span>
+                </div>
 
                 <div class="box mt-5 dark" id="mt-5">
                     <p>Twitter Profile Generator generates your very own fake Twitter Profile and prank your
@@ -564,29 +581,29 @@
         </section>
         <!--paragraph end-->
     </div>
-    <div class="has-background-black py-5 mt-3 ">
-        <a class="has-text-white-ter ml-6">About</a>
-        <a class="has-text-white-ter ml-2">Disclaimer</a>
-        <a class="has-text-white-ter ml-2">privacy</a>
-        <a class="has-text-white-ter ml-2">contact</a>
-        <a class="has-text-white-ter ml-2">Write for us</a>
-        <a class="has-text-white-ter ml-2">Advertise with us</a>
-
-        <span class="icon has-text-info">
-            <i class="fas fa-info-circle"></i>
-        </span>
-        <span class="icon has-text-success">
-            <i class="fas fa-check-square"></i>
-        </span>
-        <span class="icon has-text-warning">
-            <i class="fas fa-exclamation-triangle"></i>
-        </span>
-        <span class="icon has-text-danger">
-            <i class="fas fa-ban"></i>
-        </span>
-        <span class="icon">
-            <i class="fas fa-home"></i>
-        </span>
+    <div class="Columns has-background-black py-5 mt-3 ">
+        <div class="Column">
+            <a class="has-text-white-ter ml-6">About</a>
+            <a class="has-text-white-ter ml-2">Disclaimer</a>
+            <a class="has-text-white-ter ml-2">privacy</a>
+            <a class="has-text-white-ter ml-2">contact</a>
+            <a class="has-text-white-ter ml-2">Write for us</a>
+            <a class="has-text-white-ter ml-2">Advertise with us</a>
+        </div>
+        <!-- <div class="Column has-background-black navbar-end">
+            <span class="icon ml-3 has-background-black">
+                <img src="C:\Projects\InternProjects\Twitter\src\f_logo_RGB-Blue_1024.png">
+            </span>
+            <span class="icon ml-3 has-background-black">
+                <img src="C:\Projects\InternProjects\Twitter\src\twitter.png">
+            </span>
+            <span class="icon ml-3 has-background-black">
+                <img src="C:\Projects\InternProjects\Twitter\src\OIP (1).jpg">
+            </span>
+            <span class="icon ml-3">
+                <img src="C:\Projects\InternProjects\Twitter\src\R.png">
+            </span>
+        </div>-->
     </div>
     <!--===java script ===-->
     <script src="./src/twitter.js"></script>

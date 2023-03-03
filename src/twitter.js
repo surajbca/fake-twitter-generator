@@ -32,11 +32,11 @@ const signal = document.getElementById("signal");
 const signal2 = document.getElementById("signal2");
 const battery = document.getElementById("battery");
 const battery1 = document.getElementById("battery1");
-const time2 = document.getElementById("time2");
 const ellipsis = document.getElementById("ellipsis");
 const percent = document.getElementById("percent");
-const battery2 = document.getElementById("percent2");
+const time2 = document.getElementById("time2");
 const mobileTime = document.getElementById("mobileTime");
+const battery2 = document.getElementById("battery2");
 
 toggle.addEventListener("click", function () {
   this.classList.toggle("bi-moon");
@@ -102,10 +102,6 @@ toggle.addEventListener("click", function () {
     Born.style.color = "black";
     Born.style.transition = "2s";
 
-    time.style.background = "white";
-    time.style.color = "black";
-    time.style.transition = "2s";
-
     following1.style.background = "white";
     following1.style.color = "black";
     following1.style.transition = "2s";
@@ -134,10 +130,6 @@ toggle.addEventListener("click", function () {
     battery1.style.color = "black";
     battery1.style.transition = "2s";
 
-    time2.style.background = "white";
-    time2.style.color = "black";
-    time2.style.transition = "2s";
-
     ellipsis.style.background = "white";
     ellipsis.style.color = "black";
     ellipsis.style.transition = "2s";
@@ -146,13 +138,21 @@ toggle.addEventListener("click", function () {
     percent.style.color = "black";
     percent.style.transition = "2s";
 
-    battery2.style.background = "white";
-    battery2.style.color = "black";
-    battery2.style.transition = "2s";
+    time.style.background = "white";
+    time.style.color = "black";
+    time.style.transition = "2s";
+
+    time2.style.background = "white";
+    time2.style.color = "black";
+    time2.style.transition = "2s";
 
     mobileTime.style.background = "white";
     mobileTime.style.color = "black";
     mobileTime.style.transition = "2s";
+
+    battery2.style.background = "white";
+    battery2.style.color = "black";
+    battery2.style.transition = "2s";
   } else {
     body.style.background = "black";
     body.style.color = "white";
@@ -214,10 +214,6 @@ toggle.addEventListener("click", function () {
     Born.style.color = "white";
     Born.style.transition = "2s";
 
-    time.style.background = "black";
-    time.style.color = "white";
-    time.style.transition = "2s";
-
     following1.style.background = "black";
     following1.style.color = "white";
     following1.style.transition = "2s";
@@ -246,10 +242,6 @@ toggle.addEventListener("click", function () {
     battery1.style.color = "white";
     battery1.style.transition = "2s";
 
-    time2.style.background = "black";
-    time2.style.color = "white";
-    time2.style.transition = "2s";
-
     ellipsis.style.background = "black";
     ellipsis.style.color = "white";
     ellipsis.style.transition = "2s";
@@ -258,13 +250,21 @@ toggle.addEventListener("click", function () {
     percent.style.color = "white";
     percent.style.transition = "2s";
 
-    battery2.style.background = "black";
-    battery2.style.color = "white";
-    battery2.style.transition = "2s";
+    time.style.background = "black";
+    time.style.color = "white";
+    time.style.transition = "2s";
+
+    time2.style.background = "black";
+    time2.style.color = "white";
+    time2.style.transition = "2s";
 
     mobileTime.style.background = "black";
     mobileTime.style.color = "white";
     mobileTime.style.transition = "2s";
+
+    battery2.style.background = "black";
+    battery2.style.color = "white";
+    battery2.style.transition = "2s";
   }
 });
 /*end dark mood*/
@@ -296,11 +296,21 @@ function preview_image(event, id) {
 
 /* from submit*/
 function updateInput(value) {
-  document.getElementById("mobileTime").innerHTML =
-    document.getElementById("input3").value;
-
-  document.getElementById("batteryPercentage").innerHTML =
-    document.getElementById("input4").value;
+  //alert(value);
+  checkBox = document.getElementById("input1");
+  checkBox1 = document.getElementById("iphoneInput");
+  if (checkBox.checked) {
+    document.getElementById("androidViewTime").innerHTML =
+      document.getElementById("input3").value;
+    document.getElementById("batteryPercentage").innerHTML =
+      document.getElementById("input4").value;
+  }
+  if (checkBox1.checked) {
+    document.getElementById("mobileTime").innerHTML =
+      document.getElementById("input3").value;
+    document.getElementById("batteryPercentage1").innerHTML =
+      document.getElementById("input4").value;
+  }
 
   document.getElementById("accountName").innerHTML =
     document.getElementById("input5").value;
@@ -332,11 +342,13 @@ function mobileStyle() {
   let mobileView = document.getElementById("mobileView");
   let mobileViewBody = document.getElementById("mobileViewBody");
   let desktopViewBody = document.getElementById("desktopViewBody");
+  let twitterIcon = document.getElementById("twitterIcon");
 
   mobileViewBody.style.display = "";
   desktopViewBody.style.display = "none";
   desktopView.style.display = "none";
   mobileView.style.display = "";
+  twitterIcon.style.display = "";
 
   let iphoneView = document.getElementById("iphoneView");
   let androidView = document.getElementById("androidView");
@@ -355,12 +367,14 @@ function desktopStyle() {
   let mobileView = document.getElementById("mobileView");
   let mobileViewBody = document.getElementById("mobileViewBody");
   let desktopViewBody = document.getElementById("desktopViewBody");
+  let twitterIcon = document.getElementById("twitterIcon");
 
   mobileViewBody.style.display = "none";
   desktopViewBody.style.display = "";
 
   desktopView.style.display = "";
   mobileView.style.display = "none";
+  twitterIcon.style.display = "none";
 }
 /* end disktop */
 
