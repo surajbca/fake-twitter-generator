@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
     <title>Document</title>
@@ -339,14 +340,15 @@
                     </div>
                 </form>
             </div>
-            <!--start img div-->
+
+            <!--start display div-->
             <div class="column ml-13 dark" id="ml-13">
 
                 <div class="columns mt-2 mx-1 is-primary ">
-                    <button class="button is-medium is-fullwidth is-primary is-outlined "
-                        onclick="desktopStyle()">Desktop
+                    <button class="button is-medium is-fullwidth  " style="background-color: #00d1b2 !important; "
+                        id="activeButton" onclick="desktopStyle()">Desktop
                         View</button>
-                    <button class="button is-medium is-fullwidth is-primary is-outlined" onclick="mobileStyle()">Mobile
+                    <button class="button is-medium is-fullwidth " id="activeButton2" onclick="mobileStyle()">Mobile
                         View</button>
                 </div>
 
@@ -424,20 +426,11 @@
                                             <p id="androidViewTime">10:04 AM</p>
                                         </a>
                                     </div>
-                                    <div class="columns twitter-header-icon">
-                                        <div class="left-icon">
-                                            <img src="src\twitter-profile-left-arrow.png" alt="Placeholder image">
-                                        </div>
-                                        <div class="column right-dots">
-                                            <a class="level-item " aria-label="like">
-                                                <span class="icon is-small">
-                                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
                                 </div>
+
+
                             </div>
+
                             <div class="" id="desktopViewBody">
                                 <div class="level-left ml-20">
                                     <a class="level-item has-text-black" aria-label="reply">
@@ -454,9 +447,20 @@
                                 </div>
                             </div>
                         </div>
+                        <!--start twitter header icon-->
+                        <div class="twitter-header-icon" id="twitterHeaderIcon" style="display: none;">
+                            <div class="left-icon">
+                                <img alt="twitter-profile-left-arrow" src="src\twitter-profile-left-arrow.png">
+                            </div>
+                            <div class="right-dots">
+                                <span class="icon is-small dots">
+                                    <i class="fa fa-ellipsis-v dots" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <!--end twitter header icon-->
                         <div class="card-image">
                             <figure class="image is-4by3" id="btn-Preview-Image">
-
                                 <img src="src\twitter-header-cover.png" alt="Placeholder image" id="changeImage3">
                             </figure>
                         </div>
@@ -590,6 +594,7 @@
             <a class="has-text-white-ter ml-2">Write for us</a>
             <a class="has-text-white-ter ml-2">Advertise with us</a>
         </div>
+
         <!-- <div class="Column has-background-black navbar-end">
             <span class="icon ml-3 has-background-black">
                 <img src="C:\Projects\InternProjects\Twitter\src\f_logo_RGB-Blue_1024.png">

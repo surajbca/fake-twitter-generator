@@ -5,9 +5,8 @@ function displayPlayer() {
 
   document.getElementById("disp_player").innerHTML = position + player_id;
 }
-/* button color */
 
-/* start dark mood*/
+/* start dark-mod*/
 const toggle = document.getElementById("toggleDark");
 const body = document.querySelector("body");
 const form = document.getElementById("ml-12");
@@ -267,7 +266,7 @@ toggle.addEventListener("click", function () {
     battery2.style.transition = "2s";
   }
 });
-/*end dark mood*/
+/*end dark-mod*/
 
 function preview_image(event, id) {
   var reader = new FileReader();
@@ -294,7 +293,7 @@ function preview_image(event, id) {
   }
 }
 
-/* from submit*/
+/*start from submit*/
 function updateInput(value) {
   //alert(value);
   checkBox = document.getElementById("input1");
@@ -332,11 +331,16 @@ function updateInput(value) {
   document.getElementById("totalTweet").innerHTML =
     document.getElementById("input11").value;
 }
+/*end from submit*/
 
-/*mobile display */
+/*start mobile display */
 function mobileStyle() {
   var element = document.getElementById("myElement");
   element.style.margin = "23px 135px 24px 141px";
+
+  var rounded = document.getElementById("rounded");
+  rounded.style.width = "80px";
+  rounded.style.height = "80px";
 
   let desktopView = document.getElementById("desktopView");
   let mobileView = document.getElementById("mobileView");
@@ -355,11 +359,24 @@ function mobileStyle() {
 
   iphoneView.style.display = "none";
   androidView.style.display = "";
-  //alert(checkBox.checked);
+
+  let twitterHeaderIcon = document.getElementById("twitterHeaderIcon");
+  mobileViewBody.style.display = "";
+  desktopViewBody.style.display = "none";
+  desktopView.style.display = "none";
+  mobileView.style.display = "";
+  twitterHeaderIcon.style.display = "";
+
+  let activeButton2 = document.getElementById("activeButton2");
+  activeButton2.style.backgroundColor = "#00d1b2";
+  /*activeButton2.style.Color = "#FFFFFF";*/
+  let activeButton = document.getElementById("activeButton");
+  activeButton.style.backgroundColor = "";
+  /* activeButton.style.Color = "black";*/
 }
 /*end mobile display*/
 
-/*start disktop */
+/*start disktop display*/
 function desktopStyle() {
   var element = document.getElementById("myElement");
   element.style.margin = "0px";
@@ -375,8 +392,22 @@ function desktopStyle() {
   desktopView.style.display = "";
   mobileView.style.display = "none";
   twitterIcon.style.display = "none";
+
+  let twitterHeaderIcon = document.getElementById("twitterHeaderIcon");
+  mobileViewBody.style.display = "none";
+  desktopViewBody.style.display = "";
+  desktopView.style.display = "";
+  mobileView.style.display = "none";
+  twitterHeaderIcon.style.display = "none";
+
+  let activeButton = document.getElementById("activeButton");
+  activeButton.style.backgroundColor = "#00d1b2 ";
+  /*activeButton.style.Color = "#FFFFFF";*/
+
+  let activeButton2 = document.getElementById("activeButton2");
+  activeButton2.style.backgroundColor = "";
+  /*activeButton2.style.Color = "black";*/
 }
-/* end disktop */
 
 function verifyAccount(value) {
   let checkBox;
@@ -410,8 +441,9 @@ function switchIphone() {
   iphoneView.style.display = "";
   androidView.style.display = "none";
 }
+/* end disktop display*/
 
-/*=====*/
+/*start download imgags file */
 content = document.getElementById("myElement");
 
 function downloadImage() {
@@ -420,4 +452,9 @@ function downloadImage() {
   });
 }
 
-/*==============================*/
+/*end download imags file*/
+
+/*active button color*/
+function changeColor(htmlEl) {
+  htmlEl.style.backgroundColor = "green";
+}

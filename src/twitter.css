@@ -1,4 +1,7 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
 .container{
   margin-top: 88px;
 }
@@ -170,14 +173,14 @@
     margin-bottom: -32px;
 }
 
-.twitter-header-icon {
+/*.twitter-header-icon {
     position: absolute;
     width: 100%;
     padding: 12px;
     display: block;
-}
+}*/
 
-.main-twitter-profile .twitter-header-icon .left-icon,
+/*.main-twitter-profile .twitter-header-icon .left-icon,
 .main-twitter-profile .twitter-header-icon .right-dots {
     width: 28px;
     height: 28px;
@@ -195,10 +198,10 @@
      border-radius: 50%;
      display: inline-block;
      position: relative;
- }
+ }*/
 
  .twitter-icon{
-width: 50px;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
     background: #1da1f2;
@@ -214,7 +217,69 @@ width: 50px;
  }
 
  #Note{
+    background-color: #f8d7da;
+    border: 2px solid #f5c6cb;
     margin-left: 100px;
     margin-right: 77px;
  }
+/*start twitter header icon start*/
+ .twitter-header-icon {
+    position: absolute;
+    width: 100%;
+    padding: 12px;
+    display: block;
+}
+  .twitter-header-icon .right-dots a {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 5px;
+     height: 5px;
+     border: 1px solid #fff;
+     border-radius: 50%;
+     display: block;
+    position: absolute;
+    z-index: 2;
+ }
 
+ .left-icon {
+     width: 28px;
+     height: 28px;
+     background: rgba(0, 0, 0, .5);
+     text-align: center;
+     border-radius: 50%;
+     display: inline-block;
+     position: relative;
+     
+    position: absolute;  
+    z-index: 2;
+ }
+
+ .right-dots {
+    margin-left: 269px;
+     width: 28px;
+     height: 28px;
+     background: rgba(0, 0, 0, .5);
+     text-align: center;
+     border-radius: 50%;
+     display: inline-block;
+     position: relative;
+    position: absolute;
+        z-index: 2;
+        
+        color: white;
+ }
+ .main-twitter-profile .twitter-header-icon .right-dots {
+     float: right;
+ }
+
+   .right-dots span:nth-child(1) {
+      top: 20%;
+      transform: translate(-50%, -20%);
+  }
+  .dots{
+     margin: 7px 0px 0px 8px;
+  }
+
+/*end twitter header icon*/
