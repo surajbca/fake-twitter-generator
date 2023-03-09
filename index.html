@@ -440,7 +440,15 @@
                                     </a>
                                     <div class="columns">
                                         <div class="column ">
-                                            <code class="is-size-4  pt-0" id="Tweet">Tweet</code><br>
+
+                                            <code class="is-size-4  pt-0" id="Tweet">john Doe</code>
+                                            <code class="has-text-link is-small" style="display: none;" id="checkIcon">
+                                                <span class="icon is-small">
+                                                <img src="C:\Projects\InternProjects\Twitter\src\verified-icon.png">
+                                                </span>
+                                                </code>
+
+                                            <br>
                                             <code class="mt-2 " id="totalTweet">0</code>Tweet
                                         </div>
                                     </div>
@@ -468,9 +476,20 @@
                             <img class="twitter-profile-pic img"
                                 src="C:\Projects\InternProjects\Twitter\src\twitter-profile-pic.jpg" id="changeImage4">
                         </div>
-
-                        <button class="button is-rounded navbar-end margin_top mr-3" id="Profile-button">Edit
-                            Profile</button>
+                        <div class="Columns">
+                            <div class="Column navbar-end" id="profileButtonIcon">
+                                <div id="ellipsis-h" class="is-rounded">
+                                    <i class="fa fa-ellipsis-h " aria-hidden="true" id="threeIcon"></i>
+                                </div>
+                                <div id="ellipsis-h2" class="is-rounded">
+                                    <i class="fa fa-bell" aria-hidden="true" id="wellIcon"></i>
+                                </div>
+                                <button class="button is-rounded  margin_top mr-3" id="Profile-button">Edit
+                                    Profile</button>
+                            </div>
+                        </div>
+                        <!--<button class="button is-rounded navbar-end margin_top mr-3" id="Profile-button">Edit
+                            Profile</button>-->
                         <div class="card-content">
                             <div class="media">
                                 <div class="">
@@ -479,9 +498,9 @@
                                     <div class="level-left has-text-weight-bold">
                                         <p id="accountName" class="">john Doe</p>
                                         <a class="level-item" aria-label="reply" id="name">
-                                            <span class="icon is-small">
-                                                <i class="fa fa-check-circle" id="verifyAccount" style="display: none;"
-                                                    aria-hidden="true"></i>
+                                            <span class="icon is-small ml-2" id="verifyAccount" style="display: none;">
+                                                <img src="C:\Projects\InternProjects\Twitter\src\verified-icon.png">
+
                                             </span>
                                         </a>
                                     </div>
@@ -526,6 +545,24 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="mt-2 mb-6">
+                                    <p>Followed by Breet @ Designjoy,minh-phuc Tran,and 35 others you follow</p>
+                                </div>
+                                <!--this is profile footer-->
+                                <div class="columns ml-1 mr-1">
+                                    <div class="column is-size-5">
+                                        Tweets
+                                    </div>
+                                    <div class="column">
+                                        Replies
+                                    </div>
+                                    <div class="column ">
+                                        Media
+                                    </div>
+                                    <div class="column ">
+                                        Likes
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -533,7 +570,7 @@
                 <button class="button is-primary is-medium twitter-btn " onclick="downloadImage()">Download
                     Twitter
                     profile AS Image <i class="fas fa-download"></i></button>
-                <div class=" py-5 mt-3 has-text-centered">
+                <div class=" py-5  has-text-centered">
                     <span class="icon ml-3">
                         <img src="C:\Projects\InternProjects\Twitter\src\f_logo_RGB-Blue_1024.png">
                     </span>
@@ -548,7 +585,7 @@
                     </span>
                 </div>
 
-                <div class="box mt-5 dark" id="mt-5">
+                <div class="box dark" id="mt-5">
                     <p>Twitter Profile Generator generates your very own fake Twitter Profile and prank your
                         friends.
                         you can Generate Fake
@@ -587,7 +624,7 @@
     </div>
     <div class="Columns has-background-black py-5 mt-3 ">
         <div class="Column">
-            <a class="has-text-white-ter ml-6">About</a>
+            <a class="has-text-white-ter ml-6" id="about">About</a>
             <a class="has-text-white-ter ml-2">Disclaimer</a>
             <a class="has-text-white-ter ml-2">privacy</a>
             <a class="has-text-white-ter ml-2">contact</a>

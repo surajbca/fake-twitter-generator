@@ -36,6 +36,7 @@ const percent = document.getElementById("percent");
 const time2 = document.getElementById("time2");
 const mobileTime = document.getElementById("mobileTime");
 const battery2 = document.getElementById("battery2");
+const checkIcon = document.getElementById("checkIcon");
 
 toggle.addEventListener("click", function () {
   this.classList.toggle("bi-moon");
@@ -152,6 +153,10 @@ toggle.addEventListener("click", function () {
     battery2.style.background = "white";
     battery2.style.color = "black";
     battery2.style.transition = "2s";
+
+    checkIcon.style.background = "white";
+    checkIcon.style.color = "black";
+    checkIcon.style.transition = "2s";
   } else {
     body.style.background = "black";
     body.style.color = "white";
@@ -264,6 +269,10 @@ toggle.addEventListener("click", function () {
     battery2.style.background = "black";
     battery2.style.color = "white";
     battery2.style.transition = "2s";
+
+    checkIcon.style.background = "black";
+    checkIcon.style.color = "white";
+    checkIcon.style.transition = "2s";
   }
 });
 /*end dark-mod*/
@@ -312,6 +321,9 @@ function updateInput(value) {
   }
 
   document.getElementById("accountName").innerHTML =
+    document.getElementById("input5").value;
+
+  document.getElementById("Tweet").innerHTML =
     document.getElementById("input5").value;
 
   document.getElementById("userName").innerHTML =
@@ -369,10 +381,11 @@ function mobileStyle() {
 
   let activeButton2 = document.getElementById("activeButton2");
   activeButton2.style.backgroundColor = "#00d1b2";
-  /*activeButton2.style.Color = "#FFFFFF";*/
+  activeButton2.style.Color = "#FFFFFF";
+
   let activeButton = document.getElementById("activeButton");
   activeButton.style.backgroundColor = "";
-  /* activeButton.style.Color = "black";*/
+  activeButton.style.Color = "";
 }
 /*end mobile display*/
 
@@ -402,11 +415,11 @@ function desktopStyle() {
 
   let activeButton = document.getElementById("activeButton");
   activeButton.style.backgroundColor = "#00d1b2 ";
-  /*activeButton.style.Color = "#FFFFFF";*/
+  activeButton.style.Color = "#FFFFFF ";
 
   let activeButton2 = document.getElementById("activeButton2");
   activeButton2.style.backgroundColor = "";
-  /*activeButton2.style.Color = "black";*/
+  activeButton.style.Color = "";
 }
 
 function verifyAccount(value) {
@@ -418,11 +431,14 @@ function verifyAccount(value) {
   }
 
   let element = document.getElementById("verifyAccount");
+  let elements = document.getElementById("checkIcon");
   //alert(checkBox.checked);
   if (checkBox.checked) {
     element.style.display = "";
+    elements.style.display = "";
   } else {
     element.style.display = "none";
+    elements.style.display = "none";
   }
 }
 
