@@ -1159,9 +1159,16 @@ function mobileStyle() {
   var element = document.getElementById("myElement");
   element.style.margin = "23px 135px 24px 141px";
 
-  var rounded = document.getElementById("rounded");
+  let rounded = document.getElementById("changeImage4");
   rounded.style.width = "80px";
   rounded.style.height = "80px";
+
+  /*let profileButtonIcon = getElementById("profileButtonIcon");
+  profileButtonIcon.style.margin = "17px 0px 0px 0px";*/
+
+  let footer = document.getElementById("footer");
+  footer.style.marginLeft = "-12px";
+  footer.style.marginRight = "-36px";
 
   let desktopView = document.getElementById("desktopView");
   let mobileView = document.getElementById("mobileView");
@@ -1200,6 +1207,15 @@ function mobileStyle() {
 
 /*start disktop display*/
 function desktopStyle() {
+  let rounded = document.getElementById("rounded");
+  rounded.style.width = "115px";
+  rounded.style.height = "115px";
+  rounded.style.borderRadius = "100%";
+
+  let footer = document.getElementById("footer");
+  footer.style.marginLeft = "20px";
+  footer.style.marginRight = "-76px";
+
   var element = document.getElementById("myElement");
   element.style.margin = "0px";
   let desktopView = document.getElementById("desktopView");

@@ -84,12 +84,15 @@
 
 #Tweet{
     color: black;
+    margin-left: 25px;
     background-color: white;
+    font-family: bold;
+        font-size: 24px;
 }
 
 #totalTweet{
     color: black;
-    margin-left: 10px;
+    margin-left: 32px;
     background-color: white;
 }
 #Born{
@@ -157,22 +160,22 @@
 .twitter-profile-pic {
     display: inline-block;
         position: relative;
-        top: -19px;
-        margin-bottom: -40px;
+        top: -29px;
+        margin-bottom: -77px;
         margin-left: 9px;
 }
 
 .twitter-profile-pic img {
-    width: 80px;
-    height: 80px;
+    width: 115px;
+    height: 115px;
     border: 3px solid #fff;
-    border-radius: 50%;
+    border-radius: 100%;
     object-fit: cover;
     object-position: center;
 }
 
 #Profile-button{
-    margin-top: -31px !important;
+    margin-top: -34px !important;
     margin-bottom: -32px;
 }
 
@@ -206,14 +209,14 @@
  .twitter-icon{
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border-radius: 100%;
     background: #1da1f2;
     justify-content: center;
     align-items: center;
     display: flex;
     position: absolute;
-    bottom: 66px;
-    right: 11px;
+    bottom: 53px;
+    right: 15px;
     box-shadow: 0px 2px 6px 0 rgb(0 0 0 / 30%);
     z-index: 10;
     
@@ -260,7 +263,7 @@
  }
 
  .right-dots {
-    margin-left: 289px;
+    margin-left: 270px;
      width: 28px;
      height: 28px;
      background: rgba(0, 0, 0, .5);
@@ -292,8 +295,7 @@
         margin-bottom: -32px;
     width: 35px;
     height: 35px;
-    color: #fff;
-    background-color: rgb(117, 113, 113);
+    border: 1px solid gray;
     text-align: center;
     /*margin-left: 0px;
         width: 28px;
@@ -306,14 +308,13 @@
         
 }
 #ellipsis-h2 {
-    color: #fff;
     margin-left: 8px;
     margin-top: -31px !important;
-        margin-bottom: -32px;
+    margin-bottom: -32px;
     text-align: center;
-    background-color: rgb(117, 113, 113);
     width: 35px;
-        height: 35px;
+    border: 1px solid gray;
+    height: 35px;
         
    /* margin-left: 0px;
     width: 28px;
@@ -350,5 +351,13 @@
 }
 .grey{
     color: #808080;
+}
+#born1{
+    font-size: 24px;
+    margin-left: 12px;
+}
+#accountName{
+    font-family: bold;
+        font-size: 24px;
 }
 
