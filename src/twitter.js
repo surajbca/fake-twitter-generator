@@ -1207,10 +1207,9 @@ function mobileStyle() {
 
 /*start disktop display*/
 function desktopStyle() {
-  let rounded = document.getElementById("rounded");
+  let rounded = document.getElementById("changeImage4");
   rounded.style.width = "115px";
   rounded.style.height = "115px";
-  rounded.style.borderRadius = "100%";
 
   let footer = document.getElementById("footer");
   footer.style.marginLeft = "20px";
