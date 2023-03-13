@@ -1163,8 +1163,8 @@ function mobileStyle() {
   rounded.style.width = "80px";
   rounded.style.height = "80px";
 
-  /*let profileButtonIcon = getElementById("profileButtonIcon");
-  profileButtonIcon.style.margin = "17px 0px 0px 0px";*/
+  /*let followingButton = getElementById("followingButton");
+  followingButton.style.margin = "17px 0px 0px 0px";*/
 
   let footer = document.getElementById("footer");
   footer.style.marginLeft = "-12px";
