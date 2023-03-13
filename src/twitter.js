@@ -6,7 +6,7 @@ function displayPlayer() {
   document.getElementById("disp_player").innerHTML = position + player_id;
 }
 
-/* start dark-mod*/
+/* start dark-mode*/
 const toggle = document.getElementById("toggleDark");
 const body = document.querySelector("body");
 const form = document.getElementById("ml-12");
@@ -275,9 +275,9 @@ toggle.addEventListener("click", function () {
     checkIcon.style.transition = "2s";
   }
 });
-/*end dark-mod*/
+/*end dark-mode*/
 
-/*start blue mod */
+/*start blue mode */
 
 const toggle1 = document.getElementById("toggleBlue");
 const body1 = document.querySelector("body");
@@ -285,30 +285,30 @@ const form1 = document.getElementById("ml-12");
 const Note1 = document.getElementById("Note");
 const myElement1 = document.getElementById("myElement");
 const pragraph1 = document.getElementById("mt-5");
-/*const desktopViewBody = document.getElementById("desktopViewBody");
-const androidView = document.getElementById("androidView");
-const Select1 = document.getElementById("Select1");
-const Select2 = document.getElementById("Select2");
-const Tweet = document.getElementById("Tweet");
-const iphoneView = document.getElementById("iphoneView");
-const div1 = document.getElementById("div1");
-const born1 = document.getElementById("born1");
-const totalTweet = document.getElementById("totalTweet");
-const Born = document.getElementById("Born");
-const time = document.getElementById("time");
-const following1 = document.getElementById("following1");
-const followers1 = document.getElementById("followers1");
-const wifi = document.getElementById("wifi");
-const signal = document.getElementById("signal");
-const signal2 = document.getElementById("signal2");
-const battery = document.getElementById("battery");
-const battery1 = document.getElementById("battery1");
-const ellipsis = document.getElementById("ellipsis");
-const percent = document.getElementById("percent");
-const time2 = document.getElementById("time2");
-const mobileTime = document.getElementById("mobileTime");
-const battery2 = document.getElementById("battery2");
-const checkIcon = document.getElementById("checkIcon");*/
+const desktopViewBody1 = document.getElementById("desktopViewBody");
+const androidView1 = document.getElementById("androidView");
+const Select3 = document.getElementById("Select1");
+const Select4 = document.getElementById("Select2");
+const Tweet1 = document.getElementById("Tweet");
+const iphoneView1 = document.getElementById("iphoneView");
+const div1Blue = document.getElementById("div1");
+const born1Blue = document.getElementById("born1");
+const totalTweetBlue = document.getElementById("totalTweet");
+const BornBlue = document.getElementById("Born");
+const timeBlue = document.getElementById("time");
+const following1Blue = document.getElementById("following1");
+const followers1Blue = document.getElementById("followers1");
+const wifiBlue = document.getElementById("wifi");
+const signalBlue = document.getElementById("signal");
+const signal2Blue = document.getElementById("signal2");
+const batteryBlue = document.getElementById("battery");
+const battery1Blue = document.getElementById("battery1");
+const ellipsisBlue = document.getElementById("ellipsis");
+const percentBlue = document.getElementById("percent");
+const time2Blue = document.getElementById("time2");
+const mobileTimeBlue = document.getElementById("mobileTime");
+const battery2Blue = document.getElementById("battery2");
+const checkIconBlue = document.getElementById("checkIcon");
 
 toggle1.addEventListener("click", function () {
   if (this.classList.toggle("Blue")) {
@@ -332,101 +332,101 @@ toggle1.addEventListener("click", function () {
     pragraph1.style.color = "black";
     pragraph1.style.transition = "2s";
 
-    desktopViewBody.style.background = "white";
-    desktopViewBody.style.color = "black";
-    desktopViewBody.style.transition = "2s";
+    desktopViewBody1.style.background = "white";
+    desktopViewBody1.style.color = "black";
+    desktopViewBody1.style.transition = "2s";
 
-    androidView.style.background = "white";
-    androidView.style.color = "black";
-    androidView.style.transition = "2s";
+    androidView1.style.background = "white";
+    androidView1.style.color = "black";
+    androidView1.style.transition = "2s";
 
-    Select1.style.background = "white";
-    Select1.style.color = "black";
-    Select1.style.transition = "2s";
+    Select3.style.background = "white";
+    Select3.style.color = "black";
+    Select3.style.transition = "2s";
 
-    Select2.style.background = "white";
-    Select2.style.color = "black";
-    Select2.style.transition = "2s";
+    Select4.style.background = "white";
+    Select4.style.color = "black";
+    Select4.style.transition = "2s";
 
-    Tweet.style.background = "white";
-    Tweet.style.color = "black";
-    Tweet.style.transition = "2s";
+    Tweet1.style.background = "white";
+    Tweet1.style.color = "black";
+    Tweet1.style.transition = "2s";
 
-    iphoneView.style.background = "white";
-    iphoneView.style.color = "black";
-    iphoneView.style.transition = "2s";
+    iphoneView1.style.background = "white";
+    iphoneView1.style.color = "black";
+    iphoneView1.style.transition = "2s";
 
-    div1.style.background = "white";
-    div1.style.color = "black";
-    div1.style.transition = "2s";
+    div1Blue.style.background = "white";
+    div1Blue.style.color = "black";
+    div1Blue.style.transition = "2s";
 
-    born1.style.background = "white";
-    born1.style.color = "black";
-    born1.style.transition = "2s";
+    born1Blue.style.background = "white";
+    born1Blue.style.color = "black";
+    born1Blue.style.transition = "2s";
 
-    totalTweet.style.background = "white";
-    totalTweet.style.color = "black";
-    totalTweet.style.transition = "2s";
+    totalTweetBlue.style.background = "white";
+    totalTweetBlue.style.color = "black";
+    totalTweetBlue.style.transition = "2s";
 
-    Born.style.background = "white";
-    Born.style.color = "black";
-    Born.style.transition = "2s";
+    BornBlue.style.background = "white";
+    BornBlue.style.color = "black";
+    BornBlue.style.transition = "2s";
 
-    following1.style.background = "white";
-    following1.style.color = "black";
-    following1.style.transition = "2s";
+    following1Blue.style.background = "white";
+    following1Blue.style.color = "black";
+    following1Blue.style.transition = "2s";
 
-    followers1.style.background = "white";
-    followers1.style.color = "black";
-    followers1.style.transition = "2s";
+    followers1Blue.style.background = "white";
+    followers1Blue.style.color = "black";
+    followers1Blue.style.transition = "2s";
 
-    wifi.style.background = "white";
-    wifi.style.color = "black";
-    wifi.style.transition = "2s";
+    wifiBlue.style.background = "white";
+    wifiBlue.style.color = "black";
+    wifiBlue.style.transition = "2s";
 
-    signal.style.background = "white";
-    signal.style.color = "black";
-    signal.style.transition = "2s";
+    signalBlue.style.background = "white";
+    signalBlue.style.color = "black";
+    signalBlue.style.transition = "2s";
 
-    signal2.style.background = "white";
-    signal2.style.color = "black";
-    signal2.style.transition = "2s";
+    signal2Blue.style.background = "white";
+    signal2Blue.style.color = "black";
+    signal2Blue.style.transition = "2s";
 
-    battery.style.background = "white";
-    battery.style.color = "black";
-    battery.style.transition = "2s";
+    batteryBlue.style.background = "white";
+    batteryBlue.style.color = "black";
+    batteryBlue.style.transition = "2s";
 
-    battery1.style.background = "white";
-    battery1.style.color = "black";
-    battery1.style.transition = "2s";
+    battery1Blue.style.background = "white";
+    battery1Blue.style.color = "black";
+    battery1Blue.style.transition = "2s";
 
-    ellipsis.style.background = "white";
-    ellipsis.style.color = "black";
-    ellipsis.style.transition = "2s";
+    ellipsisBlue.style.background = "white";
+    ellipsisBlue.style.color = "black";
+    ellipsisBlue.style.transition = "2s";
 
-    percent.style.background = "white";
-    percent.style.color = "black";
-    percent.style.transition = "2s";
+    percentBlue.style.background = "white";
+    percentBlue.style.color = "black";
+    percentBlue.style.transition = "2s";
 
-    time.style.background = "white";
-    time.style.color = "black";
-    time.style.transition = "2s";
+    timeBlue.style.background = "white";
+    timeBlue.style.color = "black";
+    timeBlue.style.transition = "2s";
 
-    time2.style.background = "white";
-    time2.style.color = "black";
-    time2.style.transition = "2s";
+    time2Blue.style.background = "white";
+    time2Blue.style.color = "black";
+    time2Blue.style.transition = "2s";
 
-    mobileTime.style.background = "white";
-    mobileTime.style.color = "black";
-    mobileTime.style.transition = "2s";
+    mobileTimeBlue.style.background = "white";
+    mobileTimeBlue.style.color = "black";
+    mobileTimeBlue.style.transition = "2s";
 
-    battery2.style.background = "white";
-    battery2.style.color = "black";
-    battery2.style.transition = "2s";
+    battery2Blue.style.background = "white";
+    battery2Blue.style.color = "black";
+    battery2Blue.style.transition = "2s";
 
-    checkIcon.style.background = "white";
-    checkIcon.style.color = "black";
-    checkIcon.style.transition = "2s";
+    checkIconBlue.style.background = "white";
+    checkIconBlue.style.color = "black";
+    checkIconBlue.style.transition = "2s";
   } else {
     body1.style.background = "#0000ff";
     body1.style.color = "white";
@@ -448,106 +448,106 @@ toggle1.addEventListener("click", function () {
     pragraph1.style.color = "white";
     pragraph1.style.transition = "2s";
 
-    desktopViewBody.style.background = "#0000ff";
-    desktopViewBody.style.color = "white";
-    desktopViewBody.style.transition = "2s";
+    desktopViewBody1.style.background = "#0000ff";
+    desktopViewBody1.style.color = "white";
+    desktopViewBody1.style.transition = "2s";
 
-    androidView.style.background = "#0000ff";
-    androidView.style.color = "white";
-    androidView.style.transition = "2s";
+    androidView1.style.background = "#0000ff";
+    androidView1.style.color = "white";
+    androidView1.style.transition = "2s";
 
-    Select1.style.background = "#0000ff";
-    Select1.style.color = "white";
-    Select1.style.transition = "2s";
+    Select3.style.background = "#0000ff";
+    Select3.style.color = "white";
+    Select3.style.transition = "2s";
 
-    Select2.style.background = "#0000ff";
-    Select2.style.color = "white";
-    Select2.style.transition = "2s";
+    Select4.style.background = "#0000ff";
+    Select4.style.color = "white";
+    Select4.style.transition = "2s";
 
-    Tweet.style.background = "#0000ff";
-    Tweet.style.color = "white";
-    Tweet.style.transition = "2s";
+    Tweet1.style.background = "#0000ff";
+    Tweet1.style.color = "white";
+    Tweet1.style.transition = "2s";
 
-    iphoneView.style.background = "#0000ff";
-    iphoneView.style.color = "white";
-    iphoneView.style.transition = "2s";
+    iphoneView1.style.background = "#0000ff";
+    iphoneView1.style.color = "white";
+    iphoneView1.style.transition = "2s";
 
-    div1.style.background = "#0000ff";
-    div1.style.color = "white";
-    div1.style.transition = "2s";
+    div1Blue.style.background = "#0000ff";
+    div1Blue.style.color = "white";
+    div1Blue.style.transition = "2s";
 
-    born1.style.background = "#0000ff";
-    born1.style.color = "white";
-    born1.style.transition = "2s";
+    born1Blue.style.background = "#0000ff";
+    born1Blue.style.color = "white";
+    born1Blue.style.transition = "2s";
 
-    totalTweet.style.background = "#0000ff";
-    totalTweet.style.color = "white";
-    totalTweet.style.transition = "2s";
+    totalTweetBlue.style.background = "#0000ff";
+    totalTweetBlue.style.color = "white";
+    totalTweetBlue.style.transition = "2s";
 
-    Born.style.background = "#0000ff";
-    Born.style.color = "white";
-    Born.style.transition = "2s";
+    BornBlue.style.background = "#0000ff";
+    BornBlue.style.color = "white";
+    BornBlue.style.transition = "2s";
 
-    following1.style.background = "#0000ff";
-    following1.style.color = "white";
-    following1.style.transition = "2s";
+    following1Blue.style.background = "#0000ff";
+    following1Blue.style.color = "white";
+    following1Blue.style.transition = "2s";
 
-    followers1.style.background = "#0000ff";
-    followers1.style.color = "white";
-    followers1.style.transition = "2s";
+    followers1Blue.style.background = "#0000ff";
+    followers1Blue.style.color = "white";
+    followers1Blue.style.transition = "2s";
 
-    wifi.style.background = "#0000ff";
-    wifi.style.color = "white";
-    wifi.style.transition = "2s";
+    wifiBlue.style.background = "#0000ff";
+    wifiBlue.style.color = "white";
+    wifiBlue.style.transition = "2s";
 
-    signal.style.background = "#0000ff";
-    signal.style.color = "white";
-    signal.style.transition = "2s";
+    signalBlue.style.background = "#0000ff";
+    signalBlue.style.color = "white";
+    signalBlue.style.transition = "2s";
 
-    signal2.style.background = "#0000ff";
-    signal2.style.color = "white";
-    signal2.style.transition = "2s";
+    signal2Blue.style.background = "#0000ff";
+    signal2Blue.style.color = "white";
+    signal2Blue.style.transition = "2s";
 
-    battery.style.background = "#0000ff";
-    battery.style.color = "white";
-    battery.style.transition = "2s";
+    batteryBlue.style.background = "#0000ff";
+    batteryBlue.style.color = "white";
+    batteryBlue.style.transition = "2s";
 
-    battery1.style.background = "#0000ff";
-    battery1.style.color = "white";
-    battery1.style.transition = "2s";
+    battery1Blue.style.background = "#0000ff";
+    battery1Blue.style.color = "white";
+    battery1Blue.style.transition = "2s";
 
-    ellipsis.style.background = "#0000ff";
-    ellipsis.style.color = "white";
-    ellipsis.style.transition = "2s";
+    ellipsisBlue.style.background = "#0000ff";
+    ellipsisBlue.style.color = "white";
+    ellipsisBlue.style.transition = "2s";
 
-    percent.style.background = "#0000ff";
-    percent.style.color = "white";
-    percent.style.transition = "2s";
+    percentBlue.style.background = "#0000ff";
+    percentBlue.style.color = "white";
+    percentBlue.style.transition = "2s";
 
-    time.style.background = "#0000ff";
-    time.style.color = "white";
-    time.style.transition = "2s";
+    timeBlue.style.background = "#0000ff";
+    timeBlue.style.color = "white";
+    timeBlue.style.transition = "2s";
 
-    time2.style.background = "#0000ff";
-    time2.style.color = "white";
-    time2.style.transition = "2s";
+    time2Blue.style.background = "#0000ff";
+    time2Blue.style.color = "white";
+    time2Blue.style.transition = "2s";
 
-    mobileTime.style.background = "#0000ff";
-    mobileTime.style.color = "white";
-    mobileTime.style.transition = "2s";
+    mobileTimeBlue.style.background = "#0000ff";
+    mobileTimeBlue.style.color = "white";
+    mobileTimeBlue.style.transition = "2s";
 
-    battery2.style.background = "#0000ff";
-    battery2.style.color = "white";
-    battery2.style.transition = "2s";
+    battery2Blue.style.background = "#0000ff";
+    battery2Blue.style.color = "white";
+    battery2Blue.style.transition = "2s";
 
-    checkIcon.style.background = "#0000ff";
-    checkIcon.style.color = "#0000ff";
-    checkIcon.style.transition = "2s";
+    checkIconBlue.style.background = "#0000ff";
+    checkIconBlue.style.color = "#0000ff";
+    checkIconBlue.style.transition = "2s";
   }
 });
-/*end blue mod*/
+/*end blue mode*/
 
-/*start gold mon*/
+/*start gold mode*/
 const toggle2 = document.getElementById("togglegold");
 const body2 = document.querySelector("body");
 const form2 = document.getElementById("ml-12");
@@ -815,9 +815,9 @@ toggle2.addEventListener("click", function () {
   }
 });
 
-/*end gold mon*/
+/*end gold mode*/
 
-/*start grey mon*/
+/*start grey mode*/
 const toggle3 = document.getElementById("togglegrey");
 const body3 = document.querySelector("body");
 const form3 = document.getElementById("ml-12");
@@ -1085,7 +1085,7 @@ toggle3.addEventListener("click", function () {
   }
 });
 
-/*end grey mon*/
+/*end grey mode*/
 function preview_image(event, id) {
   var reader = new FileReader();
   reader.onload = function () {

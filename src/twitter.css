@@ -260,7 +260,7 @@
  }
 
  .right-dots {
-    margin-left: 269px;
+    margin-left: 289px;
      width: 28px;
      height: 28px;
      background: rgba(0, 0, 0, .5);
@@ -332,6 +332,7 @@
     margin-left: -16px;
     background-color: #fff;
 }
+
 #threeIcon{
    margin-top: 9px;
 }
@@ -339,6 +340,9 @@
     margin-top: 9px;
 }
 .Blue{
+    color: #0000ff;
+}
+.Blue :active{
     color: #0000ff;
 }
 .gold{
