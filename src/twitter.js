@@ -1163,8 +1163,8 @@ function mobileStyle() {
   rounded.style.width = "80px";
   rounded.style.height = "80px";
 
-  /*let followingButton = getElementById("followingButton");
-  followingButton.style.margin = "17px 0px 0px 0px";*/
+  let followingButton = document.getElementById("followingButton");
+  followingButton.style.marginTop = "20px";
 
   let footer = document.getElementById("footer");
   footer.style.marginLeft = "-12px";
@@ -1207,6 +1207,9 @@ function mobileStyle() {
 
 /*start disktop display*/
 function desktopStyle() {
+  let followingButton = document.getElementById("followingButton");
+  followingButton.style.marginTop = "";
+
   let rounded = document.getElementById("changeImage4");
   rounded.style.width = "115px";
   rounded.style.height = "115px";
