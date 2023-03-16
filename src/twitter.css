@@ -263,7 +263,7 @@
  }
 
  .right-dots {
-    margin-left: 270px;
+    margin-left: 294px;
      width: 28px;
      height: 28px;
      background: rgba(0, 0, 0, .5);
@@ -360,4 +360,13 @@
     font-family: bold;
         font-size: 24px;
 }
+#changeImageFollowed{
+    height: 25px;
+    width: 25px !important;
+    border-radius: 100%;
+    text-align: center;
+    margin-top: 6px;
+
+}
+
 

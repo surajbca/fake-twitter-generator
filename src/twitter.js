@@ -37,6 +37,7 @@ const time2 = document.getElementById("time2");
 const mobileTime = document.getElementById("mobileTime");
 const battery2 = document.getElementById("battery2");
 const checkIcon = document.getElementById("checkIcon");
+const ellipsisH = document.getElementById("ellipsis-h");
 
 toggle.addEventListener("click", function () {
   /*this.classList.toggle("bi-moon");*/
@@ -157,6 +158,10 @@ toggle.addEventListener("click", function () {
     checkIcon.style.background = "white";
     checkIcon.style.color = "black";
     checkIcon.style.transition = "2s";
+
+    ellipsisH.style.background = "white";
+    ellipsisH.style.color = "grey";
+    ellipsisH.style.transition = "2s";
   } else {
     body.style.background = "black";
     body.style.color = "white";
@@ -273,6 +278,10 @@ toggle.addEventListener("click", function () {
     checkIcon.style.background = "black";
     checkIcon.style.color = "white";
     checkIcon.style.transition = "2s";
+
+    ellipsisH.style.background = "black";
+    ellipsisH.style.color = "white";
+    ellipsisH.style.transition = "2s";
   }
 });
 /*end dark-mode*/
@@ -1132,6 +1141,15 @@ function updateInput(value) {
   document.getElementById("accountName").innerHTML =
     document.getElementById("input5").value;
 
+  document.getElementById("subcribation").innerHTML =
+    document.getElementById("inputSubcribation").value;
+
+  document.getElementById("LiveLocation").innerHTML =
+    document.getElementById("inputLiveLocation").value;
+
+  document.getElementById("totalTweet").innerHTML =
+    document.getElementById("input11").value;
+
   document.getElementById("Tweet").innerHTML =
     document.getElementById("input5").value;
 
@@ -1141,14 +1159,15 @@ function updateInput(value) {
   document.getElementById("dob").innerHTML =
     document.getElementById("input7").value;
 
-  document.getElementById("joinDate").innerHTML =
-    document.getElementById("input8").value;
-
   document.getElementById("following").innerHTML =
     document.getElementById("input9").value;
 
   document.getElementById("followers").innerHTML =
     document.getElementById("input10").value;
+
+  document.getElementById("joinDate").innerHTML =
+    document.getElementById("input8").value;
+
   document.getElementById("totalTweet").innerHTML =
     document.getElementById("input11").value;
 }
