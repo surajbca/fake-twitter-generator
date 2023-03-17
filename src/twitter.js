@@ -1187,6 +1187,13 @@ function mobileStyle() {
   var element = document.getElementById("myElement");
   element.style.margin = "23px 135px 24px 141px";
 
+  var joinDate = document.getElementById("time");
+  joinDate.style.position = "absolute";
+  joinDate.style.margin = "63px 0px 0px 0px";
+
+  var followersDiv = document.getElementById("followersDiv");
+  followersDiv.style.margin = "40px 0px 0px 0px";
+
   let rounded = document.getElementById("changeImage4");
   rounded.style.width = "80px";
   rounded.style.height = "80px";
@@ -1235,6 +1242,9 @@ function mobileStyle() {
 
 /*start disktop display*/
 function desktopStyle() {
+  var joinDate = document.getElementById("time");
+  joinDate.style.position = "";
+  joinDate.style.margin = "";
   let followingButton = document.getElementById("followingButton");
   followingButton.style.marginTop = "";
 
