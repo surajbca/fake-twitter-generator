@@ -1120,9 +1120,22 @@ function preview_image(event, id) {
   }
 }
 
+function nFormatter(num) {
+  if (num >= 1000000000) {
+    return (num / 1000000000).toFixed(1).replace(/\.0$/, "") + "G";
+  }
+  if (num >= 1000000) {
+    return (num / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
+  }
+  if (num >= 1000) {
+    return (num / 1000).toFixed(1).replace(/\.0$/, "") + "K";
+  }
+  return num;
+}
 /*start from submit*/
 function updateInput(value) {
   //alert(value);
+
   checkBox = document.getElementById("input1");
   checkBox1 = document.getElementById("iphoneInput");
   if (checkBox.checked) {
@@ -1147,8 +1160,8 @@ function updateInput(value) {
   document.getElementById("LiveLocation").innerHTML =
     document.getElementById("inputLiveLocation").value;
 
-  document.getElementById("totalTweet").innerHTML =
-    document.getElementById("input11").value;
+  var totalTweets = nFormatter(document.getElementById("input11").value);
+  document.getElementById("totalTweet").innerHTML = totalTweets;
 
   document.getElementById("Tweet").innerHTML =
     document.getElementById("input5").value;
@@ -1156,20 +1169,16 @@ function updateInput(value) {
   document.getElementById("userName").innerHTML =
     document.getElementById("input6").value;
 
-  document.getElementById("dob").innerHTML =
-    document.getElementById("input7").value;
+  /*document.getElementById("dob").innerHTML =
+    document.getElementById("input7").value;*/
+  var following = nFormatter(document.getElementById("input9").value);
+  document.getElementById("following").innerHTML = following;
 
-  document.getElementById("following").innerHTML =
-    document.getElementById("input9").value;
-
-  document.getElementById("followers").innerHTML =
-    document.getElementById("input10").value;
+  var followers = nFormatter(document.getElementById("input10").value);
+  document.getElementById("followers").innerHTML = followers;
 
   document.getElementById("joinDate").innerHTML =
     document.getElementById("input8").value;
-
-  document.getElementById("totalTweet").innerHTML =
-    document.getElementById("input11").value;
 }
 /*end from submit*/
 
@@ -1269,6 +1278,13 @@ function desktopStyle() {
 }
 
 function verifyAccount(value) {
+  document.getElementById("blue").style.display = "none";
+  document.getElementById("BlueIcon").style.display = "none";
+  document.getElementById("gray").style.display = "none";
+  document.getElementById("greyIcon").style.display = "none";
+  document.getElementById("allow").style.display = "none";
+  document.getElementById("yellowIcon").style.display = "none";
+
   let checkBox;
   if (value == 1) {
     checkBox = document.getElementById("input2");
@@ -1320,3 +1336,56 @@ function downloadImage() {
 function changeColor(htmlEl) {
   htmlEl.style.backgroundColor = "green";
 }
+
+/*differnce-diffence icon show*/
+const showBlueIcon = (event) => {
+  event.preventDefault();
+  document.getElementById("blue").style.display = "";
+  document.getElementById("BlueIcon").style.display = "";
+  document.getElementById("gray").style.display = "none";
+  document.getElementById("greyIcon").style.display = "none";
+  document.getElementById("allow").style.display = "none";
+  document.getElementById("yellowIcon").style.display = "none";
+  document.getElementById("verifyAccount").style.display = "none";
+  document.getElementById("checkIcon").style.display = "none";
+  document.getElementById("flag").style.display = "none";
+};
+
+const showGreyIcon = (event) => {
+  event.preventDefault();
+  document.getElementById("flag").style.display = "";
+  document.getElementById("gray").style.display = "";
+  document.getElementById("greyIcon").style.display = "";
+  document.getElementById("blue").style.display = "none";
+  document.getElementById("BlueIcon").style.display = "none";
+  document.getElementById("allow").style.display = "none";
+  document.getElementById("yellowIcon").style.display = "none";
+  document.getElementById("verifyAccount").style.display = "none";
+  document.getElementById("checkIcon").style.display = "none";
+};
+
+const showYellowIcon = (event) => {
+  event.preventDefault();
+  document.getElementById("allow").style.display = "";
+  document.getElementById("yellowIcon").style.display = "";
+  document.getElementById("blue").style.display = "none";
+  document.getElementById("BlueIcon").style.display = "none";
+  document.getElementById("gray").style.display = "none";
+  document.getElementById("greyIcon").style.display = "none";
+  document.getElementById("verifyAccount").style.display = "none";
+  document.getElementById("checkIcon").style.display = "none";
+  document.getElementById("flag").style.display = "none";
+};
+
+const clearIcon = (event) => {
+  event.preventDefault();
+  document.getElementById("blue").style.display = "none";
+  document.getElementById("BlueIcon").style.display = "none";
+  document.getElementById("gray").style.display = "none";
+  document.getElementById("greyIcon").style.display = "none";
+  document.getElementById("allow").style.display = "none";
+  document.getElementById("yellowIcon").style.display = "none";
+  document.getElementById("verifyAccount").style.display = "none";
+  document.getElementById("checkIcon").style.display = "none";
+  document.getElementById("flag").style.display = "none";
+};

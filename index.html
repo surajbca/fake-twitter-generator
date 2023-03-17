@@ -153,11 +153,21 @@
 
             <div class="column">
                 <form id="FormID">
-                    <!--strart button
-                    <button class="button is-link is-rounded Blue">Rounded</button>
-                    <button class="button is-warning is-rounded">Rounded</button>
-                    <button class="button is-light is-rounded">Rounded</button>
-                    end button-->
+                    <div class="mt-2">
+                        <button class="button  is-rounded Blue" onClick="showBlueIcon(event)"><span
+                                class="icon is-small mr-2 has-text-info">
+                                <img src="./src/verified-icon.png">
+                            </span>blue</button>
+                        <button class="button is-rounded" onClick="showGreyIcon(event)"><span
+                                class="icon is-small mr-2 has-text-primary">
+                                <img src="./src/verified-grey4.png">
+                            </span>grey</button>
+                        <button class="button  is-rounded" onClick="showYellowIcon(event)"><span
+                                class="icon is-small mr-2">
+                                <img src="./src/verify-allow.png">
+                            </span>yellow</button>
+                        <button class="button is-primary is-rounded" onClick="clearIcon(event)">none</button>
+                    </div>
                     <div class="column is-three-fifths box  ml-12 dark" id="ml-12">
                         <!--div start-->
                         <div id="desktopView">
@@ -471,16 +481,44 @@
                                     </a>
                                     <div class="columns">
                                         <div class="column ">
+                                            <!--tweets div-->
+                                            <div class="level-left has-text-weight-bold ml-5">
+                                                <p class="" id="Tweet">john Doe</p>
+                                                &nbsp;
+                                                <a class="level-item has-text-link is-small" aria-label="reply">
+                                                    <span class="icon is-small " id="checkIcon" style="display: none;">
+                                                        <img src="./src/verified-icon.png">
+                                                    </span>
+                                                    <span class="icon is-small " id="BlueIcon" style="display: none;">
+                                                        <img src="./src/verified-icon.png">
+                                                    </span>
+                                                    <span class="icon is-small" style="display: none;" id="greyIcon">
+                                                        <img src="./src/verified-grey4.png">
+                                                    </span>
+                                                    <span class="icon is-small " style="display: none;" id="yellowIcon">
+                                                        <img src="./src/verify-allow.png">
+                                                    </span>
+                                                </a>
+                                            </div>
+                                            <div class="ml-4 level-left">
+                                                <p id="totalTweet">0 </p>&nbsp;Tweets
+                                            </div>
 
-                                            <code class="pt-0" id="Tweet">john Doe</code>
+
+
+                                            <!--<code class="pt-0" id="Tweet">john Doe</code>
                                             <code class="has-text-link is-small" style="display: none;" id="checkIcon">
                                                 <span class="icon is-small">
                                                 <img src="./src/verified-icon.png">
-                                                </span>
-                                                </code>
+                                                </span>-->
+                                            <!--allow icon-->
+                                            <!-- <span class="icon is-small mr-2">
+                                                <img src="./src/verify-allow.png">
+                                            </span>
+                                            </code>
 
                                             <br>
-                                            <code class="mt-2 " id="totalTweet">0</code>Tweets
+                                            <code class="mt-2 " id="totalTweet">0</code>Tweets-->
                                         </div>
                                     </div>
                                 </div>
@@ -527,15 +565,29 @@
                                 <div class="media-content">
                                     <div class="level-left has-text-weight-bold">
                                         <p id="accountName" class="">john Doe</p>
+                                        &nbsp;
                                         <a class="level-item" aria-label="reply" id="name">
-                                            <span class="icon is-small ml-2" id="verifyAccount" style="display: none;">
+                                            <span class="icon is-small " id="verifyAccount" style="display: none;">
                                                 <img src="./src/verified-icon.png">
-
+                                            </span>
+                                            <span class="icon is-small " id="blue" style="display: none;">
+                                                <img src="./src/verified-icon.png">
+                                            </span>
+                                            <span class="icon is-small" id="gray" style="display: none;">
+                                                <img src="./src/verified-grey4.png">
+                                            </span>
+                                            <span class="icon is-small mr-2" id="allow" style="display: none;">
+                                                <img src="./src/verify-allow.png">
                                             </span>
                                         </a>
                                     </div>
                                     <div class="level-left">
                                         @<p id="userName">i.m.john_doe</p>
+                                    </div>
+                                    <div class="level-left" style="display: none;" id="flag">
+                                        <span class="icon is-small mt-2"><i class="fa fa-flag"
+                                                aria-hidden="true"></i></span>
+                                        <a class="ml-1 " href="">india goverment official</a>
                                     </div>
                                 </div>
                             </div>
@@ -554,25 +606,27 @@
                                     <div class="level-left ">
                                         <a class="level-item " aria-label="reply">
                                             <span class="icon is-small">
-                                                <i class="fa fa-map-marker has-text-dark" aria-hidden="true"></i>
+
+                                                <img src="./src/location.png">
+
+                                                <!-- <i class="fa fa-map-marker has-text-dark" aria-hidden="true"></i>-->
                                             </span>
                                             &nbsp;
-                                            <p id="LiveLocation" class="has-text-dark">india</p>&nbsp;&nbsp;
+                                            <p id="LiveLocation" class="has-text-dark">india</p>
                                         </a>
-
-                                        <span class="icon is-small">
-                                            <i class="fa fa-link has-text-dark" aria-hidden="true"></i>&nbsp;
-                                        </span>&nbsp;
-                                        <a href="" target="_blank">TomCruise.com</a>&nbsp;&nbsp;
-
-                                        &nbsp;&nbsp;
+                                        <a>
+                                            <span class="icon is-small">
+                                                <img src="./src/link.png">
+                                            </span>&nbsp;
+                                            <a href="" target="_blank">TomCruise.com</a>
+                                        </a>
+                                        &nbsp;&nbsp;&nbsp;
                                         <a class="level-item" aria-label="reply" id="time">
                                             <span class="icon is-small">
-                                                <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;&nbsp;
+                                                <img src="./src/calendar.png"> &nbsp;
                                             </span>&nbsp;
                                             <p id="joinDate">January 1, 1999</p>
                                         </a>
-
 
                                         <div class="twitter-icon" id="twitterIcon" style="display: none;">
                                             <img src="./src/twitter-add-post-icon.png" alt="Placeholder image">
@@ -603,8 +657,8 @@
                                             id="changeImage3">
                                     </figure>-->
                                     <div class="level-left ">
-                                        <a class="level-item " aria-label="reply">
-                                            <span class="icon is-small">
+                                        <a class="level-item mr-1" aria-label="reply">
+                                            <span class="icon is-small" id="imgSpan">
                                                 <img src="./src/twitter-profile-pic.jpg" alt="Image"
                                                     id="changeImageFollowed"> &nbsp;&nbsp;
                                             </span>
