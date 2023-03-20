@@ -83,7 +83,7 @@
 
 
 #Tweet{
-    color: black;
+    color: #4a4a4a;
     margin-left: 25px;
     background-color: white;
     font-family: bold;
@@ -96,14 +96,14 @@
     background-color: white;
 }
 #Born{
-    color: black;
+    color: #4a4a4a;
 }
 
 #following1{
-    color: black;
+    color: #4a4a4a;
 }
 #followers1{
-    color: black;
+    color: #4a4a4a;
 }
 #wifi{
     color: black;
@@ -128,7 +128,7 @@
     color: black;
 }
 #time{
-    color: black;
+    color: #4a4a4a;
 }
 #time2{
     color: black;
@@ -369,6 +369,22 @@
 }
 #imgSpan{
     width: 34px;
+}
+
+#LiveLocation{
+    color: #4a4a4a;
+}
+#dob{
+    color: #4a4a4a;
+}
+
+
+/*#joinDate{
+    color: #4a4a4a;
+}*/
+
+#url{
+    color: #485fc7;
 }
 
 
