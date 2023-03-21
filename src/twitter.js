@@ -8,21 +8,13 @@ function displayPlayer() {
 
 /* start dark-mode*/
 const toggle = document.getElementById("toggleDark");
-const body = document.querySelector("body");
-const form = document.getElementById("ml-12");
-const Note = document.getElementById("Note");
 const myElement = document.getElementById("myElement");
-const pragraph = document.getElementById("mt-5");
 const desktopViewBody = document.getElementById("desktopViewBody");
 const androidView = document.getElementById("androidView");
-const Select1 = document.getElementById("Select1");
-const Select2 = document.getElementById("Select2");
 const Tweet = document.getElementById("Tweet");
 const iphoneView = document.getElementById("iphoneView");
-const div1 = document.getElementById("div1");
 const born1 = document.getElementById("born1");
 const totalTweet = document.getElementById("totalTweet");
-const dob = document.getElementById("dob");
 const time = document.getElementById("time");
 const following1 = document.getElementById("following1");
 const followers1 = document.getElementById("followers1");
@@ -40,30 +32,18 @@ const ellipsisH = document.getElementById("ellipsis-h");
 const LiveLocation = document.getElementById("LiveLocation");
 const signal = document.getElementById("signal");
 const urldark = document.getElementById("url");
+const Profilebottondark = document.getElementById("Profile-button");
 
 toggle.addEventListener("click", function () {
   /*this.classList.toggle("bi-moon");*/
 
   if (this.classList.toggle("dark")) {
-    body.style.background = "white";
-    body.style.color = "black";
-    body.style.transition = "2s";
-
-    form.style.background = "white";
-    form.style.color = "black";
-    form.style.transition = "2s";
-
-    Note.style.background = "white";
-    Note.style.color = "black";
-    Note.style.transition = "2s";
+    Profilebottondark.style.background = "black";
+    Profilebottondark.style.color = "white";
 
     myElement.style.background = "white";
     myElement.style.color = "black";
     myElement.style.transition = "2s";
-
-    pragraph.style.background = "white";
-    pragraph.style.color = "black";
-    pragraph.style.transition = "2s";
 
     desktopViewBody.style.background = "white";
     desktopViewBody.style.color = "black";
@@ -73,14 +53,6 @@ toggle.addEventListener("click", function () {
     androidView.style.color = "black";
     androidView.style.transition = "2s";
 
-    Select1.style.background = "white";
-    Select1.style.color = "black";
-    Select1.style.transition = "2s";
-
-    Select2.style.background = "white";
-    Select2.style.color = "black";
-    Select2.style.transition = "2s";
-
     Tweet.style.background = "white";
     Tweet.style.color = "black";
     Tweet.style.transition = "2s";
@@ -89,10 +61,6 @@ toggle.addEventListener("click", function () {
     iphoneView.style.color = "black";
     iphoneView.style.transition = "2s";
 
-    div1.style.background = "white";
-    div1.style.color = "black";
-    div1.style.transition = "2s";
-
     born1.style.background = "white";
     born1.style.color = "black";
     born1.style.transition = "2s";
@@ -100,10 +68,6 @@ toggle.addEventListener("click", function () {
     totalTweet.style.background = "white";
     totalTweet.style.color = "black";
     totalTweet.style.transition = "2s";
-
-    dob.style.background = "white";
-    dob.style.color = "black";
-    dob.style.transition = "2s";
 
     following1.style.background = "white";
     following1.style.color = "black";
@@ -173,25 +137,12 @@ toggle.addEventListener("click", function () {
     urldark.style.color = "dark";
     urldark.style.transition = "2s";
   } else {
-    body.style.background = "black";
-    body.style.color = "white";
-    body.style.transition = "2s";
-
-    form.style.background = "black";
-    form.style.color = "white";
-    form.style.transition = "2s";
-
-    Note.style.background = "black";
-    Note.style.color = "white";
-    Note.style.transition = "2s";
+    Profilebottondark.style.background = "white";
+    Profilebottondark.style.color = "black";
 
     myElement.style.background = "black";
     myElement.style.color = "white";
     myElement.style.transition = "2s";
-
-    pragraph.style.background = "black";
-    pragraph.style.color = "white";
-    pragraph.style.transition = "2s";
 
     wifiIcon.style.background = "black";
     wifiIcon.style.color = "white";
@@ -205,14 +156,6 @@ toggle.addEventListener("click", function () {
     androidView.style.color = "white";
     androidView.style.transition = "2s";
 
-    Select1.style.background = "black";
-    Select1.style.color = "white";
-    Select1.style.transition = "2s";
-
-    Select2.style.background = "black";
-    Select2.style.color = "white";
-    Select2.style.transition = "2s";
-
     Tweet.style.background = "black";
     Tweet.style.color = "white";
     Tweet.style.transition = "2s";
@@ -221,10 +164,6 @@ toggle.addEventListener("click", function () {
     iphoneView.style.color = "white";
     iphoneView.style.transition = "2s";
 
-    div1.style.background = "black";
-    div1.style.color = "white";
-    div1.style.transition = "2s";
-
     born1.style.background = "black";
     born1.style.color = "white";
     born1.style.transition = "2s";
@@ -232,10 +171,6 @@ toggle.addEventListener("click", function () {
     totalTweet.style.background = "black";
     totalTweet.style.color = "white";
     totalTweet.style.transition = "2s";
-
-    dob.style.background = "black";
-    dob.style.color = "white";
-    dob.style.transition = "2s";
 
     following1.style.background = "black";
     following1.style.color = "white";
@@ -306,21 +241,14 @@ toggle.addEventListener("click", function () {
 
 /*start blue mode */
 const toggle1 = document.getElementById("toggleBlue");
-const body1 = document.querySelector("body");
-const form1 = document.getElementById("ml-12");
-const Note1 = document.getElementById("Note");
+const profileButtonBlue = document.getElementById("Profile-button");
 const myElement1 = document.getElementById("myElement");
-const pragraph1 = document.getElementById("mt-5");
 const desktopViewBody1 = document.getElementById("desktopViewBody");
 const androidView1 = document.getElementById("androidView");
-const Select3 = document.getElementById("Select1");
-const Select4 = document.getElementById("Select2");
 const Tweet1 = document.getElementById("Tweet");
 const iphoneView1Blue = document.getElementById("iphoneView");
-const div1Blue = document.getElementById("div1");
 const born1Blue = document.getElementById("born1");
 const totalTweetBlue = document.getElementById("totalTweet");
-const BornBlue = document.getElementById("dob");
 const timeBlue = document.getElementById("time");
 const following1Blue = document.getElementById("following1");
 const followers1Blue = document.getElementById("followers1");
@@ -341,25 +269,12 @@ const ellipsis1Blue = document.getElementById("ellipsis");
 
 toggle1.addEventListener("click", function () {
   if (this.classList.toggle("Blue")) {
-    body1.style.background = "white";
-    body1.style.color = "black";
-    body1.style.transition = "2s";
-
-    form1.style.background = "white";
-    form1.style.color = "black";
-    form1.style.transition = "2s";
-
-    Note1.style.background = "white";
-    Note1.style.color = "black";
-    Note1.style.transition = "2s";
+    profileButtonBlue.style.background = "black";
+    profileButtonBlue.style.color = "color";
 
     myElement1.style.background = "white";
     myElement1.style.color = "black";
     myElement1.style.transition = "2s";
-
-    pragraph1.style.background = "white";
-    pragraph1.style.color = "black";
-    pragraph1.style.transition = "2s";
 
     desktopViewBody1.style.background = "white";
     desktopViewBody1.style.color = "black";
@@ -369,14 +284,6 @@ toggle1.addEventListener("click", function () {
     androidView1.style.color = "black";
     androidView1.style.transition = "2s";
 
-    Select3.style.background = "white";
-    Select3.style.color = "black";
-    Select3.style.transition = "2s";
-
-    Select4.style.background = "white";
-    Select4.style.color = "black";
-    Select4.style.transition = "2s";
-
     Tweet1.style.background = "white";
     Tweet1.style.color = "black";
     Tweet1.style.transition = "2s";
@@ -385,10 +292,6 @@ toggle1.addEventListener("click", function () {
     iphoneView1Blue.style.color = "black";
     iphoneView1Blue.style.transition = "2s";
 
-    div1Blue.style.background = "white";
-    div1Blue.style.color = "black";
-    div1Blue.style.transition = "2s";
-
     born1Blue.style.background = "white";
     born1Blue.style.color = "black";
     born1Blue.style.transition = "2s";
@@ -396,10 +299,6 @@ toggle1.addEventListener("click", function () {
     totalTweetBlue.style.background = "white";
     totalTweetBlue.style.color = "black";
     totalTweetBlue.style.transition = "2s";
-
-    BornBlue.style.background = "white";
-    BornBlue.style.color = "black";
-    BornBlue.style.transition = "2s";
 
     following1Blue.style.background = "white";
     following1Blue.style.color = "black";
@@ -469,25 +368,12 @@ toggle1.addEventListener("click", function () {
     ellipsis1Blue.style.color = "black";
     ellipsis1Blue.style.transition = "2s";
   } else {
-    body1.style.background = "#0000ff";
-    body1.style.color = "white";
-    body1.style.transition = "2s";
-
-    form1.style.background = "#0000ff";
-    form1.style.color = "white";
-    form1.style.transition = "2s";
-
-    Note1.style.background = "#0000ff";
-    Note1.style.color = "white";
-    Note1.style.transition = "2s";
+    profileButtonBlue.style.background = "white";
+    profileButtonBlue.style.color = "black";
 
     myElement1.style.background = "#0000ff";
     myElement1.style.color = "white";
     myElement1.style.transition = "2s";
-
-    pragraph1.style.background = "#0000ff";
-    pragraph1.style.color = "white";
-    pragraph1.style.transition = "2s";
 
     desktopViewBody1.style.background = "#0000ff";
     desktopViewBody1.style.color = "white";
@@ -497,14 +383,6 @@ toggle1.addEventListener("click", function () {
     androidView1.style.color = "white";
     androidView1.style.transition = "2s";
 
-    Select3.style.background = "#0000ff";
-    Select3.style.color = "white";
-    Select3.style.transition = "2s";
-
-    Select4.style.background = "#0000ff";
-    Select4.style.color = "white";
-    Select4.style.transition = "2s";
-
     Tweet1.style.background = "#0000ff";
     Tweet1.style.color = "white";
     Tweet1.style.transition = "2s";
@@ -513,10 +391,6 @@ toggle1.addEventListener("click", function () {
     iphoneView1Blue.style.color = "white";
     iphoneView1Blue.style.transition = "2s";
 
-    div1Blue.style.background = "#0000ff";
-    div1Blue.style.color = "white";
-    div1Blue.style.transition = "2s";
-
     born1Blue.style.background = "#0000ff";
     born1Blue.style.color = "white";
     born1Blue.style.transition = "2s";
@@ -524,10 +398,6 @@ toggle1.addEventListener("click", function () {
     totalTweetBlue.style.background = "#0000ff";
     totalTweetBlue.style.color = "white";
     totalTweetBlue.style.transition = "2s";
-
-    BornBlue.style.background = "#0000ff";
-    BornBlue.style.color = "white";
-    BornBlue.style.transition = "2s";
 
     following1Blue.style.background = "#0000ff";
     following1Blue.style.color = "white";
@@ -602,19 +472,14 @@ toggle1.addEventListener("click", function () {
 
 /*start gold mode*/
 const toggle2 = document.getElementById("togglegold");
-const body2 = document.querySelector("body");
-const form2 = document.getElementById("ml-12");
-const Note2 = document.getElementById("Note");
+const ProfileButtongold = document.getElementById("Profile-button");
 const myElement2 = document.getElementById("myElement");
-const pragraph2 = document.getElementById("mt-5");
 const followinggold = document.getElementById("following1");
 const followersgold = document.getElementById("followers1");
 const LiveLocationgold = document.getElementById("LiveLocation");
-const dobgold = document.getElementById("dob");
 const timegold = document.getElementById("time");
 const urlgold = document.getElementById("url");
 const ellipsisgold = document.getElementById("ellipsis-h");
-const ellipsisglod2 = document.getElementById("ellipsis-h2");
 const androidViewgold = document.getElementById("androidView");
 const iphoneViewgold = document.getElementById("iphoneView");
 const signalgold = document.getElementById("signal");
@@ -627,52 +492,15 @@ const time2gold = document.getElementById("time2");
 const percentgold = document.getElementById("percent");
 const battery2gold = document.getElementById("battery2");
 const ellipsis1gold = document.getElementById("ellipsis");
-/*const desktopViewBody = document.getElementById("desktopViewBody");
-
-const Select1 = document.getElementById("Select1");
-const Select2 = document.getElementById("Select2");
-const Tweet = document.getElementById("Tweet");
-
-const div1 = document.getElementById("div1");
-const born1 = document.getElementById("born1");
-const totalTweet = document.getElementById("totalTweet");
-
-const time = document.getElementById("time");
-const following1 = document.getElementById("following1");
-const followers1 = document.getElementById("followers1");
-const wifi = document.getElementById("wifi");
-
-
-
-
-
-
-
-
-
-const checkIcon = document.getElementById("checkIcon");*/
 
 toggle2.addEventListener("click", function () {
   if (this.classList.toggle("gold")) {
-    body2.style.background = "white";
-    body2.style.color = "black";
-    body2.style.transition = "2s";
-
-    form2.style.background = "white";
-    form2.style.color = "black";
-    form2.style.transition = "2s";
-
-    Note2.style.background = "white";
-    Note2.style.color = "black";
-    Note2.style.transition = "2s";
+    ProfileButtongold.style.background = "black";
+    ProfileButtongold.style.color = "white";
 
     myElement2.style.background = "white";
     myElement2.style.color = "black";
     myElement2.style.transition = "2s";
-
-    pragraph2.style.background = "white";
-    pragraph2.style.color = "black";
-    pragraph2.style.transition = "2s";
 
     desktopViewBody.style.background = "white";
     desktopViewBody.style.color = "black";
@@ -682,14 +510,6 @@ toggle2.addEventListener("click", function () {
     androidViewgold.style.color = "black";
     androidViewgold.style.transition = "2s";
 
-    Select1.style.background = "white";
-    Select1.style.color = "black";
-    Select1.style.transition = "2s";
-
-    Select2.style.background = "white";
-    Select2.style.color = "black";
-    Select2.style.transition = "2s";
-
     Tweet.style.background = "white";
     Tweet.style.color = "black";
     Tweet.style.transition = "2s";
@@ -697,10 +517,6 @@ toggle2.addEventListener("click", function () {
     iphoneViewgold.style.background = "white";
     iphoneViewgold.style.color = "black";
     iphoneViewgold.style.transition = "2s";
-
-    div1.style.background = "white";
-    div1.style.color = "black";
-    div1.style.transition = "2s";
 
     born1.style.background = "white";
     born1.style.color = "black";
@@ -722,10 +538,6 @@ toggle2.addEventListener("click", function () {
     LiveLocationgold.style.color = "black";
     LiveLocationgold.style.transition = "2s";
 
-    dobgold.style.background = "white";
-    dobgold.style.color = "black";
-    dobgold.style.transition = "2s";
-
     timegold.style.background = "white";
     timegold.style.color = "black";
     timegold.style.transition = "2s";
@@ -738,9 +550,6 @@ toggle2.addEventListener("click", function () {
     ellipsisgold.style.color = "black";
     ellipsisgold.style.border = "1px solid gray";
     ellipsisgold.style.transition = "2s";
-
-    ellipsisglod2.style.border = "1px solid gray";
-    ellipsisglod2.style.transition = "2s";
 
     signal2gold.style.background = "white";
     signal2gold.style.color = "black";
@@ -782,25 +591,12 @@ toggle2.addEventListener("click", function () {
     signalgold.style.color = "black";
     signalgold.style.transition = "2s";
   } else {
-    body2.style.background = "#FFD700";
-    body2.style.color = "white";
-    body2.style.transition = "2s";
-
-    form2.style.background = "#FFD700";
-    form2.style.color = "white";
-    form2.style.transition = "2s";
-
-    Note2.style.background = "#FFD700";
-    Note2.style.color = "white";
-    Note2.style.transition = "2s";
+    ProfileButtongold.style.background = "white";
+    ProfileButtongold.style.color = "black";
 
     myElement2.style.background = "#FFD700";
     myElement2.style.color = "white";
     myElement2.style.transition = "2s";
-
-    pragraph2.style.background = "#FFD700";
-    pragraph2.style.color = "white";
-    pragraph2.style.transition = "2s";
 
     desktopViewBody.style.background = "#FFD700";
     desktopViewBody.style.color = "white";
@@ -810,14 +606,6 @@ toggle2.addEventListener("click", function () {
     androidViewgold.style.color = "white";
     androidViewgold.style.transition = "2s";
 
-    Select1.style.background = "#FFD700";
-    Select1.style.color = "white";
-    Select1.style.transition = "2s";
-
-    Select2.style.background = "#FFD700";
-    Select2.style.color = "white";
-    Select2.style.transition = "2s";
-
     Tweet.style.background = "#FFD700";
     Tweet.style.color = "white";
     Tweet.style.transition = "2s";
@@ -825,10 +613,6 @@ toggle2.addEventListener("click", function () {
     iphoneViewgold.style.background = "#FFD700";
     iphoneViewgold.style.color = "white";
     iphoneViewgold.style.transition = "2s";
-
-    div1.style.background = "#FFD700";
-    div1.style.color = "white";
-    div1.style.transition = "2s";
 
     born1.style.background = "#FFD700";
     born1.style.color = "white";
@@ -850,10 +634,6 @@ toggle2.addEventListener("click", function () {
     LiveLocationgold.style.color = "white";
     LiveLocationgold.style.transition = "2s";
 
-    dobgold.style.background = "#FFD700";
-    dobgold.style.color = "white";
-    dobgold.style.transition = "2s";
-
     timegold.style.background = "#FFD700";
     timegold.style.color = "white";
     timegold.style.transition = "2s";
@@ -866,9 +646,6 @@ toggle2.addEventListener("click", function () {
     ellipsisgold.style.color = "white";
     ellipsisgold.style.border = "1px solid white";
     ellipsisgold.style.transition = "2s";
-
-    ellipsisglod2.style.border = "1px solid white";
-    ellipsisglod2.style.transition = "2s";
 
     signal2gold.style.background = "#FFD700";
     signal2gold.style.color = "white";
@@ -916,27 +693,21 @@ toggle2.addEventListener("click", function () {
 
 /*start gray mode*/
 const toggle3 = document.getElementById("togglegrey");
-const body3 = document.querySelector("body");
-const form3 = document.getElementById("ml-12");
-const Note3 = document.getElementById("Note");
+const ProfileButtongray = document.getElementById("Profile-button");
+
 const myElement3 = document.getElementById("myElement");
-const pragraph3gray = document.getElementById("mt-5");
 const desktopViewBodygray = document.getElementById("desktopViewBody");
 const Tweetgrey = document.getElementById("Tweet");
 const totalTweetgray = document.getElementById("totalTweet");
 const ellipsisgray = document.getElementById("ellipsis-h");
-const ellipsisgray2 = document.getElementById("ellipsis-h2");
 const Tweetgray = document.getElementById("Tweet");
 const born1gray = document.getElementById("born1");
 const LiveLocationgray = document.getElementById("LiveLocation");
-const dobgray = document.getElementById("dob");
 const timegray = document.getElementById("time");
 const following1gray = document.getElementById("following1");
 const followers1gary = document.getElementById("followers1");
 const urlgray = document.getElementById("url");
-const Select1gray = document.getElementById("Select1");
-const Select2gray = document.getElementById("Select2");
-const div1gray = document.getElementById("div1");
+
 const androidViewgray = document.getElementById("androidView");
 const iphoneViewgray = document.getElementById("iphoneView");
 const time2gray = document.getElementById("time2");
@@ -952,17 +723,8 @@ const ellipsis1gray = document.getElementById("ellipsis");
 
 toggle3.addEventListener("click", function () {
   if (this.classList.toggle("grey")) {
-    body3.style.background = "white";
-    body3.style.color = "black";
-    body3.style.transition = "2s";
-
-    form3.style.background = "white";
-    form3.style.color = "black";
-    form3.style.transition = "2s";
-
-    Note3.style.background = "white";
-    Note3.style.color = "black";
-    Note3.style.transition = "2s";
+    ProfileButtongray.style.background = "black";
+    ProfileButtongray.style.color = "white";
 
     myElement3.style.background = "white";
     myElement3.style.color = "black";
@@ -985,9 +747,6 @@ toggle3.addEventListener("click", function () {
     ellipsisgray.style.border = "1px solid gray";
     ellipsisgray.style.transition = "2s";
 
-    ellipsisgray2.style.border = "1px solid gray";
-    ellipsisgray2.style.transition = "2s";
-
     totalTweetgray.style.background = "white";
     totalTweetgray.style.color = "black";
     totalTweetgray.style.transition = "2s";
@@ -1004,10 +763,6 @@ toggle3.addEventListener("click", function () {
     LiveLocationgray.style.color = "black";
     LiveLocationgray.style.transition = "2s";
 
-    dobgray.style.background = "white";
-    dobgray.style.color = "black";
-    dobgray.style.transition = "2s";
-
     timegray.style.background = "white";
     timegray.style.color = "black";
     timegray.style.transition = "2s";
@@ -1023,22 +778,6 @@ toggle3.addEventListener("click", function () {
     urlgray.style.background = "white";
     urlgray.style.color = "black";
     urlgray.style.transition = "2s";
-
-    Select1gray.style.background = "white";
-    Select1gray.style.color = "black";
-    Select1gray.style.transition = "2s";
-
-    Select2gray.style.background = "white";
-    Select2gray.style.color = "black";
-    Select2gray.style.transition = "2s";
-
-    div1gray.style.background = "white";
-    div1gray.style.color = "black";
-    div1gray.style.transition = "2s";
-
-    pragraph3gray.style.background = "white";
-    pragraph3gray.style.color = "black";
-    pragraph3gray.style.transition = "2s";
 
     androidViewgray.style.background = "white";
     androidViewgray.style.color = "black";
@@ -1088,17 +827,8 @@ toggle3.addEventListener("click", function () {
     ellipsis1gray.style.color = "black";
     ellipsis1gray.style.transition = "2s";
   } else {
-    body3.style.background = "#808080";
-    body3.style.color = "black";
-    body3.style.transition = "2s";
-
-    form3.style.background = "#808080";
-    form3.style.color = "black";
-    form3.style.transition = "2s";
-
-    Note3.style.background = "#808080";
-    Note3.style.color = "black";
-    Note3.style.transition = "2s";
+    ProfileButtongray.style.background = "black";
+    ProfileButtongray.style.color = "white";
 
     myElement3.style.background = "#808080";
     myElement3.style.color = "black";
@@ -1124,10 +854,6 @@ toggle3.addEventListener("click", function () {
     LiveLocationgray.style.color = "black";
     LiveLocationgray.style.transition = "2s";
 
-    dobgray.style.background = "#808080";
-    dobgray.style.color = "black";
-    dobgray.style.transition = "2s";
-
     timegray.style.background = "#808080";
     timegray.style.color = "black";
     timegray.style.transition = "2s";
@@ -1144,22 +870,6 @@ toggle3.addEventListener("click", function () {
     urlgray.style.color = "black";
     urlgray.style.transition = "2s";
 
-    Select1gray.style.background = "#808080";
-    Select1gray.style.color = "white";
-    Select1gray.style.transition = "2s";
-
-    Select2gray.style.background = "#808080";
-    Select2gray.style.color = "white";
-    Select2gray.style.transition = "2s";
-
-    div1gray.style.background = "#808080";
-    div1gray.style.color = "white";
-    div1gray.style.transition = "2s";
-
-    pragraph3gray.style.background = "#808080";
-    pragraph3gray.style.color = "black";
-    pragraph3gray.style.transition = "2s";
-
     ellipsisgray.style.background = "#808080";
     ellipsisgray.style.color = "black";
     ellipsisgray.style.border = "1px solid white";
@@ -1167,9 +877,6 @@ toggle3.addEventListener("click", function () {
 
     Tweetgrey.style.background = "#808080";
     Tweetgrey.style.color = "black";
-
-    ellipsisgray2.style.border = "1px solid white";
-    ellipsisgray2.style.transition = "2s";
 
     totalTweetgray.style.background = "#808080";
     totalTweetgray.style.color = "black";
@@ -1263,6 +970,18 @@ function nFormatter(num) {
   }
   return num;
 }
+
+/* start show-hide icon*/
+function hideIcon(elementId) {
+  const hideElementId = document.getElementById(elementId);
+  hideElementId.style.display = "none";
+}
+function showIcon(elementId) {
+  const hideElementId = document.getElementById(elementId);
+  hideElementId.style.display = "";
+}
+
+/* end show hide icon
 /*start from submit*/
 function updateInput(value) {
   //alert(value);
@@ -1288,8 +1007,29 @@ function updateInput(value) {
   document.getElementById("subcribation").innerHTML =
     document.getElementById("inputSubcribation").value;
 
-  document.getElementById("LiveLocation").innerHTML =
-    document.getElementById("inputLiveLocation").value;
+  let liveLocationData = document.getElementById("inputLiveLocation").value;
+  if (liveLocationData) {
+    showIcon("liveIcon");
+  } else {
+    hideIcon("liveIcon");
+  }
+  document.getElementById("LiveLocation").innerHTML = liveLocationData;
+
+  let hideinputUrl = document.getElementById("urlInput").value;
+  if (hideinputUrl) {
+    showIcon("urlicon");
+  } else {
+    hideIcon("urlicon");
+  }
+  document.getElementById("url").innerHTML = hideinputUrl;
+
+  let joinDateshowIcon = document.getElementById("input8").value;
+  if (joinDateshowIcon) {
+    showIcon("joinDateIcon");
+  } else {
+    hideIcon("joinDateIcon");
+  }
+  document.getElementById("joinDate").innerHTML = joinDateshowIcon;
 
   var totalTweets = nFormatter(document.getElementById("input11").value);
   document.getElementById("totalTweet").innerHTML = totalTweets;
@@ -1300,16 +1040,20 @@ function updateInput(value) {
   document.getElementById("userName").innerHTML =
     document.getElementById("input6").value;
 
-  document.getElementById("dob").innerHTML =
-    document.getElementById("input7").value;
-  var following = nFormatter(document.getElementById("input9").value);
+  /*document.getElementById("dob").innerHTML =
+    document.getElementById("input7").value;*/
+
+  let following = nFormatter(document.getElementById("input9").value);
   document.getElementById("following").innerHTML = following;
 
-  var followers = nFormatter(document.getElementById("input10").value);
+  let followers = nFormatter(document.getElementById("input10").value);
   document.getElementById("followers").innerHTML = followers;
 
-  document.getElementById("joinDate").innerHTML =
-    document.getElementById("input8").value;
+  /* document.getElementById("joinDate").innerHTML =
+    document.getElementById("input8").value;*/
+
+  /*document.getElementById("url").innerHTML =
+    document.getElementById("urlInput").value;*/
 }
 /*end from submit*/
 
@@ -1320,14 +1064,14 @@ function mobileStyle() {
 
   var joinDate = document.getElementById("time");
   joinDate.style.position = "absolute";
-  joinDate.style.margin = "124px 0px 0px 0px";
+  joinDate.style.margin = "68px 0px 0px 0px";
 
-  var outputborn = document.getElementById("born");
+  /*var outputborn = document.getElementById("born");
   outputborn.style.position = "absolute";
-  outputborn.style.margin = "63px 0px 0px 0px";
+  outputborn.style.margin = "63px 0px 0px 0px";*/
 
   var followersDiv = document.getElementById("followersDiv");
-  followersDiv.style.margin = "70px 0px 0px 0px";
+  followersDiv.style.margin = "41px 0px 0px 0px";
 
   let rounded = document.getElementById("changeImage4");
   rounded.style.width = "80px";
@@ -1377,9 +1121,9 @@ function mobileStyle() {
 
 /*start disktop display*/
 function desktopStyle() {
-  var outputborn = document.getElementById("born");
+  /* var outputborn = document.getElementById("born");
   outputborn.style.position = "";
-  outputborn.style.margin = "";
+  outputborn.style.margin = "";*/
 
   var joinDate = document.getElementById("time");
   joinDate.style.position = "";
