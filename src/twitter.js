@@ -33,9 +33,23 @@ const LiveLocation = document.getElementById("LiveLocation");
 const signal = document.getElementById("signal");
 const urldark = document.getElementById("url");
 const Profilebottondark = document.getElementById("Profile-button");
+const mapsIcongray = document.getElementById("mapsIcongray");
+const mapsIconWhite = document.getElementById("mapsIconWhite");
+const mapsIconBlack = document.getElementById("mapsIconBlack");
+const linkgrayIcon = document.getElementById("linkgrayIcon");
+const linkWhiteIcon = document.getElementById("linkWhiteIcon");
+const linkBlackIcon = document.getElementById("linkBlackIcon");
+const dategrayIcon = document.getElementById("dategrayIcon");
+const dateWhiteIcon = document.getElementById("dateWhiteIcon");
+const dateBlackIcon = document.getElementById("dateBlackIcon");
+/*const calendarSvg = document.getElementById("liveIcon");
+const urlSvg = document.getElementById("urlicon");*/
 
 toggle.addEventListener("click", function () {
   /*this.classList.toggle("bi-moon");*/
+  /*====== icon show ====*/
+
+  dateBlackIcon.style.display = "none";
 
   if (this.classList.toggle("dark")) {
     Profilebottondark.style.background = "black";
@@ -134,9 +148,33 @@ toggle.addEventListener("click", function () {
     signal.style.transition = "2s";
 
     urldark.style.background = "white";
-    urldark.style.color = "dark";
+    urldark.style.color = "#485fc7";
     urldark.style.transition = "2s";
+
+    /*calendarSvg.style.background = "white";
+    calendarSvg.style.fill = "#4a4a4a";
+
+    urlSvg.style.background = "white";
+    urlSvg.style.fill = "#4a4a4a";*/
+    mapsIcongray.style.display = "";
+    mapsIconWhite.style.display = "none";
+    mapsIconBlack.style.display = "none";
+    linkgrayIcon.style.display = "";
+    linkWhiteIcon.style.display = "none";
+    linkBlackIcon.style.display = "none";
+    dategrayIcon.style.display = "";
+    dateWhiteIcon.style.display = "none";
+    dateBlackIcon.style.display = "none";
   } else {
+    dateBlackIcon.style.display = "none";
+    dateWhiteIcon.style.display = "";
+    dategrayIcon.style.display = "none";
+    linkBlackIcon.style.display = "none";
+    linkWhiteIcon.style.display = "";
+    linkgrayIcon.style.display = "none";
+    mapsIconWhite.style.display = "";
+    mapsIconBlack.style.display = "none";
+    mapsIcongray.style.display = "none";
     Profilebottondark.style.background = "white";
     Profilebottondark.style.color = "black";
 
@@ -235,6 +273,12 @@ toggle.addEventListener("click", function () {
     urldark.style.background = "black";
     urldark.style.color = "white";
     urldark.style.transition = "2s";
+
+    /*calendarSvg.style.background = "black";
+    calendarSvg.style.fill = "white";
+
+    urlSvg.style.background = "black";
+    urlSvg.style.fill = "white";*/
   }
 });
 /*end dark-mode*/
@@ -267,7 +311,44 @@ const LiveLocationBlue = document.getElementById("LiveLocation");
 const urlBlue = document.getElementById("url");
 const ellipsis1Blue = document.getElementById("ellipsis");
 
+const mapsIcongray1 = document.getElementById("mapsIcongray");
+const mapsIconWhite1 = document.getElementById("mapsIconWhite");
+const mapsIconBlack1 = document.getElementById("mapsIconBlack");
+const linkgrayIcon1 = document.getElementById("linkgrayIcon");
+const linkWhiteIcon1 = document.getElementById("linkWhiteIcon");
+const linkBlackIcon1 = document.getElementById("linkBlackIcon");
+const dategrayIcon1 = document.getElementById("dategrayIcon");
+const dateWhiteIcon1 = document.getElementById("dateWhiteIcon");
+const dateBlackIcon1 = document.getElementById("dateBlackIcon");
+
 toggle1.addEventListener("click", function () {
+  const mapsIcongray = document.getElementById("mapsIcongray");
+  mapsIcongray.style.display = "none";
+
+  const mapsIconWhite = document.getElementById("mapsIconWhite");
+  mapsIconWhite.style.display = "";
+
+  const mapsIconBlack = document.getElementById("mapsIconBlack");
+  mapsIconBlack.style.display = "none";
+
+  const linkgrayIcon = document.getElementById("linkgrayIcon");
+  linkgrayIcon.style.display = "none";
+
+  const linkWhiteIcon = document.getElementById("linkWhiteIcon");
+  linkWhiteIcon.style.display = "";
+
+  const linkBlackIcon = document.getElementById("linkBlackIcon");
+  linkBlackIcon.style.display = "none";
+
+  const dategrayIcon = document.getElementById("dategrayIcon");
+  dategrayIcon.style.display = "none";
+
+  const dateWhiteIcon = document.getElementById("dateWhiteIcon");
+  dateWhiteIcon.style.display = "";
+
+  const dateBlackIcon = document.getElementById("dateBlackIcon");
+  dateBlackIcon.style.display = "none";
+
   if (this.classList.toggle("Blue")) {
     profileButtonBlue.style.background = "black";
     profileButtonBlue.style.color = "color";
@@ -361,13 +442,33 @@ toggle1.addEventListener("click", function () {
     LiveLocationBlue.style.transition = "2s";
 
     urlBlue.style.background = "white";
-    urlBlue.style.color = "black";
+    urlBlue.style.color = "#485fc7";
     urlBlue.style.transition = "2s";
 
     ellipsis1Blue.style.background = "white";
     ellipsis1Blue.style.color = "black";
     ellipsis1Blue.style.transition = "2s";
+
+    mapsIcongray1.style.display = "";
+    mapsIconWhite1.style.display = "none";
+    mapsIconBlack1.style.display = "none";
+    linkgrayIcon1.style.display = "";
+    linkWhiteIcon1.style.display = "none";
+    linkBlackIcon1.style.display = "none";
+    dategrayIcon1.style.display = "";
+    dateWhiteIcon1.style.display = "none";
+    dateBlackIcon1.style.display = "none";
   } else {
+    dateBlackIcon1.style.display = "none";
+    dateWhiteIcon1.style.display = "";
+    dategrayIcon1.style.display = "none";
+    linkBlackIcon1.style.display = "none";
+    linkWhiteIcon1.style.display = "";
+    linkgrayIcon1.style.display = "none";
+    mapsIconWhite1.style.display = "";
+    mapsIconBlack1.style.display = "none";
+    mapsIcongray1.style.display = "none";
+
     profileButtonBlue.style.background = "white";
     profileButtonBlue.style.color = "black";
 
@@ -493,7 +594,44 @@ const percentgold = document.getElementById("percent");
 const battery2gold = document.getElementById("battery2");
 const ellipsis1gold = document.getElementById("ellipsis");
 
+const mapsIcongray2 = document.getElementById("mapsIcongray");
+const mapsIconWhite2 = document.getElementById("mapsIconWhite");
+const mapsIconBlack2 = document.getElementById("mapsIconBlack");
+const linkgrayIcon2 = document.getElementById("linkgrayIcon");
+const linkWhiteIcon2 = document.getElementById("linkWhiteIcon");
+const linkBlackIcon2 = document.getElementById("linkBlackIcon");
+const dategrayIcon2 = document.getElementById("dategrayIcon");
+const dateWhiteIcon2 = document.getElementById("dateWhiteIcon");
+const dateBlackIcon2 = document.getElementById("dateBlackIcon");
+
 toggle2.addEventListener("click", function () {
+  const mapsIcongray = document.getElementById("mapsIcongray");
+  mapsIcongray.style.display = "none";
+
+  const mapsIconWhite = document.getElementById("mapsIconWhite");
+  mapsIconWhite.style.display = "";
+
+  const mapsIconBlack = document.getElementById("mapsIconBlack");
+  mapsIconBlack.style.display = "none";
+
+  const linkgrayIcon = document.getElementById("linkgrayIcon");
+  linkgrayIcon.style.display = "none";
+
+  const linkWhiteIcon = document.getElementById("linkWhiteIcon");
+  linkWhiteIcon.style.display = "";
+
+  const linkBlackIcon = document.getElementById("linkBlackIcon");
+  linkBlackIcon.style.display = "none";
+
+  const dategrayIcon = document.getElementById("dategrayIcon");
+  dategrayIcon.style.display = "none";
+
+  const dateWhiteIcon = document.getElementById("dateWhiteIcon");
+  dateWhiteIcon.style.display = "";
+
+  const dateBlackIcon = document.getElementById("dateBlackIcon");
+  dateBlackIcon.style.display = "none";
+
   if (this.classList.toggle("gold")) {
     ProfileButtongold.style.background = "black";
     ProfileButtongold.style.color = "white";
@@ -543,7 +681,7 @@ toggle2.addEventListener("click", function () {
     timegold.style.transition = "2s";
 
     urlgold.style.background = "white";
-    urlgold.style.color = "black";
+    urlgold.style.color = "#485fc7";
     urlgold.style.transition = "2s";
 
     ellipsisgold.style.background = "white";
@@ -590,7 +728,27 @@ toggle2.addEventListener("click", function () {
     signalgold.style.background = "white";
     signalgold.style.color = "black";
     signalgold.style.transition = "2s";
+
+    mapsIcongray2.style.display = "";
+    mapsIconWhite2.style.display = "none";
+    mapsIconBlack2.style.display = "none";
+    linkgrayIcon2.style.display = "";
+    linkWhiteIcon2.style.display = "none";
+    linkBlackIcon2.style.display = "none";
+    dategrayIcon2.style.display = "";
+    dateWhiteIcon2.style.display = "none";
+    dateBlackIcon2.style.display = "none";
   } else {
+    dateBlackIcon2.style.display = "none";
+    dateWhiteIcon2.style.display = "";
+    dategrayIcon2.style.display = "none";
+    linkBlackIcon2.style.display = "none";
+    linkWhiteIcon2.style.display = "";
+    linkgrayIcon2.style.display = "none";
+    mapsIconWhite2.style.display = "";
+    mapsIconBlack2.style.display = "none";
+    mapsIcongray2.style.display = "none";
+
     ProfileButtongold.style.background = "white";
     ProfileButtongold.style.color = "black";
 
@@ -721,7 +879,44 @@ const percentgray = document.getElementById("percent");
 const battery2gray = document.getElementById("battery2");
 const ellipsis1gray = document.getElementById("ellipsis");
 
+const mapsIcongray3 = document.getElementById("mapsIcongray");
+const mapsIconWhite3 = document.getElementById("mapsIconWhite");
+const mapsIconBlack3 = document.getElementById("mapsIconBlack");
+const linkgrayIcon3 = document.getElementById("linkgrayIcon");
+const linkWhiteIcon3 = document.getElementById("linkWhiteIcon");
+const linkBlackIcon3 = document.getElementById("linkBlackIcon");
+const dategrayIcon3 = document.getElementById("dategrayIcon");
+const dateWhiteIcon3 = document.getElementById("dateWhiteIcon");
+const dateBlackIcon3 = document.getElementById("dateBlackIcon");
+
 toggle3.addEventListener("click", function () {
+  const mapsIcongray = document.getElementById("mapsIcongray");
+  mapsIcongray.style.display = "none";
+
+  const mapsIconWhite = document.getElementById("mapsIconWhite");
+  mapsIconWhite.style.display = "none";
+
+  const mapsIconBlack = document.getElementById("mapsIconBlack");
+  mapsIconBlack.style.display = "";
+
+  const linkgrayIcon = document.getElementById("linkgrayIcon");
+  linkgrayIcon.style.display = "none";
+
+  const linkWhiteIcon = document.getElementById("linkWhiteIcon");
+  linkWhiteIcon.style.display = "none";
+
+  const linkBlackIcon = document.getElementById("linkBlackIcon");
+  linkBlackIcon.style.display = "";
+
+  const dategrayIcon = document.getElementById("dategrayIcon");
+  dategrayIcon.style.display = "none";
+
+  const dateWhiteIcon = document.getElementById("dateWhiteIcon");
+  dateWhiteIcon.style.display = "none";
+
+  const dateBlackIcon = document.getElementById("dateBlackIcon");
+  dateBlackIcon.style.display = "";
+
   if (this.classList.toggle("grey")) {
     ProfileButtongray.style.background = "black";
     ProfileButtongray.style.color = "white";
@@ -776,7 +971,7 @@ toggle3.addEventListener("click", function () {
     followers1gary.style.transition = "2s";
 
     urlgray.style.background = "white";
-    urlgray.style.color = "black";
+    urlgray.style.color = "#485fc7";
     urlgray.style.transition = "2s";
 
     androidViewgray.style.background = "white";
@@ -826,7 +1021,27 @@ toggle3.addEventListener("click", function () {
     ellipsis1gray.style.background = "white";
     ellipsis1gray.style.color = "black";
     ellipsis1gray.style.transition = "2s";
+
+    mapsIcongray3.style.display = "";
+    mapsIconWhite3.style.display = "none";
+    mapsIconBlack3.style.display = "none";
+    linkgrayIcon3.style.display = "";
+    linkWhiteIcon3.style.display = "none";
+    linkBlackIcon3.style.display = "none";
+    dategrayIcon3.style.display = "";
+    dateWhiteIcon3.style.display = "none";
+    dateBlackIcon3.style.display = "none";
   } else {
+    dateBlackIcon3.style.display = "";
+    dateWhiteIcon3.style.display = "none";
+    dategrayIcon3.style.display = "none";
+    linkBlackIcon3.style.display = "";
+    linkWhiteIcon3.style.display = "none";
+    linkgrayIcon3.style.display = "none";
+    mapsIconWhite3.style.display = "none";
+    mapsIconBlack3.style.display = "";
+    mapsIcongray3.style.display = "none";
+
     ProfileButtongray.style.background = "black";
     ProfileButtongray.style.color = "white";
 
