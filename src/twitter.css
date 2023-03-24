@@ -20,9 +20,9 @@
 #ml-12{
     margin-left: 117px;
 }
-#ml-13{
-    margin-right: 89px;
-}
+/*#ml-13{
+    margin-right: 89px!important;
+}*/
 #about{
     margin-left: 9rem !important;
 }
@@ -83,55 +83,55 @@
 
 
 #Tweet{
-    color: #4a4a4a;
+    color: black;
     margin-left: 25px;
     background-color: white;
-    font-family: bold;
-        font-size: 24px;
+    font-size: 20px;
+        font-family: inherit;
 }
 
 #totalTweet{
-    color: black;
+    color: rgb(83, 100, 113);
     margin-left: 32px;
     background-color: white;
 }
 #Born{
-    color: #4a4a4a;
+    color: rgb(83, 100, 113);
 }
 
 #following1{
-    color: #4a4a4a;
+    color: rgb(83, 100, 113);
 }
 #followers1{
-    color: #4a4a4a;
+    color: rgb(83, 100, 113);
 }
 #wifi{
-    color: black;
+    color: rgb(83, 100, 113);
 }
 #signal{
-    color: black;
+    color: rgb(83, 100, 113);
 }
 #signal2 {
-    color: black;
+    color: rgb(83, 100, 113);
 }
 #battery{
-    color: black;
+    color: rgb(83, 100, 113);
 }
 #battery1{
-    color: black;
+    color: rgb(83, 100, 113);
 }
 
 #ellipsis{
-    color: black;
+    color: rgb(83, 100, 113);
 }
 #percent{
-    color: black;
+    color: rgb(83, 100, 113);
 }
 #time{
-    color: #4a4a4a;
+    color: rgb(83, 100, 113);
 }
 #time2{
-    color: black;
+    color: rgb(83, 100, 113);
 }
 
 #changeImage3{
@@ -139,10 +139,10 @@
     
 }
 #mobileTime{
-    color: black;
+    color: rgb(83, 100, 113);
 }
 #battery2{
-    color: black;
+    color: rgb(83, 100, 113);
 }
 
 /*#rounded{
@@ -215,7 +215,7 @@
     align-items: center;
     display: flex;
     position: absolute;
-    bottom: 68px;
+    bottom: 59px;
     right: 15px;
     box-shadow: 0px 2px 6px 0 rgb(0 0 0 / 30%);
     z-index: 10;
@@ -263,7 +263,7 @@
  }
 
  .right-dots {
-    margin-left: 269px;
+    margin-left: 321px;
      width: 28px;
      height: 28px;
      background: rgba(0, 0, 0, .5);
@@ -356,8 +356,9 @@
     margin-left: 12px;
 }
 #accountName{
-    font-family: bold;
-        font-size: 24px;
+    color: black;
+        font-size: 20px;
+        font-family: inherit;
 }
 #changeImageFollowed{
     height: 25px;
@@ -372,10 +373,10 @@
 }
 
 #LiveLocation{
-    color: #4a4a4a;
+    color: rgb(83, 100, 113);
 }
 #dob{
-    color: #4a4a4a;
+    color: rgb(83, 100, 113);
 }
 
 
@@ -387,15 +388,33 @@
     color: #485fc7;
 }
 #flag{
-    color: #4a4a4a;
+    color: rgb(83, 100, 113);
 }
 #governmenticon{
-    color: #4a4a4a;
+    color: rgb(83, 100, 113);
+}
+#subcribation{
+    color: black;
 }
 
 #Profile-button{
     background-color: black;
     color: #fff;
+}
+#followers{
+    color: black;
+}
+#following{
+    color: black;
+}
+#sarvamangal{
+    color: rgb(83, 100, 113);
+}
+#totalTweetDiv{
+    color: rgb(83, 100, 113);
+}
+#userNameDiv{
+    color: rgb(83, 100, 113);
 }
 
 
