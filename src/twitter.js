@@ -49,6 +49,7 @@ const subcribationdark = document.getElementById("subcribation");
 const sarvamangaldark = document.getElementById("sarvamangal");
 const userNamedark = document.getElementById("userNameDiv");
 const totalTweet1 = document.getElementById("totalTweet");
+const Tweets = document.getElementById("Tweets");
 /*const calendarSvg = document.getElementById("liveIcon");
 const urlSvg = document.getElementById("urlicon");*/
 
@@ -175,15 +176,19 @@ toggle.addEventListener("click", function () {
     subcribationdark.style.transition = "2s";
 
     sarvamangaldark.style.background = "white";
-    sarvamangaldark.style.color = "rgb(83, 100, 113);";
+    sarvamangaldark.style.color = "rgb(83, 100, 113)";
     sarvamangaldark.style.transition = "2s";
 
     userNamedark.style.background = "white";
-    userNamedark.style.color = "rgb(83, 100, 113);";
+    userNamedark.style.color = "rgb(83, 100, 113)";
     userNamedark.style.transition = "2s";
 
+    Tweets.style.background = "white";
+    Tweets.style.color = "rgb(83, 100, 113)";
+    Tweets.style.transition = "2s";
+
     totalTweet1.style.background = "white";
-    totalTweet1.style.color = "rgb(83, 100, 113);";
+    totalTweet1.style.color = "black";
     totalTweet1.style.transition = "2s";
 
     /*calendarSvg.style.background = "white";
@@ -212,6 +217,10 @@ toggle.addEventListener("click", function () {
     mapsIcongray.style.display = "none";
     Profilebottondark.style.background = "white";
     Profilebottondark.style.color = "black";
+
+    Tweets.style.background = "black";
+    Tweets.style.color = "white";
+    Tweets.style.transition = "2s";
 
     totalTweet1.style.background = "black";
     totalTweet1.style.color = "white";
@@ -390,6 +399,7 @@ const subcribationBlue = document.getElementById("subcribation");
 const sarvamangalBlue = document.getElementById("sarvamangal");
 const userNameBlue = document.getElementById("userNameDiv");
 const totalTweetBlue1 = document.getElementById("totalTweet");
+const TweetsBlue = document.getElementById("Tweets");
 
 toggle1.addEventListener("click", function () {
   const mapsIcongray = document.getElementById("mapsIcongray");
@@ -421,7 +431,7 @@ toggle1.addEventListener("click", function () {
 
   if (this.classList.toggle("Blue")) {
     profileButtonBlue.style.background = "black";
-    profileButtonBlue.style.color = "color";
+    profileButtonBlue.style.color = "white";
 
     myElement1.style.background = "white";
     myElement1.style.color = "black";
@@ -436,7 +446,7 @@ toggle1.addEventListener("click", function () {
     androidView1.style.transition = "2s";
 
     Tweet1.style.background = "white";
-    Tweet1.style.color = "rgb(83, 100, 113)";
+    Tweet1.style.color = "black";
     Tweet1.style.transition = "2s";
 
     iphoneView1Blue.style.background = "white";
@@ -520,11 +530,11 @@ toggle1.addEventListener("click", function () {
     ellipsis1Blue.style.transition = "2s";
 
     followingBlue.style.background = "white";
-    followingBlue.style.color = "rgb(83, 100, 113)";
+    followingBlue.style.color = "black";
     followingBlue.style.transition = "2s";
 
     followersBlue.style.background = "white";
-    followersBlue.style.color = "rgb(83, 100, 113)";
+    followersBlue.style.color = "black";
     followersBlue.style.transition = "2s";
 
     accountNameBlue.style.background = "white";
@@ -547,6 +557,10 @@ toggle1.addEventListener("click", function () {
     totalTweetBlue1.style.color = "rgb(83, 100, 113)";
     totalTweetBlue1.style.transition = "2s";
 
+    TweetsBlue.style.background = "white";
+    TweetsBlue.style.color = "black";
+    TweetsBlue.style.transition = "2s";
+
     mapsIcongray1.style.display = "";
     mapsIconWhite1.style.display = "none";
     mapsIconBlack1.style.display = "none";
@@ -566,6 +580,10 @@ toggle1.addEventListener("click", function () {
     mapsIconWhite1.style.display = "";
     mapsIconBlack1.style.display = "none";
     mapsIcongray1.style.display = "none";
+
+    TweetsBlue.style.background = "#0000ff";
+    TweetsBlue.style.color = "white";
+    TweetsBlue.style.transition = "2s";
 
     totalTweetBlue1.style.background = "#0000ff";
     totalTweetBlue1.style.color = "white";
@@ -737,6 +755,7 @@ const sarvamangalgold = document.getElementById("sarvamangal");
 const userNamegold = document.getElementById("userNameDiv");
 const totalTweetgold = document.getElementById("totalTweetDiv");
 const totalTweetgold1 = document.getElementById("totalTweet");
+const Tweetsgold = document.getElementById("Tweets");
 
 toggle2.addEventListener("click", function () {
   const mapsIcongray = document.getElementById("mapsIcongray");
@@ -864,11 +883,11 @@ toggle2.addEventListener("click", function () {
     signalgold.style.transition = "2s";
 
     followinggold1.style.background = "white";
-    followinggold1.style.color = "rgb(83, 100, 113)";
+    followinggold1.style.color = "black";
     followinggold1.style.transition = "2s";
 
     followersgold1.style.background = "white";
-    followersgold1.style.color = "rgb(83, 100, 113)";
+    followersgold1.style.color = "black";
     followersgold1.style.transition = "2s";
 
     accountNamegold.style.background = "white";
@@ -891,6 +910,10 @@ toggle2.addEventListener("click", function () {
     totalTweetgold1.style.color = "rgb(83, 100, 113)";
     totalTweetgold1.style.transition = "2s";
 
+    Tweetsgold.style.background = "white";
+    Tweetsgold.style.color = "black";
+    Tweetsgold.style.transition = "2s";
+
     mapsIcongray2.style.display = "";
     mapsIconWhite2.style.display = "none";
     mapsIconBlack2.style.display = "none";
@@ -910,6 +933,10 @@ toggle2.addEventListener("click", function () {
     mapsIconWhite2.style.display = "";
     mapsIconBlack2.style.display = "none";
     mapsIcongray2.style.display = "none";
+
+    Tweetsgold.style.background = "#FFD700";
+    Tweetsgold.style.color = "white";
+    Tweetsgold.style.transition = "2s";
 
     totalTweetgold1.style.background = "#FFD700";
     totalTweetgold1.style.color = "white";
@@ -1090,6 +1117,7 @@ const subcribationgray = document.getElementById("subcribation");
 const sarvamangalgray = document.getElementById("sarvamangal");
 const userNamegray = document.getElementById("userNameDiv");
 const totalTweetgray1 = document.getElementById("totalTweet");
+const Tweetsgray = document.getElementById("Tweets");
 
 toggle3.addEventListener("click", function () {
   const mapsIcongray = document.getElementById("mapsIcongray");
@@ -1240,7 +1268,7 @@ toggle3.addEventListener("click", function () {
     subcribationgray.style.transition = "2s";
 
     sarvamangalgray.style.background = "white";
-    sarvamangalgray.style.color = "rgb(83, 100, 113);";
+    sarvamangalgray.style.color = "rgb(83, 100, 113)";
     sarvamangalgray.style.transition = "2s";
 
     userNamegray.style.background = "white";
@@ -1248,8 +1276,12 @@ toggle3.addEventListener("click", function () {
     userNamegray.style.transition = "2s";
 
     totalTweetgray1.style.background = "white";
-    totalTweetgray1.style.color = "rgb(83, 100, 113);";
+    totalTweetgray1.style.color = "rgb(83, 100, 113)";
     totalTweetgray1.style.transition = "2s";
+
+    Tweetsgray.style.background = "white";
+    Tweetsgray.style.color = "black";
+    Tweetsgray.style.transition = "2s";
 
     mapsIcongray3.style.display = "";
     mapsIconWhite3.style.display = "none";
@@ -1270,6 +1302,10 @@ toggle3.addEventListener("click", function () {
     mapsIconWhite3.style.display = "none";
     mapsIconBlack3.style.display = "";
     mapsIcongray3.style.display = "none";
+
+    Tweetsgray.style.background = "#808080";
+    Tweetsgray.style.color = "black";
+    Tweetsgray.style.transition = "2s";
 
     totalTweetgray1.style.background = "#808080";
     totalTweetgray1.style.color = "black";

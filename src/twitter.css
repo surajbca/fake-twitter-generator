@@ -416,5 +416,17 @@
 #userNameDiv{
     color: rgb(83, 100, 113);
 }
-
+#Tweets{
+    color: black;
+    font-family: inherit;
+}
+#Replies{
+    font-family: inherit;
+}
+#Media{
+    font-family: inherit;
+}
+#Likes{
+    font-family: inherit;
+}
 
