@@ -1798,3 +1798,7 @@ const clearIcon = (event) => {
   document.getElementById("checkIcon").style.display = "none";
   document.getElementById("flag").style.display = "none";
 };
+
+function Followingbtn() {
+  document.getElementById("ellipsis-h2").style.display = "";
+}
