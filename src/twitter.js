@@ -1515,6 +1515,16 @@ function updateInput(value) {
   document.getElementById("subcribation").innerHTML =
     document.getElementById("inputSubcribation").value;
 
+  /*start government flag icon*/
+  let governmenticon = document.getElementById("inputgovernment").value;
+  if (governmenticon) {
+    showIcon("flagicon");
+  } else {
+    hideIcon("flagicon");
+  }
+  document.getElementById("governmenticon").innerHTML = governmenticon;
+  /*end government flag icon*/
+
   let liveLocationData = document.getElementById("inputLiveLocation").value;
   if (liveLocationData) {
     showIcon("liveIcon");
@@ -1547,6 +1557,9 @@ function updateInput(value) {
 
   document.getElementById("userName").innerHTML =
     document.getElementById("input6").value;
+
+  document.getElementById("governmenticon").innerHTML =
+    document.getElementById("inputgovernment").value;
 
   /*document.getElementById("dob").innerHTML =
     document.getElementById("input7").value;*/
@@ -1762,6 +1775,7 @@ const showBlueIcon = (event) => {
 
 const showGreyIcon = (event) => {
   event.preventDefault();
+  document.getElementById("governmentdiv").style.display = "";
   document.getElementById("flag").style.display = "";
   document.getElementById("gray").style.display = "";
   document.getElementById("greyIcon").style.display = "";
@@ -1801,4 +1815,36 @@ const clearIcon = (event) => {
 
 function Followingbtn() {
   document.getElementById("ellipsis-h2").style.display = "";
+  document.getElementById("Profile-button").style.display = "none";
+  document.getElementById("idfollowing").style.display = "";
 }
+
+function alertdiv() {
+  confirm("Unfollow @TomCruise?");
+  document.getElementById("alertDiv").style.display = "";
+}
+
+//var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+//var btn = document.getElementById("idfollowing");
+
+// Get the <span> element that closes the modal
+//var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+/*btn.onclick = function () {
+  modal.style.display = "block";
+};*/
+
+// When the user clicks on <span> (x), close the modal
+/*span.onclick = function () {
+  modal.style.display = "none";
+};*/
+
+// When the user clicks anywhere outside of the modal, close it
+/*window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};*/

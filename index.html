@@ -325,6 +325,15 @@
                                     oninput="updateInput(value)">
                             </div>
                         </div>
+
+                        <div class="field" style="display: none;" id="governmentdiv">
+                            <label class="label">government</label>
+                            <div class="control">
+                                <input class="input " type="text" placeholder="government"
+                                    value="india government official" id="inputgovernment" oninput="updateInput(value)">
+                            </div>
+                        </div>
+
                         <div class="field">
                             <label class="label">subcribation</label>
                             <div class="control">
@@ -554,6 +563,8 @@ TomCruise.com
                                 </div>
                                 <button class="button is-rounded  margin_top mr-3" id="Profile-button"
                                     onClick="Followingbtn()">Follow</button>
+                                <button class="button is-rounded   mr-3" id="idfollowing" onClick="alertdiv()"
+                                    style="display: none;">Following</button>
                             </div>
                         </div>
                         <!--<button class="button is-rounded navbar-end margin_top mr-3" id="Profile-button">Edit
@@ -585,23 +596,39 @@ TomCruise.com
                                         @<p id="userName">TomCruise</p>
                                     </div>
                                     <div class="level-left" style="display: none;" id="flag">
-                                        <span class="icon is-small mt-2"><i class="fa fa-flag"
+                                        <span class="icon is-small mt-2" id="flagicon"><i class="fa fa-flag"
                                                 aria-hidden="true"></i></span>
                                         <a class="ml-1 " href="" id="governmenticon">india government official</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="content" id="subcribationid">
-                                <div class="level-left ">
-
-                                    <p id="subcribation">Actor. producer. Running in movies since 1918.</p>
-                                    <!--<a class="level-item " aria-label="reply" id="Born">
+                                <!--<div class="level-left ">
+                                    <p id="subcribation">Actor. producer. Running in movies since 1918.</p>-->
+                                <!--<a class="level-item " aria-label="reply" id="Born">
                                         <span class="icon is-small">
                                             <i class="fa fa-table" aria-hidden="true"></i> &nbsp;&nbsp;
                                         </span><span>Born</span>
                                     </a>
-                                    <p id="dob"> January 1, 1999</p>-->
-                                </div>
+                                    <p id="dob"> January 1, 1999</p>
+                                </div>-->
+                                <!--start alert-->
+                                <!--<h2>Modal Example</h2>-->
+
+                                <!-- Trigger/Open The Modal -->
+                                <!-- <button id="myBtn">Open Modal</button>-->
+
+                                <!-- The Modal -->
+                                <!-- <div id="myModal" class="modal">-->
+
+                                <!-- Modal content -->
+                                <!-- <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <p>Some text in the Modal..</p>
+                                    </div>
+
+                                </div>-->
+                                <!--end alert-->
                                 <div class="has-text-info mt-2">
                                     <div class="level-left ">
                                         <a class="level-item " aria-label="reply">
