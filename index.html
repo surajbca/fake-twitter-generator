@@ -153,7 +153,7 @@
 
             <div class="column">
                 <form id="FormID">
-                    <div class="mt-2">
+                    <!--<div class="mt-2">
                         <button class="button  is-rounded Blue" onClick="showBlueIcon(event)"><span
                                 class="icon is-small mr-2 has-text-info">
                                 <img src="./src/verified-icon.png">
@@ -167,9 +167,42 @@
                                 <img src="./src/verify-allow.png">
                             </span>yellow</button>
                         <button class="button is-primary is-rounded" onClick="clearIcon(event)">none</button>
-                    </div>
+                    </div>-->
                     <div class="column is-three-fifths box  ml-12 dark" id="ml-12">
                         <!--div start-->
+                        <div class="buttons">
+                            <button class="button btn" onClick="showBlueIcon(event) " id="BlueIconbtn"><span
+                                    class="icon is-small mr-2 has-text-info">
+                                    <img src="./src/verified-icon.png">
+                                </span>Blue</button>
+                            <button class="button btn" onClick="showGreyIcon(event)" id="greyIconbtn"><span
+                                    class="icon is-small mr-2 has-text-primary">
+                                    <img src="./src/gray2.png.png">
+                                </span>grey</button>
+                            <button class="button btn" onClick="showYellowIcon(event)" id="yellowIconbtn"><span
+                                    class="icon is-small mr-2">
+                                    <img src="./src/verify-allow.png">
+                                </span>yellow</button>
+                            <button class="button btn" onClick="clearIcon(event)" id="noneIconbtn"
+                                style="background-color: #48c78e;color: white">none</button>
+                        </div>
+                        <div class="field" style="display: none;" id="governmentdiv">
+                            <label class="label">government official</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="government"
+                                    value="india government official" id="inputgovernment" oninput="myFunction()">
+                                <div class="select ">
+                                    <select id="selectInput" oninput="updateInput(value)">
+                                        <option>india government official</option>
+                                        <option>United states government official</option>
+                                        <option>Canadian government official</option>
+                                        <option>United kingdom government official</option>
+                                        <option> government official</option>
+                                        <option>Custom</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                         <div id="desktopView">
                             <div class="column">
 
@@ -236,9 +269,9 @@
                                     </figure>
                                 </div>
                                 <div class="media-content ml-10 ">
-                                    <div class="content">
-                                        Banner photo
-                                        <div class="file  is-primary">
+                                    <div class="content ">
+                                        <label class="has-text-weight-bold">Banner photo</label>
+                                        <div class="file  is-primary" id="Bannerphoto">
                                             <label class="file-label">
                                                 <input class="file-input" type="file" name="resume"
                                                     onchange="preview_image(event, 'changeImage1')">
@@ -281,9 +314,9 @@
                                     </figure>
                                 </div>
                                 <div class="media-content ml-10">
-                                    <div class="content has-span-right imageIsLoaded()">
-                                        Profile photo
-                                        <div class="file  is-primary">
+                                    <div class="content has-span-right imageIsLoaded() ">
+                                        <label class="has-text-weight-bold">Profile photo</label>
+                                        <div class="file  is-primary" id="SelectImgage">
                                             <label class="file-label">
                                                 <input class="file-input" type="file" name="resume"
                                                     onchange="preview_image(event, 'changeImage2')">
@@ -326,13 +359,7 @@
                             </div>
                         </div>
 
-                        <div class="field" style="display: none;" id="governmentdiv">
-                            <label class="label">government</label>
-                            <div class="control">
-                                <input class="input " type="text" placeholder="government"
-                                    value="india government official" id="inputgovernment" oninput="updateInput(value)">
-                            </div>
-                        </div>
+
 
                         <div class="field">
                             <label class="label">subcribation</label>
@@ -502,7 +529,7 @@ TomCruise.com
                                                         <img src="./src/verified-icon.png">
                                                     </span>
                                                     <span class="icon is-small" style="display: none;" id="greyIcon">
-                                                        <img src="./src/verified-grey4.png">
+                                                        <img src="./src/gray2.png.png">
                                                     </span>
                                                     <span class="icon is-small " style="display: none;" id="yellowIcon">
                                                         <img src="./src/verify-allow.png">
@@ -585,7 +612,7 @@ TomCruise.com
                                                 <img src="./src/verified-icon.png">
                                             </span>
                                             <span class="icon is-small" id="gray" style="display: none;">
-                                                <img src="./src/verified-grey4.png">
+                                                <img src="./src/gray2.png.png">
                                             </span>
                                             <span class="icon is-small mr-2" id="allow" style="display: none;">
                                                 <img src="./src/verify-allow.png">
@@ -603,31 +630,17 @@ TomCruise.com
                                 </div>
                             </div>
                             <div class="content" id="subcribationid">
+                                <p id="subcribation">Actor. producer. Running in movies since 1918.</p>
                                 <!--<div class="level-left ">
-                                    <p id="subcribation">Actor. producer. Running in movies since 1918.</p>-->
-                                <!--<a class="level-item " aria-label="reply" id="Born">
+                                    
+                                    <a class="level-item " aria-label="reply" id="Born">
                                         <span class="icon is-small">
                                             <i class="fa fa-table" aria-hidden="true"></i> &nbsp;&nbsp;
                                         </span><span>Born</span>
                                     </a>
                                     <p id="dob"> January 1, 1999</p>
                                 </div>-->
-                                <!--start alert-->
-                                <!--<h2>Modal Example</h2>-->
 
-                                <!-- Trigger/Open The Modal -->
-                                <!-- <button id="myBtn">Open Modal</button>-->
-
-                                <!-- The Modal -->
-                                <!-- <div id="myModal" class="modal">-->
-
-                                <!-- Modal content -->
-                                <!-- <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <p>Some text in the Modal..</p>
-                                    </div>
-
-                                </div>-->
                                 <!--end alert-->
                                 <div class="has-text-info mt-2">
                                     <div class="level-left ">

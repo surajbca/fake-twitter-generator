@@ -15,7 +15,7 @@
     margin-top: -69px;
 }
 .ml-10{
-    margin-left: 93px;
+    margin-left: 148px;
 }
 #ml-12{
     margin-left: 117px;
@@ -263,7 +263,7 @@
  }
 
  .right-dots {
-    margin-left: 321px;
+    margin-left: 419px;
      width: 28px;
      height: 28px;
      background: rgba(0, 0, 0, .5);
@@ -396,6 +396,7 @@
     color: rgb(83, 100, 113);
 }
 #subcribation{
+    margin-bottom: 1px;
     color: black;
 }
 
@@ -461,7 +462,7 @@
    /* background-color: rgb(0, 0, 0);*/
     /* Fallback color */
     /*background-color: rgba(0, 0, 0, 0.4);*/
-    /* Black w/ opacity */
+    /* Black w/ opacity 
 }
 
 /* Modal Content 
@@ -487,4 +488,23 @@
     text-decoration: none;
     cursor: pointer;
 }*/
+
+#Bannerphoto{
+    margin-left: -15px;
+}
+#SelectImgage{
+    margin-left: -15px;
+}
+.btn:active,
+.btn.active {
+    background-color: #48c78e;
+    outline: none;
+}
+/* #noneIconbtn{
+    background-color: #48c78e;
+} */
+#selectInput{
+    padding-right: 120px;
+    margin-top: 5px;
+}
 

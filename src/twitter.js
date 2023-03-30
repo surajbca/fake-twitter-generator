@@ -124,7 +124,7 @@ toggle.addEventListener("click", function () {
     percent.style.transition = "2s";
 
     time.style.background = "white";
-    time.style.color = "#rgb(83, 100, 113)";
+    time.style.color = "rgb(83, 100, 113)";
     time.style.transition = "2s";
 
     time2.style.background = "white";
@@ -184,11 +184,11 @@ toggle.addEventListener("click", function () {
     userNamedark.style.transition = "2s";
 
     Tweets.style.background = "white";
-    Tweets.style.color = "rgb(83, 100, 113)";
+    Tweets.style.color = "black";
     Tweets.style.transition = "2s";
 
     totalTweet1.style.background = "white";
-    totalTweet1.style.color = "black";
+    totalTweet1.style.color = "rgb(83, 100, 113)";
     totalTweet1.style.transition = "2s";
 
     /*calendarSvg.style.background = "white";
@@ -1272,7 +1272,7 @@ toggle3.addEventListener("click", function () {
     sarvamangalgray.style.transition = "2s";
 
     userNamegray.style.background = "white";
-    userNamegray.style.color = "rgb(83, 100, 113);";
+    userNamegray.style.color = "rgb(83, 100, 113)";
     userNamegray.style.transition = "2s";
 
     totalTweetgray1.style.background = "white";
@@ -1558,8 +1558,14 @@ function updateInput(value) {
   document.getElementById("userName").innerHTML =
     document.getElementById("input6").value;
 
+  document.getElementById("inputgovernment").value =
+    document.getElementById("selectInput").value;
+
   document.getElementById("governmenticon").innerHTML =
     document.getElementById("inputgovernment").value;
+
+  /*document.getElementById("governmenticon").innerHTML =
+    document.getElementById("inputgovernment").value;*/
 
   /*document.getElementById("dob").innerHTML =
     document.getElementById("input7").value;*/
@@ -1577,7 +1583,10 @@ function updateInput(value) {
     document.getElementById("urlInput").value;*/
 }
 /*end from submit*/
-
+function myFunction() {
+  let text = document.getElementById("inputgovernment").value;
+  document.getElementById("governmenticon").innerHTML = text;
+}
 /*start mobile display */
 function mobileStyle() {
   var element = document.getElementById("myElement");
@@ -1771,6 +1780,23 @@ const showBlueIcon = (event) => {
   document.getElementById("verifyAccount").style.display = "none";
   document.getElementById("checkIcon").style.display = "none";
   document.getElementById("flag").style.display = "none";
+  document.getElementById("governmentdiv").style.display = "none";
+  //document.getElementById("BlueIconbtn").style.backgroundColor = "#48c78e";
+  let BlueIconbtn = document.getElementById("BlueIconbtn");
+  BlueIconbtn.style.backgroundColor = "#48c78e";
+  BlueIconbtn.style.color = "white";
+
+  let greyIconbtn = document.getElementById("greyIconbtn");
+  greyIconbtn.style.backgroundColor = "";
+  greyIconbtn.style.color = "";
+
+  let yellowIconbtn = document.getElementById("yellowIconbtn");
+  yellowIconbtn.style.backgroundColor = "";
+  yellowIconbtn.style.color = "";
+
+  let noneIconbtn = document.getElementById("noneIconbtn");
+  noneIconbtn.style.backgroundColor = "white";
+  noneIconbtn.style.color = "black";
 };
 
 const showGreyIcon = (event) => {
@@ -1785,6 +1811,20 @@ const showGreyIcon = (event) => {
   document.getElementById("yellowIcon").style.display = "none";
   document.getElementById("verifyAccount").style.display = "none";
   document.getElementById("checkIcon").style.display = "none";
+  let BlueIconbtn = document.getElementById("BlueIconbtn");
+  BlueIconbtn.style.backgroundColor = "";
+  BlueIconbtn.style.color = "";
+  let greyIconbtn = document.getElementById("greyIconbtn");
+  greyIconbtn.style.backgroundColor = "#48c78e";
+  greyIconbtn.style.color = "white";
+
+  let yellowIconbtn = document.getElementById("yellowIconbtn");
+  yellowIconbtn.style.backgroundColor = "";
+  yellowIconbtn.style.color = "";
+
+  let noneIconbtn = document.getElementById("noneIconbtn");
+  noneIconbtn.style.backgroundColor = "white";
+  noneIconbtn.style.color = "black";
 };
 
 const showYellowIcon = (event) => {
@@ -1798,6 +1838,23 @@ const showYellowIcon = (event) => {
   document.getElementById("verifyAccount").style.display = "none";
   document.getElementById("checkIcon").style.display = "none";
   document.getElementById("flag").style.display = "none";
+  document.getElementById("governmentdiv").style.display = "none";
+
+  let BlueIconbtn = document.getElementById("BlueIconbtn");
+  BlueIconbtn.style.backgroundColor = "";
+  BlueIconbtn.style.color = "";
+
+  let greyIconbtn = document.getElementById("greyIconbtn");
+  greyIconbtn.style.backgroundColor = "";
+  greyIconbtn.style.color = "";
+
+  let yellowIconbtn = document.getElementById("yellowIconbtn");
+  yellowIconbtn.style.backgroundColor = "#48c78e";
+  yellowIconbtn.style.color = "white";
+
+  let noneIconbtn = document.getElementById("noneIconbtn");
+  noneIconbtn.style.backgroundColor = "white";
+  noneIconbtn.style.color = "black";
 };
 
 const clearIcon = (event) => {
@@ -1811,6 +1868,23 @@ const clearIcon = (event) => {
   document.getElementById("verifyAccount").style.display = "none";
   document.getElementById("checkIcon").style.display = "none";
   document.getElementById("flag").style.display = "none";
+  document.getElementById("governmentdiv").style.display = "none";
+
+  let BlueIconbtn = document.getElementById("BlueIconbtn");
+  BlueIconbtn.style.backgroundColor = "";
+  BlueIconbtn.style.color = "";
+
+  let greyIconbtn = document.getElementById("greyIconbtn");
+  greyIconbtn.style.backgroundColor = "";
+  greyIconbtn.style.color = "";
+
+  let yellowIconbtn = document.getElementById("yellowIconbtn");
+  yellowIconbtn.style.backgroundColor = "";
+  yellowIconbtn.style.color = "";
+
+  let noneIconbtn = document.getElementById("noneIconbtn");
+  noneIconbtn.style.backgroundColor = "#48c78e";
+  noneIconbtn.style.color = "white";
 };
 
 function Followingbtn() {
@@ -1820,31 +1894,6 @@ function Followingbtn() {
 }
 
 function alertdiv() {
-  confirm("Unfollow @TomCruise?");
+  alert("");
   document.getElementById("alertDiv").style.display = "";
 }
-
-//var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-//var btn = document.getElementById("idfollowing");
-
-// Get the <span> element that closes the modal
-//var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-/*btn.onclick = function () {
-  modal.style.display = "block";
-};*/
-
-// When the user clicks on <span> (x), close the modal
-/*span.onclick = function () {
-  modal.style.display = "none";
-};*/
-
-// When the user clicks anywhere outside of the modal, close it
-/*window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};*/
