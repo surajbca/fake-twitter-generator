@@ -19,9 +19,14 @@
     font-family: TwitterChirpReg;
     src: url(s../rc/Font/Chirp-Regular.80fda27a.woff2)format('opentype');
 }
-.font {
+.font{
+    font-family: TwitterChirpReg;
+}
+.fontReg{
     font-family: TwitterChirpMedium;
-
+}
+.fontBold{
+    font-family:TwitterChirpBold;
 }
 *{
     margin: 0;
