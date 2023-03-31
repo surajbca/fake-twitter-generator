@@ -1,6 +1,34 @@
+
+@font-face {
+    font-family: TwitterChirpBold;
+    src: url(../src/Font/Chirp-Bold.ebb56aba.woff2) format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: TwitterChirpMedium;
+    src: url(../src/Font/Chirp-Medium.f8e2739a.woff2)format('opentype');
+}
+
+@font-face {
+    font-family: TwitterChirHeavy;
+    src: url(../src/Font/Chirp-Heavy.f44ae4ea.woff2)format('opentype');
+}
+
+@font-face {
+    font-family: TwitterChirpReg;
+    src: url(s../rc/Font/Chirp-Regular.80fda27a.woff2)format('opentype');
+}
+.font {
+    font-family: TwitterChirpMedium;
+
+}
 *{
     margin: 0;
     padding: 0;
+}
+body {
+    font-family: TwitterChirpReg !important;
 }
 .container{
   margin-top: 88px;
@@ -80,85 +108,79 @@
     margin-left: -39px ;
 }
 
-*{
-    font-family: inherit;
-}
+
 
 #Tweet{
     color: black;
     margin-left: 25px;
     background-color: white;
     font-size: 20px;
-        font-family: inherit;
+        /*font-family: inherit;*/
 }
 
 #totalTweet{
-    font-family: inherit;
+   /* font-family: inherit;*/
     color: rgb(83, 100, 113);
     margin-left: 32px;
     font-size: 15px;
     background-color: white;
+   
 }
 #Born{
-    font-family: inherit;
+   
     color: rgb(83, 100, 113);
     font-size: 15px;
     font-size: 15px;
 }
 
 #following1{
-    font-family: inherit;
+   
     color: rgb(83, 100, 113);
     font-size: 15px;
+    
 }
 #followers1{
-    font-family: inherit;
+   
     color: rgb(83, 100, 113);
+   
     font-size: 15px;
 }
 #wifi{
-    font-family: inherit;
+    
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #signal{
-    font-family: inherit;
+    
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #signal2 {
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #battery{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #battery1{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 
 #ellipsis{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #percent{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #time{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #time2{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
@@ -170,12 +192,9 @@
 #mobileTime{
     font-family: inherit;
     color: rgb(83, 100, 113);
-    font-size: 15px;
 }
 #battery2{
-    font-family: inherit;
     color: rgb(83, 100, 113);
-    font-size: 15px;
 }
 
 /*#rounded{
@@ -385,15 +404,14 @@
     color: #808080;
 }
 #born1{
+    font-family: serif;
     width: 20px;
     height: 20px;
-   /* font-size: 24px;*/
     margin-left: 12px;
 }
 #accountName{
     color: black;
         font-size: 20px;
-        font-family: inherit;
 }
 #changeImageFollowed{
     height: 25px;
@@ -408,12 +426,10 @@
 }
 
 #LiveLocation{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #dob{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
@@ -427,12 +443,10 @@
     color: #485fc7;
 }
 #flag{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #governmenticon{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
@@ -452,41 +466,27 @@
     color: black;
 }
 #sarvamangal{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #totalTweetDiv{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #userNameDiv{
-    font-family: inherit;
     color: rgb(83, 100, 113);
     font-size: 15px;
 }
 #Tweets{
     color: black;
-    font-family: inherit;
-    font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
-#Replies{
-    font-family: inherit;
-}
-#Media{
-    font-family: inherit;
-}
-#Likes{
-    font-family: inherit;
-}
+
 #subcribationid{
     margin-top: -18px;
 }
 #idfollowing{
     margin-top: -35px;
     color: black;
-    font-family: inherit;
 }
 
 /*
@@ -555,8 +555,5 @@
     padding-right: 120px;
     margin-top: 5px;
 }
-*{
-    font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    word-wrap: break-word;
-    font-family: inherit;
-}
+
+
