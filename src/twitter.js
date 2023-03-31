@@ -1590,7 +1590,7 @@ function myFunction() {
 /*start mobile display */
 function mobileStyle() {
   var element = document.getElementById("myElement");
-  element.style.margin = "23px 70px 24px 55px";
+  element.style.margin = "28px 109px 24px 99px";
 
   /* var mobilediv = document.getElementById("ml-13");
   mobilediv.style.marginRight = "0px";
