@@ -19,6 +19,12 @@
     font-family: TwitterChirpReg;
     src: url(s../rc/Font/Chirp-Regular.80fda27a.woff2)format('opentype');
 }
+@font-face {
+    font-family: system-ui;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
 .font{
     font-family: TwitterChirpReg;
 }
@@ -27,6 +33,16 @@
 }
 .fontBold{
     font-family:TwitterChirpBold;
+}
+.fontHeavy{
+    font-family: TwitterChirHeavy;
+}
+
+.fontNormal {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+ }
+.uifont{
+    font-family: system-ui;
 }
 *{
     margin: 0;
@@ -432,11 +448,11 @@ body {
 
 #LiveLocation{
     color: rgb(83, 100, 113);
-    font-size: 15px;
+   /* font-size: 15px;*/
 }
 #dob{
     color: rgb(83, 100, 113);
-    font-size: 15px;
+   /* font-size: 15px;*/
 }
 
 
@@ -449,11 +465,11 @@ body {
 }
 #flag{
     color: rgb(83, 100, 113);
-    font-size: 15px;
+   /* font-size: 15px;*/
 }
 #governmenticon{
     color: rgb(83, 100, 113);
-    font-size: 15px;
+   /* font-size: 15px;*/
 }
 #subcribation{
     margin-bottom: 1px;
@@ -472,15 +488,15 @@ body {
 }
 #sarvamangal{
     color: rgb(83, 100, 113);
-    font-size: 15px;
+    font-size: 13px;
 }
 #totalTweetDiv{
     color: rgb(83, 100, 113);
-    font-size: 15px;
+    /*font-size: 15px;*/
 }
 #userNameDiv{
     color: rgb(83, 100, 113);
-    font-size: 15px;
+   /* font-size: 15px;*/
 }
 #Tweets{
     color: black;
